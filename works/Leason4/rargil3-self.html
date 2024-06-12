@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rargil3</title>
+</head>
+
+<body>
+    <input id="selectedNumber" type="number" placeholder="Enter number to power it (**)">
+    <button onclick="(powerCalculate())" type="button">Calculate</button>
+    <div id="box"></div>
+    <script>
+        function powerCalculate() {
+            let num = +document.querySelector('#selectedNumber').value;
+                document.getElementById("box").innerHTML = ''
+            for (let i = 0; i <= 4; i++) {
+                document.getElementById("box").innerHTML += `<p>${num}^${i} = ${num ** i}<p/>`
+            }
+        }
+
+    </script>
+</body>
+
+</html>

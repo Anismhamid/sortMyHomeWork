@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date in day</title>
+</head>
+
+<body id="body">
+
+    <input type="date" id="userDate" />
+    <button onclick="check()">check</button>
+    <p id="result"></p>
+    <script>
+        function check() {
+            let userDate = document.getElementById("userDate").value;
+            let date = new Date(userDate);
+            let days = [
+                "الاحد",
+                "Monday",
+                "Tuesday",
+                "Wednsday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ];
+            document.getElementById("result").innerText = days[date.getDay()];
+        }
+    </script>
+</body>
+
+</html>

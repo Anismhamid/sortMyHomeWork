@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targil 1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 450px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .box h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 0 10px;
+            text-align: center;
+            color: #fff;
+            background: #be4f4f;
+        }
+
+        button {
+            display: block;
+            width: 420px;
+            height: 50px;
+            margin: 0 auto;
+            border: none;
+            background: #c77171;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        button:hover {
+            background: #7c3636;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1 box">
+            <span>המחשב</span>
+            <h2 id="computer"></h2>
+            <p id="computerResult"></p>
+        </div>
+        <div class="box2 box">
+            <span>אתה</span>
+            <h2 id="user"></h2>
+            <p id="userResult"></p>
+        </div>
+    </div>
+    <button type="button" onclick="roll()">Roll</button>
+    <script>
+        function roll() {
+            let computerRoll = Math.floor(Math.random() * 10 + 1);
+            let userRoll = Math.floor(Math.random() * 10 + 1);
+
+            document.getElementById('computer').innerText = computerRoll;
+            document.getElementById('user').innerText = userRoll;
+
+            function resultFunc(winner, empty) {
+                document.getElementById('computerResult').innerText = winner;
+                document.getElementById('userResult').innerText = empty;
+            }
+            if (computerRoll > userRoll) {
+                resultFunc('ניצחת (:', '')
+            } else if (computerRoll < userRoll) {
+                resultFunc('', 'ניצחת (:')
+            } else {
+                resultFunc('שווה', 'שווה')
+            }
+        }
+    </script>
+</body>
+
+</html>

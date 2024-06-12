@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>targil 4</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: #c8c8c8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container #anim {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input,
+        button {
+            margin: 30px;
+            height: 40px;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .box p {
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="anim">
+            <input placeholder="Enter a1" type="number" name="a1" id="a1">
+            <input placeholder="Enter q" type="number" name="q" id="q">
+            <input placeholder="Enter n" type="number" name="n" id="n">
+            <button onclick="calcul()" type="button">Calculate</button>
+            <div id="box"></div>
+        </div>
+    </div>
+    <script>
+
+
+        function calcul() {
+            let a1 = +document.querySelector('#a1').value;
+            let q = +document.querySelector('#q').value;
+            let n = +document.querySelector('#n').value;
+            let series = "";
+            let firstValue = a1;
+            for (let i = 0; i < n; i++) {
+                series += firstValue + ", ";
+                firstValue *= q;
+            }
+            document.querySelector('#box').innerHTML = `<p>The numbers in series are: ${series}</p>`;
+        }
+
+    </script>
+
+</body>
+
+</html>

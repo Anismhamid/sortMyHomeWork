@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heska</title>
+</head>
+
+<body>
+    <input id="input" placeholder="Enter number" type="number">
+    <button onclick="calc()" type="button">Calculate</button>
+    <div id="container">
+    </div>
+    <script>
+        function calc() {
+            document.querySelector('#container').innerHTML = '';
+            let num = +document.getElementById('input').value;
+            for (let i = 0; i <= 4; i++) {
+                a = document.querySelector('#container').innerHTML += `<p> the result for = ${num}^${i} = ${num ** i}<p/>`;
+            }
+        }
+    </script>
+</body>
+
+</html>

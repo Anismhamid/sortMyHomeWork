@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+  </head>
+  <body>
+    <h1>Food: <span id="food">0</span></h1>
+    <h1>Money: <span id="money">100</span></h1>
+    <h1>Name: Mor</h1>
+    <button onclick="buyFood()">Buy food</button>
+    <button onclick="askMoney()">Ask for money</button>
+
+    <script>
+      var food = 0,
+        money = 100;
+
+      function buyFood() {
+        money -= 5; // money = money - 5
+        food += 2;
+        showCurrent();
+      }
+
+      function askMoney() {
+        money += 5; // money = money + 5
+        food--;
+        showCurrent();
+      }
+
+      function showCurrent() {
+        document.getElementById("food").innerText = food;
+        document.getElementById("money").innerText = money;
+      }
+    </script>
+  </body>
+</html>

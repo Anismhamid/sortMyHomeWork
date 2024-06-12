@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your birthday to convert to the day that you born</title>
+</head>
+
+<body>
+    <input type="date" name="date" id="date">
+    <button type="button" onclick="dateinDay()" >calc</button>
+    <p id="p"></p>
+    <script>
+        function dateinDay() {
+            let userValue = document.getElementById('date').value;
+            let date = new Date(userValue);
+            let days = [
+                'sunday',
+                'monday',
+                'tuesday',
+                'wednesday',
+                'thursday',
+                'friday'
+            ];
+                document.getElementById('p').innerText = days[date.getDay()];
+                console.log(days[date.getDay()]);
+            }
+
+    </script>
+</body>
+
+</html>

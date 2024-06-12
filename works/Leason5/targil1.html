@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t 1</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <script>
+
+        // שאלה 1
+        // כתבו סקריפט מגדיר מערך עם שלושה המאכלי האהובים עליכם
+        let favfood = ['salamon', 'loopster', 'ship meat'];
+        console.log(`Targil 1 = ${favfood}`);
+        favfood[1] = 'Cake';
+        favfood.push('macaroni');
+
+        for (let j = 0; j < favfood.length; j++) {
+            console.log(`Targil 1 = ${favfood[j]}`);
+        }
+
+        // שאלה 2
+        // כתבו סקריפט המכיל פונקציה השם פינדמאקס המקבל מערך מספרים כלשהו ומחזירה הערך המקסימלי במערך- אם קיים. אחרת מחזירה נאלל. אין להשתמש במתודות קיימות
+        let numbers = [130, 1315, 1582, 760, 200]
+
+        function findMax() {
+            let max = numbers[0];
+
+            for (i = 1; i < numbers.length; i++) {
+                if (numbers[i] > max) {
+                    max = numbers[i]
+                }
+            }
+            console.log(`Targil 2 Max value = ${max}`);
+        }
+        findMax()
+
+        // שאלה 3
+        // כתבו סקריפט מערך של מספרים [10,20,30,40,50,60] ומערך של שישה שימות בעלי חיים לבחירתך
+        // השתמשו בלולאה והגדירו שבתוך דיב תהיה 6 פסקאות עבור כל חיה וגודל הפונט שכל אחת מהן יהי מערך אחר מערך בהתאמה.
+
+        let animals = ['Cat', 'Dog', 'Giraffe', 'Koala', 'Bear', 'Deer'];
+        let paragraphFontSize = [10, 20, 30, 40, 50, 60];
+        let box = document.querySelector('#box');
+        for (i = 0; i < animals.length; i++) {
+
+            let fontSizeIndex = i % paragraphFontSize.length;
+
+            box.innerHTML += `<p style="font-size:${paragraphFontSize[fontSizeIndex]}px">${animals[i]}</p>`;
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

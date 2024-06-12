@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שאלה 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 450px;
+            height: 300px;
+            position: absolute;
+            top: 30%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: 0 auto;
+        }
+        h1{
+            font-weight: bold;
+        }
+        label{
+            display: block;
+            margin: 30px 0;
+        }
+        input{
+            display: block;
+        }
+        button{
+            margin: 20px 20px 0 0;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-box">
+        <h1>DISCOUNT CALCULATOR</h1>
+        <label for="price">Price:</label>
+        <input id="price" placeholder="Enter the original price" type="number">
+        <label for="discount">Discount:</label>
+        <input placeholder="Enter the value you want to discount" type="number" id="discount">
+        <button onclick="calc()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+        <p id="pr"></p>
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

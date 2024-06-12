@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button type="button" onclick="targil_1()">targil 1</button>
+    <button type="button" onclick="targil_2()">targil 2</button>
+    <button type="button" onclick="targil_3()">targil 3</button>
+    <!-- =============================================== | 1 | ===================================================== -->
+
+    <!-- 1 -->
+    <script>
+        function targil_1() {
+            document.getElementById('box').innerText ='';
+            let food = ['| pizza,', 'meat,', 'Chicken,'];
+            console.log(food);
+            food[1] = 'Cacke,';
+            // food.splice(1,0,'cacke')
+            food.push('allpe. |')
+            for (let i = 0; i < food.length; i++) {
+                document.getElementById('box').innerHTML += `${food[i]}`;
+            }
+        }
+
+    </script>
+
+
+
+
+
+    <!-- =============================================== | 2 | ===================================================== -->
+
+    <!-- 2 -->
+    <script>
+        function targil_2() {
+            document.getElementById('box').innerText = '';
+            let numbers = [48, 98, 58, 26, 90, 50];
+
+            let max = numbers[0];
+
+            function findMax() {
+                for (let i = 1; i < numbers.length; i++) {
+                    if (numbers[i] > max) max = numbers[i];
+                }
+                // document.write(`Targil 2 Max value = ${max}`);
+                console.log(max);
+                document.getElementById('box').innerHTML = `<p>Targil 2 Max value = ${max}</p>`;
+            }
+            findMax()
+        }
+
+
+    </script>
+
+
+
+    <!-- =============================================== | 3 | ===================================================== -->
+
+    <!-- 3 -->
+    <script>
+        function targil_3() {
+            let fontSize = [10, 20, 30, 40, 50, 60];
+            let animalsNames = ['Giraffe', 'Cat', 'Panda', 'dear', 'bear', 'jaguar'];
+            let container = document.createElement('div');
+
+            for (i = 0; i < animalsNames.length; i++) {
+
+                let paragraph = document.createElement(`p`);
+
+                paragraph.innerText = animalsNames[i];
+
+                paragraph.id = animalsNames[i];
+
+
+                container.appendChild(paragraph);
+
+                for (j = 0; j < fontSize.length; j++) {
+
+                    if (j == i) {
+                        paragraph.style.fontSize = fontSize[j] + 'px';
+                    }
+                }
+            }
+            document.body.appendChild(container)
+            document.getElementById('box').innerHTML = animalsNames;
+        }
+
+    </script>
+</body>
+
+</html>

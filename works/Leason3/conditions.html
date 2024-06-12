@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditions</title>
+  </head>
+  <body>
+    <script>
+      // boolean operators
+      var num1 = 8,
+        num2 = 10,
+        flag = true;
+
+      console.log(num1 > num2); // גדול
+      console.log(num1 >= num2); // גדול או שווה
+      console.log(num1 < num2); // קטן
+      console.log(num1 <= num2); // קטן או שווה
+      console.log(num1 != num2); // שונה
+      console.log(num1 == num2); // שווה ערך
+      console.log(num1 === num2); // שווה ערך כולל סוג
+      console.log(flag);
+
+      console.log(10 == "10");
+      console.log(10 === "10");
+
+      // כתוב סקריפט שמצהיר על משתנה עם ערך מספרי כלשהו
+      // בדוק אם הערך גדול או שווה מ18, אם כן הדפס לקונסול הודעה על כך
+      // אם לא, הדפס לקונסול הודעה על כך
+      var age = 7;
+      if (age >= 18) {
+        console.log("You can buy beer");
+      } else {
+        console.log("You are too young");
+      }
+
+      // logic gates
+      var price1 = 19,
+        price2 = 62;
+      console.log(price1 > 10 || price1 < 50);
+      console.log(price1 > 10 && price2 < 50);
+      console.log(!flag);
+
+      // כתוב סקריפט שמגדיר מחיר של מוצר כלשהו
+      // אם המחיר קטן מ10 שקלים, הדפס קטן מ10 שקלים
+      // אם המחיר גדול או שווה מ10 שקלים אבל קטן מ50, הדפס שהמחיר בטווח
+      // אחרת הדפס שהמוצר יקר מדי
+      var price = 25;
+      if (price < 10) {
+        console.log("Price lower than 10");
+      } else if (price >= 10 && price < 50) {
+        console.log("Price between 10 to 50");
+      } else {
+        console.log("Price is too expensive");
+      }
+    </script>
+    <input type="number" id="num" oninput="checkDay()" />
+    <p id="day"></p>
+    <script>
+      function checkDay() {
+        var num = Number(document.getElementById("num").value);
+        switch (num) {
+          case 1:
+            document.getElementById("day").innerText = "Sunday";
+            break;
+          case 2:
+            document.getElementById("day").innerText = "Monday";
+            break;
+          case 3:
+            document.getElementById("day").innerText = "Tuesday";
+            break;
+          case 4:
+            document.getElementById("day").innerText = "Wednsday";
+          case 5:
+            document.getElementById("day").innerText = "Thursday";
+            break;
+          case 6:
+            document.getElementById("day").innerText = "Friday";
+            break;
+          case 7:
+            document.getElementById("day").innerText = "Saturday";
+            break;
+          default:
+            document.getElementById("day").innerText = "Wrong input";
+            break;
+        }
+        // if (num == 1) document.getElementById("day").innerText = "Sunday";
+        // else if (num == 2) document.getElementById("day").innerText = "Monday";
+        // else if (num == 3) document.getElementById("day").innerText = "Tuesday";
+        // else if (num == 4)
+        //   document.getElementById("day").innerText = "Wednsday";
+        // else if (num == 5)
+        //   document.getElementById("day").innerText = "Thursday";
+        // else if (num == 6) document.getElementById("day").innerText = "Friday";
+        // else if (num == 7)
+        //   document.getElementById("day").innerText = "Saturday";
+        // else document.getElementById("day").innerText = "Wrong input";
+      }
+
+      // switch case
+    </script>
+  </body>
+</html>

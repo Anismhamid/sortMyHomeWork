@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodVsMoney</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            
+            width: 600px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+        }
+
+#result{
+    margin-left: 20px;
+}
+p{
+    margin-bottom: 40px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="./GamingController.png" alt="GamingController image">
+        <div id="result">
+            <p id="food">Food:</p>
+            <p id="money">Money:</p>
+            <p id="name">Name:</p>
+            <button onclick="buyFood()" type="button">Buy food</button>
+            <button onclick="askForMoney()" type="button">Ask for money</button>
+        </div>
+    </div>
+    <script src="./foodVsMoney.js"></script>
+</body>
+
+</html>
