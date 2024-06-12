@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,18 @@
 <input id="n" type="number" placeholder="Enter n number">
 <button onclick="calc()" type="button">calculate</button>
 <div id="parent"></div>
+
 <body>
     <script>
 
 
-        function calc(){
+        function calc() {
             let a1 = +document.getElementById('a1').value;
             let q = +document.getElementById('q').value;
             let n = +document.getElementById('n').value;
             let series = '';
             let firstValue = a1;
-            for(let i = 0; i <= n; i++){
+            for (let i = 0; i <= n; i++) {
                 series += firstValue + ", ";
                 firstValue *= q;
                 document.getElementById('parent').innerHTML = `<p>The number in series are:${series}<p/>`
@@ -29,30 +31,31 @@
 
 
 
-        // for(let i = 0; i <= 25; i++){
-        //     console.log(i);
-        // }
+        for (let i = 0; i <= 25; i++) {
+            console.log(i);
+        }
 
-        // for(let i = 0; i <= 50; i++){
-        //     if(i % 3 == 0)
-        //     console.log(i);
-        // }
+        for (let i = 0; i <= 50; i++) {
+            if (i % 3 == 0)
+                console.log(i);
+        }
 
-        // function calc(){
-        //     for(let i = 0; i <= 4;i++){
-        //         let selectedValue = +document.querySelector('input').value;
-        //         document.getElementById('parent').innerHTML += `<p>${selectedValue}^${i}=${selectedValue ** i}<p/>`
-        //     }
-        // }
-            
+        function calc() {
+            for (let i = 0; i <= 4; i++) {
+                let selectedValue = +document.querySelector('input').value;
+                document.getElementById('parent').innerHTML += `<p>${selectedValue}^${i}=${selectedValue ** i}<p/>`
+            }
+        }
 
-        // function calc(){
-        //     userValue = +document.querySelector('#input').value;
-        //     for(i=0;i<=4;i++){
-        //         document.getElementById('parent').innerHTML += `<p>${userValue}^${i}=${userValue ** i}<p/>`
-        //     }
-        // }
+
+        function calc() {
+            userValue = +document.querySelector('#input').value;
+            for (i = 0; i <= 4; i++) {
+                document.getElementById('parent').innerHTML += `<p>${userValue}^${i}=${userValue ** i}<p/>`
+            }
+        }
 
     </script>
 </body>
+
 </html>
