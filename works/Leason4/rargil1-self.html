@@ -9,10 +9,18 @@
 
 <body>
     <script>
-            for (let i = 0; i <= 10; i++) {
-                console.log(i);
-            }
+        for (let i = 1; i <= 25; i++) {
+            console.log(i);
+        }
     </script>
 </body>
 
 </html>
+<p id="p"></p>
+<script>
+    let p = document.getElementById('p');
+    for (let i = 0; i <= 25; i++) {
+        let newstr = ''
+        console.log(newstr = i);
+        p.innerText += newstr + ','
+    }
