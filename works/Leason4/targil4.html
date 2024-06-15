@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T 1</title>
 </head>
-<input id="a1" type="number" placeholder="Enter a1 number">
-<input id="q" type="number" placeholder="Enter q number">
-<input id="n" type="number" placeholder="Enter n number">
-<button onclick="calc()" type="button">calculate</button>
-<div id="parent"></div>
 
 <body>
+    <input id="a1" type="number" placeholder="Enter a1 number">
+    <input id="q" type="number" placeholder="Enter q number">
+    <input id="n" type="number" placeholder="Enter n number">
+    <button onclick="calcSeries()" type="button">calculate</button>
+    <div id="parent"></div>
+
+
     <script>
 
 
-        function calc() {
+        function calcSeries() {
             let a1 = +document.getElementById('a1').value;
             let q = +document.getElementById('q').value;
             let n = +document.getElementById('n').value;
@@ -28,8 +30,6 @@
                 document.getElementById('parent').innerHTML = `<p>The number in series are:${series}<p/>`
             }
         }
-
-
 
         for (let i = 0; i <= 25; i++) {
             console.log(i);
@@ -46,7 +46,6 @@
                 document.getElementById('parent').innerHTML += `<p>${selectedValue}^${i}=${selectedValue ** i}<p/>`
             }
         }
-
 
         function calc() {
             userValue = +document.querySelector('#input').value;
