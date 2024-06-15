@@ -1,0 +1,20 @@
+.pages-links {
+  display: flex;
+  justify-content: center;
+}
+.pages-links ul {
+  list-style-type: none;
+}
+.pages-links ul li {
+  display: flex;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.pages-links ul li:last-child {
+  margin-right: 0;
+}
+.pages-links ul li a {
+  text-decoration: none;
+  color: red;
+}/*# sourceMappingURL=index.css.map */
