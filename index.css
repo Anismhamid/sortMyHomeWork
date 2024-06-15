@@ -4,15 +4,12 @@
 }
 .pages-links ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .pages-links ul li {
-  display: flex;
-  margin-right: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-.pages-links ul li:last-child {
-  margin-right: 0;
+  margin: 20px;
 }
 .pages-links ul li a {
   text-decoration: none;

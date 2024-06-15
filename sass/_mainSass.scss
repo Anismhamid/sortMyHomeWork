@@ -2,19 +2,15 @@
     display: flex;
     justify-content: center;
 
+
     ul {
         list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
         li {
-            display: flex;
-            margin-right: 10px;
-            display: flex;
-            justify-content: space-around;
-
-            &:last-child {
-                margin-right: 0;
-
-            }
+            margin: 20px;
 
             a {
                 text-decoration: none;
