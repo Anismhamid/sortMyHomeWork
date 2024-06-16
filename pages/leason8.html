@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Leason 7</title>
+</head>
+
+<body class="bg-dark">
+    <header class="fixed-top">
+        <nav class="navbar text-center navbar-expand-lg bg-info p-110 d-fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#main-section">HomeWorks javaScript modul leason 7</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">בית</a>
+                        </li>
+                        <li class="nav-item pos">
+                            <a class="nav-link" href="./leason1.html" role="button">
+                                שיעור 1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason2.html" role="button">
+                                שיעור 2
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason3.html" role="button">
+                                שיעור 3
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top" role="button">
+                                שיעור 4
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason5.html" role="button">
+                                שיעור 5
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason6.html" role="button">
+                                שיעור 6
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./leason5.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                שיעור 7
+                            </a>
+                            <ul class="dropdown-menu gx-5">
+                                <li><a class="dropdown-item" href="#leason7-q1">שאלה 1</a></li>
+                                <li><a class="dropdown-item" href="#leason7-q2">שאלה 2</a></li>
+                                <li><a class="dropdown-item" href="#leason7-q3">שאלה 3</a></li>
+                                <li><a class="dropdown-item" href="#leason7-q4">שאלה 4</a></li>
+                                <li><a class="dropdown-item" href="#leason7-q4">שאלה 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./leason8.html" role="button">
+                                שיעור 8
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./leason9.html" role="button">
+                                שיעור 9
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./leason10.html" role="button">
+                                שיעור 10
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section id="main-section">
+        <img class="w-100" src="../What-Is-JavaScript-Used-For.avif" alt="What-Is-JavaScript-Used-For">
+        <a href="#top">
+            <h1 class="fixed-bottom text-center text-info text-decoration-underline ">▲</h1>
+        </a>
+    </section>
+
+
+
+    <main>
+
+
+
+
+
+        <!-- leason 8 -->
+        <section class="text-center h-100" id="leason6">>
+            <h2 class="text-light h1">
+                שיעור 8
+            </h2>
+
+            <!-- leason 8 q1 -->
+
+            <div id="leason8-q1" class="card m-5">
+                <div class="card-header">
+                    <span class="card-title">שאלה 1</span>
+                    <br>
+                    <h5>
+                        כתוב פונקציה שמקבלת מערך של מספרים ובודקת אם הוא סימטרי.אם כן תחזיר true אחרת תחזיר false
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="mt-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-1-js.png"
+                            alt="leason 8 javaScript js question 1">
+                    </div>
+
+
+                    <div class="border border-success my-5 w-75 mx-auto">
+                        <div id="roz"></div>
+                        <p id="symmetric"></p>
+                        <script>
+                            let symmetric = [10, 20, 30, 20, 10];
+                            let notSymmetric = [3, 15, 30, 28, 10];
+                            function isSymmetric(arr) {
+                                for (let i = 0; i < arr.length / 2; i++) {
+                                    if (arr[i] !== arr[arr.length - 1 - i]) {
+                                        return false;
+                                    }
+                                }
+                                return true;
+                            }
+                            document.getElementById('roz').innerHTML = `<p>is symmetric ${symmetric}<hr> is not Symmetric ${notSymmetric}<hr></p>`
+                            document.getElementById('symmetric').innerText = isSymmetric(symmetric)
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- leason 8 q2 -->
+
+            <div id="leason8-q2" class="card m-5">
+                <div class="card-header">
+                    <span class="card-title">שאלה 2</span>
+                    <br>
+                    <h5>
+                        כתוב פונקציה המקבלת מערך של מספרים ובודקת אם הוא בסדר עולה. אם כן תחזיר true אם לא תחזיר false
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="mt-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-2-js.png"
+                            alt="leason 8 javaScript js question 2">
+                    </div>
+
+
+                    <div class="border border-success my-5 w-75 mx-auto">
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- leason 8 q3 -->
+
+        <div id="leason8-q3" class="card m-5">
+            <div class="card-header">
+                <span class="card-title">שאלה 3</span>
+                <br>
+                <h5>
+                    כתוב פונקציה המקבלת מערך של מספרים ומחזירה את סכום איברי המערך
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-3-js.png"
+                        alt="leason 8 javaScript js question 3">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- leason 8 q4 -->
+
+        <div id="leason8-q4" class="card m-5">
+            <div class="card-header">
+                <span class="card-title">שאלה 4</span>
+                <br>
+                <h5>
+                    כתוב פונקציה המקבלת מערך של מספרים ומחזירה את ממוצע איברי המערך
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-4-js.png"
+                        alt="leason 8 javaScript js question 4">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- leason 8 q5 -->
+
+        <div id="leason8-q5" class="card m-5">
+            <div class="card-header">
+                <span class="card-title">שאלה 5</span>
+                <br>
+                <h5>
+                    כתוב פונקציה המקבלת מערך של מספרים ומחזירה הערך המקסימלי במערך
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-5-js.png"
+                        alt="leason 8 javaScript js question 5">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- leason 8 q6 -->
+
+        <div id="leason8-q6" class="card m-5">
+            <div class="card-header">
+                <span class="card-title">שאלה 6</span>
+                <br>
+                <h5>
+                    כתוב פונקציה המקבלת מערך של מספרים ומחזירה מערך חדש שאיבירין הם האיברים מהמערך שהםונקציה קיבלה רק
+                    בסדר הפוך
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-6-js.png"
+                        alt="leason 8 javaScript js question 6">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+
+
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+        <!-- leason 8 q7 -->
+
+        <div id="leason8-q7" class="card m-5">
+            <div class="card-header">
+                <span class="card-title">שאלה 7</span>
+                <br>
+                <h5>
+                    כתוב פונקציה המקבלת מספר ומחזירה את כמות הספרות השונות בו
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-7-js.png"
+                        alt="leason 8 javaScript js question 7">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- leason 8 q8 -->
+
+        <div id="leason8-q8" class="card m-5">
+            <div class="card-header">
+                <span class="card-title">שאלה 8</span>
+                <br>
+                <h5>
+                    כתוב פונקציה המקבלת מערך של מחרוזות ומחזירה מערך חדש המכיל רק את המחרוזות מהמערך המקורי שאורכן גדול או שווה - 5
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-8-js.png"
+                        alt="leason 8 javaScript js question 9">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- leason 8 q9 -->
+
+        <div id="leason8-q9" class="card m-5">
+            <div class="card-header">
+                <span class="card-title">שאלה 9</span>
+                <br>
+                <h5>
+                    כתוב פונקציה המקבלת מערך של מחרוזות ומחזירה מערך חדש המכיל רק את המחרוזות מהמערך המקורי שאורכן גדול או שווה - 5
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-9-js.png"
+                        alt="leason 8 javaScript js question 9">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+
+
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row border border-danger-subtle">
+                <div class="col-md-4">
+                    <h5 class="mb-4">מצגות לשיעורי JavaScript</h5>
+
+                    <p>שיעור 1:
+                        <br>
+                        היכרות עם ההיסטוריה של javaScript
+                        <br>
+                        <a href="./presentations/js1-intro.pdf" download="js1-intro.pdf">מצגת שיעור 1</a>
+                        <hr>
+                    </p>
+                    <p>
+                        שיעור 2: <br>
+                        משתנים וסוגי נתונים
+                        <br>
+                        <a href="./presentations/js2-variables.pdf" download="js2-variables.pdf">מצגת שיעור 2</a>
+                        <hr>
+                    </p>
+                    <p>
+                        שיעור 3: <br>
+                        תנאים
+                        <br>
+                        <a href="./presentations/js3-conditions.pdf" download="js3-conditions.pdf">מצגת שיעור 3</a>
+                        <hr>
+                    </p>
+                    <p>
+                        שיעור 4:
+                        <br>
+                        לולאות
+                        <br>
+                        <a href="./presentations/js4-loops.pdf" download="js3-conditions.pdf">מצגת שיעור 4</a>
+                        <hr>
+                    </p>
+
+                    <p>
+                        שיעור 5:
+                        <br>
+                        מערכים
+                        <br>
+                        <a href="./presentations/js5-arrays.pdf" download="js3-conditions.pdf">מצגת שיעור 5</a>
+                        <hr>
+                    </p>
+
+                    <p>
+                        שיעור 6:
+                        <br>
+                        built In functions
+                        <br>
+                        <a href="./presentations/js6-tools.pdf" download="js3-conditions.pdf">מצגת שיעור 6</a>
+                        <hr>
+                    </p>
+
+                    <p>
+                        שיעור 7:
+                        <br>
+
+                        <br>
+                        <a href="./presentations/js6-tools.pdf" download="js3-conditions.pdf">מצגת שיעור 7</a>
+                        <hr>
+                    </p>
+                </div>
+                <div class="row mt-5 m-auto p-5 border-top border-danger">
+                    <div class="col text-center">
+                        <p class="mb-0">&copy; Anis mhamid כל הזכויות שמורות &#169; 2024</p>
+                    </div>
+                </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

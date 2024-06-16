@@ -113,7 +113,7 @@
 
             <!-- leason 7 q1 -->
 
-            <div id="leason7-q1" class="card">
+            <div id="leason7-q1" class="card m-5">
                 <div class="card-header">
                     <span class="card-title">שאלה 1</span>
                     <br>
@@ -164,9 +164,101 @@
                 </div>
             </div>
 
-
-
         </section>
+
+
+
+
+        <!-- leason 7 q2 -->
+
+        <div id="leason7-q2" class="card m-5 text-center">
+            <div class="card-header">
+                <span class="card-title">שאלה 2</span>
+                <br>
+                <h5>
+                    כתבו פונקציה המקבלת מספר שלם כלשהו ובודקת אם המספר מתחלק ב 3 וב 7 ללא שארית. אם כן, תחזיר
+                    את המחרוזת "yes" ואם לא תחזיר את המחרוזת "no" . יש להשתמש ב- ternary operator בלבד לצורך
+                    השאלה.
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason7/leason7images/leason-7-2.png"
+                        alt="leason 7 javaScript js question 2">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+                    <div class="row">
+                        <div class="col m-auto">
+                            <input class="bg-black text-white" oninput="devide()" id="check-number" type="text"
+                                placeholder="בדוק מספר">
+                            <p id="numberr"></p>
+                        </div>
+                    </div>
+
+                    <script>
+                        function devide() {
+                            let checkNumber = +document.getElementById('check-number').value;
+                            let result = (checkNumber % 3 === 0 || checkNumber % 7 === 0) ? 'כן' : 'לא';
+                            document.getElementById('numberr').innerText = result;
+                            return result
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+        <!-- leason 7 q3 -->
+
+        <div id="leason7-q3" class="card m-5 text-center shadow">
+            <div class="card-header">
+                <span class="card-title">שאלה 3</span>
+                <br>
+                <h5>
+                    כתבו פונקציה אנונימית המקבלת מערך שבו 10 מספרים. הפונקציה תחשב את כמות המספרים הזוגיים
+                    במערך ותחזיר את התוצאה.
+                </h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">פיתרון</h5>
+                <div class="mt-2">
+                    <img class="img-fluid" src="../works/Leason7/leason7images/leason-7-3.png"
+                        alt="leason 7 javaScript js question 3">
+                </div>
+
+
+                <div class="border border-success my-5 w-75 mx-auto">
+                    <p id="evens"></p>
+                    <script>
+                        let arra = [200, 10, 60, 50, 80, 3, 0, 80, 70, 88]
+                        let checkEven = function (arr) {
+                            let counter = 0;
+                            for (let i = 0; i < arr.length; i++){
+                                if (arr[i] % 2 === 0) {
+                                    counter++
+                                }
+                            }
+                            document.getElementById('evens').innerText += counter
+                            return counter
+                                
+                        }
+                        checkEven(arra)
+                    </script>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
 
     </main>
 
