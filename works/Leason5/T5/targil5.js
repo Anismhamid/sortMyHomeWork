@@ -1,10 +1,8 @@
 
 
 let colorsName = ['red', 'green', 'blue', 'purple', 'yellow', 'magenta'];
-let container = document.querySelector('#container');
+let container = document.getElementById('targil5-box');
 
-container.style.width = '80vw';
-container.style.margin = '0 auto';
 container.style.backgroundColor = 'antiquewhite';
 
 for (let i = 0; i < colorsName.length; i++) {

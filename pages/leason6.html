@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Leason 6</title>
+</head>
+
+<body class="bg-dark">
+    <header class="fixed-top">
+        <nav class="navbar text-center navbar-expand-lg bg-info p-110 d-fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#main-section">HomeWorks javaScript modul leason 4</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">בית</a>
+                        </li>
+                        <li class="nav-item pos">
+                            <a class="nav-link" href="./leason1.html" role="button">
+                                שיעור 1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason2.html" role="button">
+                                שיעור 2
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason3.html" role="button">
+                                שיעור 3
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#top" role="button">
+                                שיעור 4
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./leason5.html" role="button">
+                                שיעור 5
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./leason6.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                שיעור 6
+                            </a>
+                            <ul class="dropdown-menu gx-5">
+                                <li><a class="dropdown-item" href="#leason6-q1">שאלה 1</a></li>
+                                <li><a class="dropdown-item" href="#leason6-q2">שאלה 2</a></li>
+                                <li><a class="dropdown-item" href="#leason6-q3">שאלה 3</a></li>
+                                <li><a class="dropdown-item" href="#leason6-q4">שאלה 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./leason7.html" role="button">
+                                שיעור 7
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./leason8.html" role="button">
+                                שיעור 8
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./leason9.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                שיעור 9
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./leason10.html" role="button">
+                                שיעור 10
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section id="main-section">
+        <img class="w-100" src="../What-Is-JavaScript-Used-For.avif" alt="What-Is-JavaScript-Used-For">
+        <a href="#top">
+            <h1 class="fixed-bottom text-center text-info text-decoration-underline ">▲</h1>
+        </a>
+    </section>
+
+
+
+    <main>
+
+
+
+
+
+        <!-- leason 6 -->
+        <section class="text-center h-100" id="leason6">>
+            <h2 class="text-light h1">
+                שיעור 6
+            </h2>
+
+            <!-- leason 6 q1 -->
+
+            <div id="leason6-q1" class="card">
+                <div class="card-header">
+                    <span class="card-title">שאלה 1</span>
+                    <br>
+                    <img class="img-fluid" src="../works/leason6/leason6images/leason-6-1-q.png" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="mt-2">
+                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-1-html.png"
+                            alt="leason 6 javaScript html question 1">
+                    </div>
+                    <div class="mt-2">
+                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-1-js.png"
+                            alt="leason 6 javaScript js question 1">
+                    </div>
+
+
+                    <div class="border border-success my-5 w-75 mx-auto" dir="ltr">
+                        <div class="targil-6">
+                            <div class=" border p-5">
+                                <span>אני</span>
+                                <h2 id="computer"></h2>
+                                <p id="computerResult"></p>
+                            </div>
+                            <div class="border p-5">
+                                <span>אתה</span>
+                                <h2 id="user"></h2>
+                                <p id="userResult"></p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-danger my-3" onclick="roll()">Roll</button>
+                        <script>
+                            function roll() {
+                                let computerRoll = Math.floor(Math.random() * 10 + 1);
+                                let userRoll = Math.floor(Math.random() * 10 + 1);
+
+                                document.getElementById('computer').innerText = computerRoll;
+                                document.getElementById('user').innerText = userRoll;
+
+                                function resultFunc(winner, empty) {
+                                    document.getElementById('computerResult').innerText = winner;
+                                    document.getElementById('userResult').innerText = empty;
+                                }
+                                if (computerRoll > userRoll) {
+                                    resultFunc('ניצחת (:', '')
+                                } else if (computerRoll < userRoll) {
+                                    resultFunc('', 'ניצחת (:')
+                                } else {
+                                    resultFunc('שווה', 'שווה')
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- leason 6 q2 -->
+
+            <div id="leason6-q2" class="card">
+                <div class="card-header">
+                    <span class="card-title">שאלה 2</span>
+                    <br>
+                    <img class="img-fluid" src="../works/leason6/leason6images/leason-6-2-q.png" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="mt-2">
+                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-2-html.png"
+                            alt="leason 6 javaScript html question 2">
+                    </div>
+
+                    <div class="border border-success my-5 w-75 mx-auto" dir="ltr">
+
+                        <input type="date" name="date" id="date">
+                        <button type="button" onclick="dateinDay()">בדוק</button>
+                        <p id="p"></p>
+
+                        <script>
+                            function dateinDay() {
+                                let userValue = document.getElementById('date').value;
+                                let date = new Date(userValue);
+                                let days = [
+                                    'ראשון',
+                                    'שני',
+                                    'שלישי',
+                                    'רביעי',
+                                    'חמישי',
+                                    'שישי',
+                                    'שבת',
+                                ];
+                                document.getElementById('p').innerText = days[date.getDay()];
+                                console.log(days[date.getDay()]);
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- leason 6 q3 -->
+
+            <div id="leason6-q3" class="card">
+                <div class="card-header">
+                    <span class="card-title">שאלה 3</span>
+                    <br>
+                    <img class="img-fluid" src="../works/leason6/leason6images/leason-6-3-q.png" alt="">
+                    <a href="https://bennettfeely.com/clippy/" target="_blank"
+                        rel=" noopener noreferrer ">https://bennettfeely.com/clippy/</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="mt-2">
+                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-3-html.png"
+                            alt="leason 6 javaScript html question 3">
+                    </div>
+                    <div class="mt-2">
+                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-3-js.png"
+                            alt="leason 6 javaScript html question 3">
+                    </div>
+
+                    <div class="border border-success my-5 w-75 mx-auto">
+
+                        <div class="row-3 my-5">
+                            <div class="col-2 mx-auto">
+                                <div id="red" class="rounded-circle p-5 mt-2 h-100 w-100"></div>
+
+                                <div id="yellow" class="rounded-circle p-5 mt-2  h-100 w-100"></div>
+                                <div id="green" class="rounded-circle p-5 mt-2  h-100 w-100"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            let counter = 0;
+                            function tafficLight() {
+                                counter %= 4;
+                                switch (counter) {
+                                    case 0:
+                                        document.getElementById('red').style.backgroundColor = 'red';
+                                        break;
+                                    case 1:
+                                        document.getElementById('red').style.backgroundColor = 'gray'
+                                        document.getElementById('yellow').style.backgroundColor = 'yellow';
+                                        break;
+                                    case 2:
+                                        document.getElementById('yellow').style.backgroundColor = 'gray'
+                                        document.getElementById('green').style.backgroundColor = 'green';
+
+                                        break;
+                                    case 3:
+                                        document.getElementById('green').style.backgroundColor = 'gray';
+                                        document.getElementById('red').style.backgroundColor = 'gray';
+                                        document.getElementById('yellow').style.backgroundColor = 'gray'
+                                        break;
+                                    default:
+                                        break;
+                                }
+                                counter++;
+                            }
+                            setInterval(tafficLight, 1000)
+
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row border border-danger-subtle">
+                <div class="col-md-4">
+                    <h5 class="mb-4">מצגות לשיעורי JavaScript</h5>
+
+                    <p>שיעור 1:
+                        <br>
+                        היכרות עם ההיסטוריה של javaScript
+                        <br>
+                        <a href="./presentations/js1-intro.pdf" download="ijs1-intro.pdf">מצגת שיעור 1</a>
+                        <hr>
+                    </p>
+                    <p>
+                        שיעור 2: <br>
+                        משתנים וסוגי נתונים
+                        <br>
+                        <a href="./presentations/js2-variables.pdf" download="js2-variables.pdf">מצגת שיעור 2</a>
+                        <hr>
+                    </p>
+                    <p>
+                        שיעור 3: <br>
+                        תנאים
+                        <br>
+                        <a href="./presentations/js3-conditions.pdf" download="js3-conditions.pdf">מצגת שיעור 3</a>
+                        <hr>
+                    </p>
+                    <p>
+                        שיעור 4:
+                        <br>
+                        לולאות
+                        <br>
+                        <a href="./presentations/js4-loops.pdf" download="js3-conditions.pdf">מצגת שיעור 4</a>
+                        <hr>
+                    </p>
+
+                    <p>
+                        שיעור 5:
+                        <br>
+                        מערכים
+                        <br>
+                        <a href="./presentations/js5-arrays.pdf" download="js3-conditions.pdf">מצגת שיעור 5</a>
+                        <hr>
+                    </p>
+
+                    <p>
+                        שיעור 6:
+                        <br>
+                        built In functions
+                        <br>
+                        <a href="./presentations/js6-tools.pdf" download="js3-conditions.pdf">מצגת שיעור 6</a>
+                        <hr>
+                    </p>
+
+                    <p>
+                        שיעור 7:
+                        <br>
+
+                        <br>
+                        <a href="./presentations/js6-tools.pdf" download="js3-conditions.pdf">מצגת שיעור 7</a>
+                        <hr>
+                    </p>
+                </div>
+                <div class="row mt-5 m-auto p-5 border-top border-danger">
+                    <div class="col text-center">
+                        <p class="mb-0">&copy; Anis mhamid כל הזכויות שמורות &#169; 2024</p>
+                    </div>
+                </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

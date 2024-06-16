@@ -11,6 +11,8 @@
             justify-items: center;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 1fr);
+            height: 100vh;
+            /* Ensure full viewport height */
         }
 
         .circle-box {
@@ -18,16 +20,17 @@
             height: 400px;
             background: #eee;
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
         }
 
-        .circle-box .circle {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto;
-            background: #eee;
+        .circle {
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             background: #000;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -36,32 +39,11 @@
     <div class="container">
         <div class="circle-box">
             <div class="circle circle1"></div>
-            <div class="circle circle"></div>
-            <div class="circle circle"></div>
-        </div>
-        <div class="circle-box">
             <div class="circle circle2"></div>
             <div class="circle circle3"></div>
-            <div class="circle circle"></div>
         </div>
-        <div class="circle-box">
-            <div class="circle circle"></div>
-            <div class="circle circle"></div>
-            <div class="circle circle4"></div>
-        </div>
-        <div class="circle-box">
-            <div class="circle circle"></div>
-            <div class="circle circle5"></div>
-            <div class="circle circle"></div>
-        </div>
-        <!-- <div class="circle-box">
-            <div class="circle circle2"></div>
-            <div class="circle circle3"></div>
-            <div class="circle circle4"></div>
-        </div> -->
     </div>
     <script>
-
         function changeColor(elements, color, delay) {
             setTimeout(function () {
                 for (let i = 0; i < elements.length; i++) {
@@ -71,31 +53,28 @@
         }
 
         function colorChanger() {
-            let redcircles1 = document.getElementsByClassName('circle1');
-            let redcircles2 = document.getElementsByClassName('circle2');
-            let yellowcircles3 = document.getElementsByClassName('circle3');
-            let greencircles4 = document.getElementsByClassName('circle4');
-            let yellowcircles5 = document.getElementsByClassName('circle5');
+                let circles = [
+                    { elements: document.getElementsByClassName('circle1'), color: 'red', delay: 1000 },
+                    { elements: document.getElementsByClassName('circle2'), color: 'yellow', delay: 2000 },
+                    { elements: document.getElementsByClassName('circle3'), color: 'green', delay: 3000 },
+                ];
 
-            changeColor(redcircles1, 'red', 1000);
-            changeColor(redcircles2, 'red', 2000);
-            changeColor(yellowcircles3, 'yellow', 3000);
-            changeColor(greencircles4, 'green', 4000);
-            changeColor(yellowcircles5, 'yellow', 5000);
+                circles.forEach(function (circle) {
+                    changeColor(circle.elements, circle.color, circle.delay);
+                });
 
-            setTimeout(function () {
-                changeColor(redcircles1, 'black', 1000);
-                changeColor(redcircles2, 'black', 1000);
-                changeColor(yellowcircles3, 'black', 1000);
-                changeColor(yellowcircles5, 'black', 1000);
-                changeColor(greencircles4, 'black', 1000);
-            }, 5000);
-        }
+                // إعادة تعيين الألوان بعد فترة زمنية
+                setTimeout(function () {
+                    circles.forEach(function (circle) {
+                        changeColor(circle.elements, 'black', 1000);
+                    });
+                }, 4800); 
+            }
 
-        colorChanger();
+            colorChanger();
 
-        setInterval(colorChanger, 6000);
 
+        setInterval(colorChanger, 4000); 
     </script>
 </body>
 

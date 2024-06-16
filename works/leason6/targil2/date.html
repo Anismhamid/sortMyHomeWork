@@ -16,12 +16,13 @@
             let userValue = document.getElementById('date').value;
             let date = new Date(userValue);
             let days = [
-                'sunday',
-                'monday',
-                'tuesday',
-                'wednesday',
-                'thursday',
-                'friday'
+                'ראשון',
+                'שני',
+                'שלישי',
+                'רביעי',
+                'חמישי',
+                'שישי',
+                'שבת',
             ];
                 document.getElementById('p').innerText = days[date.getDay()];
                 console.log(days[date.getDay()]);
