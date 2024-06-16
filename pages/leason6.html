@@ -287,6 +287,70 @@
 
 
 
+
+
+            <!-- leason 6 q4 -->
+
+            <div id="leason6-q4" class="card">
+                <div class="card-header">
+                    <span class="card-title">שאלה 4</span>
+                    <br>
+                    <img class="img-fluid" src="../works/leason6/leason6images/leason-6-4-q.png"
+                        alt="leason 6 javaScript question 4 image">
+                    <a href="https://bennettfeely.com/clippy/" target="_blank"
+                        rel=" noopener noreferrer ">https://bennettfeely.com/clippy/</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="mt-2">
+                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-4-js.png"
+                            alt="leason 6 javaScript html question 4">
+                    </div>
+
+                    <div class="border border-success my-5 h-100 p-5 w-75 mx-auto">
+                        <div class="image-container p-5 h-100">
+                            <img id="image" class="img-thumbnail w-100" src="../works/leason6/leason6images/imgs/3.jpeg"
+                                alt="Image loop">
+                            <label id="seconds-input" for="inputSeconds">בחר שניה 1 , שניות 2 , שניות 3 , שניות 4 ,....</label>
+                            <input oninput="changeImage()" id="inputSeconds" type="number" class="m-2"
+                                placeholder="בחר כמה שניות התמונה תתחלף">
+
+                        </div>
+                        <script>
+
+                            let images = [
+                                '../works/leason6/leason6images/imgs/1.jpeg',
+                                '../works/leason6/leason6images/imgs/2.jpeg',
+                                '../works/leason6/leason6images/imgs/3.jpeg',
+                                '../works/leason6/leason6images/imgs/4.jpeg',
+                            ];
+                            let currentImageIndex = 0;
+                            function changeImage() {
+                                let inputSeconds = +document.getElementById('inputSeconds').value;
+                                if (isNaN(inputSeconds) || inputSeconds <= 0) {
+                                    document.querySelector("#seconds-input").innerText = "Please enter a valid positive number for seconds.";
+                                    return;
+                                }
+
+                                let imgElement = document.getElementById('image');
+
+                                imgElement.src = images[currentImageIndex];
+                                currentImageIndex = (currentImageIndex + 1) % images.length;
+
+                                setTimeout(changeImage, inputSeconds * 1000);
+                            }
+                            changeImage();
+                        </script>
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </section>
 
     </main>
