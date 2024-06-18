@@ -148,7 +148,7 @@
 
                                 document.getElementById('palind').innerHTML += `${palindromeNumber(palind)}<br>`;
                                 document.getElementById('palind').innerText += palindromeNumber(notPalind);
-                                console.log(palindromeNumber(notPalind));
+                                palindromeNumber(notPalind);
                             </script>
                         </div>
                     </div>
@@ -396,18 +396,19 @@
                             כתוב פונקציה המקבלת מספר ומחזירה את כמות הספרות השונות בו
                         </h5>
                     </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-7-js.png"
+                            alt="leason 8 javaScript js question 7">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-7-js.png"
-                                alt="leason 8 javaScript js question 7">
-                        </div>
 
 
                         <div class="border border-success my-5 w-75 mx-auto">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <input oninput="countDiff(this.value)" id="get-user-input" placeholder="הזן מספר לבדיקה" type="text">
+                                    <input oninput="countDiff(this.value)" id="get-user-input"
+                                        placeholder="הזן מספר לבדיקה" type="text">
                                     <p id="check-num"></p>
                                 </div>
                             </div>
@@ -439,63 +440,137 @@
                 <!-- leason 8 q8 -->
 
                 <div id="leason8-q8" class="card w-75 my-5 m-auto">
-            <div class="card-header">
-                <span class="card-title">שאלה 8</span>
-                <br>
-                <h5 class="text-danger card-text">
-                    כתוב פונקציה המקבלת מערך של מחרוזות ומחזירה מערך חדש המכיל רק את המחרוזות מהמערך המקורי שאורכן גדול
-                    או שווה - 5
-                </h5>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">פיתרון</h5>
-                <div class="card-img my-2">
-                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-8-js.png"
-                        alt="leason 8 javaScript js question 9">
+                    <div class="card-header">
+                        <span class="card-title">שאלה 8</span>
+                        <br>
+                        <h5 class="text-danger card-text">
+                            כתוב פונקציה המקבלת מערך של מחרוזות ומחזירה מערך חדש המכיל רק את המחרוזות מהמערך המקורי
+                            שאורכן גדול
+                            או שווה - 5
+                        </h5>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-8-js.png"
+                            alt="leason 8 javaScript js question 9">
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="border border-success my-5 w-100 mx-auto">
+                            <div class="row">
+                                <div id="rslt-d" class="col ">
+                                    <p id="rslt"></p>
+                                </div>
+                            </div>
+                            <script>
+                                let neAr = ['Gim', 'Moti', 'Yehodet', 'David', 'Itamar'];
+                                function strings(arr) {
+                                    let newstr = '';
+                                    for (i = 0; i < arr.length; i++) {
+                                        if (arr[i].length >= '5') {
+                                            newstr += arr[i] + ', '
+                                        }
+                                    }
+                                    document.getElementById('rslt-d').innerHTML += `<p>let string = [${neAr}]</p><br>`
+                                    document.getElementById('rslt').innerText += newstr
+                                    return newstr;
+                                }
+                                strings(neAr);
+                            </script>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="border border-success my-5 w-75 mx-auto">
-
-
-                </div>
-            </div>
-        </div>
 
 
 
 
                 <!-- leason 8 q9 -->
 
-                <!-- <div id="leason8-q9" class="card w-75 my-5 m-auto">
-            <div class="card-header">
-                <span class="card-title">שאלה 9</span>
-                <br>
-                <h5 class="text-danger card-text">
-                    כתוב פונקציה המקבלת מערך של מחרוזות ומחזירה מערך חדש המכיל רק את המחרוזות מהמערך המקורי שאורכן גדול
-                    או שווה - 5
-                </h5>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">פיתרון</h5>
-                <div class="card-img my-2">
-                    <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-9-js.png"
-                        alt="leason 8 javaScript js question 9">
+                <div id="leason8-q9" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="card-title">שאלה 9</span>
+                        <br>
+                        <h5 class="text-danger card-text">
+                            כתוב פונקציה שמקבלת מערך של מחירים ומחזירה מערך חדש המכיל את המיחירים לאחר חנחה של 20%
+                        </h5>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-9-js.png"
+                            alt="leason 8 javaScript js question 9">
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="border border-success my-5 w-100 mx-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="sale"></p>
+                                </div>
+                            </div>
+                            <script>
+                                let mewaar = [100, 500, 600, 800, 990, 300, 1450, 1293]
+                                function sale(arr) {
+                                    let newarr = []
+                                    for (i = 0; i < arr.length; i++) {
+                                        let discountPrice = arr[i] - (arr[i] * 20) / 100
+                                        newarr.push(discountPrice)
+                                    }
+                                    document.getElementById('sale').innerText = newarr
+                                    return newarr
+                                }
+                                sale(mewaar);
+                            </script>
+
+                        </div>
+                    </div>
                 </div>
 
 
-                <div class="border border-success my-5 w-75 mx-auto">
+
+                <!-- leason 8 q10 -->
+
+                <div id="leason8-q10" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="card-title">שאלה 10</span>
+                        <br>
+                        <h5 class="text-danger card-text">
+                            כתוב פונקציה המקבלת מערך של מחרוזות ומחזירה מערך חדש המכיל את המחרוזות מהמערך המקורי באותיות
+                            גדולות
+                        </h5>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-10-js.png"
+                            alt="leason 8 javaScript js question 10">
+                    </div>
+                    <div class="card-body">
 
 
+                        <div class="border border-success my-5 w-100 m-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="upper-case"></p>
+                                </div>
+                            </div>
+
+                            <script>
+                                let movies = [' drama ', ' action ', ' romace ']
+                                function upperChase(dArr) {
+                                    let mewstr = [];
+                                    for (i = 0; i < dArr.length; i++) {
+                                        let = toUpper = dArr[i].toUpperCase();
+                                        mewstr.push(toUpper);
+                                    }
+                                    document.getElementById('upper-case').innerText = `let movies = [ ${mewstr} ]`
+                                    return mewstr;
+                                }
+                                upperChase(movies);
+                            </script>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-    -->
-
-
-
-
             </section>
         </div>
     </main>
