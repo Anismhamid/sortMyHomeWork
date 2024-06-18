@@ -1,7 +1,7 @@
 let food = 0;
 let money = 100;
-let get_food = document.getElementById('food').innerText = `Food: ${food}`
-let get_money = document.getElementById('money').innerText = `Money: ${money}`
+let get_food = document.getElementById('food').innerText = `${food}`
+let get_money = document.getElementById('money').innerText = `${money}`
 
 function buyFood() {
     money = money - 5;

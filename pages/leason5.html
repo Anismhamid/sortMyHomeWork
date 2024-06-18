@@ -46,17 +46,17 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./leason5.html" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            שיעור 5
-                        </a>
-                        <ul class="dropdown-menu gx-5">
-                            <li><a class="dropdown-item" href="#leason5-q1">שאלה 1</a></li>
-                            <li><a class="dropdown-item" href="#leason5-q2">שאלה 2</a></li>
-                            <li><a class="dropdown-item" href="#leason5-q3">שאלה 3</a></li>
-                            <li><a class="dropdown-item" href="#leason5-q4">שאלה 4</a></li>
-                            <li><a class="dropdown-item" href="#leason5-q4">שאלה 5</a></li>
-                        </ul>
+                            <a class="nav-link dropdown-toggle" href="./leason5.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                שיעור 5
+                            </a>
+                            <ul class="dropdown-menu gx-5">
+                                <li><a class="dropdown-item" href="#leason5-q1">שאלה 1</a></li>
+                                <li><a class="dropdown-item" href="#leason5-q2">שאלה 2</a></li>
+                                <li><a class="dropdown-item" href="#leason5-q3">שאלה 3</a></li>
+                                <li><a class="dropdown-item" href="#leason5-q4">שאלה 4</a></li>
+                                <li><a class="dropdown-item" href="#leason5-q4">שאלה 5</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="./leason6.html" role="button">
@@ -99,246 +99,242 @@
     </section>
 
 
-
-    <main>
-
-
+    <main class=" gx-0 p-0 bg-dark">
+        <div class="container-lg">
 
 
 
-        <!-- leason 5 -->
-        <section class="text-center h-100" id="leason4">>
-            <h2 class="text-light h1">
-                שיעור 5
-            </h2>
 
-            <!-- leason 5 q1 -->
+            <!-- leason 5 -->
+            <section class="text-center h-100" id="leason4">>
+                <h2 class="text-light h1">
+                    שיעור 5
+                </h2>
 
-            <div id="leason5-q1" class="card my-5">
-                <div class="card-header">
-                    <span class="q-title">שאלה 1</span>
-                    <br>
-                    <h5>כתבו סקריפט המגדיר מערך עם שלושת המאכלים האהובים עליכם.
-                        <br><br> ▪ הדפיסו את איברי המערך לקונסול (ללא לולאה).
-                        <br><br> ▪ שנו את המאכל השני במערך ל- cake
-                        <br><br> ▪ הוסיפו לסוף המערך מאכל נוסף לבחירתכם.
-                        <br><br> ▪ הדפיסו את איברי המערך לקונסול באמצעות לולאה.
-                    </h5>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-1-js.png"
-                            alt="leason 5 javaScript question 1">
+                <!-- leason 5 q1 -->
+
+                <div id="leason5-q1" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="q-title">שאלה 1</span>
+                        <br>
+                        <h5>כתבו סקריפט המגדיר מערך עם שלושת המאכלים האהובים עליכם.
+                            <br><br> ▪ הדפיסו את איברי המערך לקונסול (ללא לולאה).
+                            <br><br> ▪ שנו את המאכל השני במערך ל- cake
+                            <br><br> ▪ הוסיפו לסוף המערך מאכל נוסף לבחירתכם.
+                            <br><br> ▪ הדפיסו את איברי המערך לקונסול באמצעות לולאה.
+                        </h5>
                     </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-1-js.png"
+                                alt="leason 5 javaScript question 1">
+                        </div>
 
 
-                    <div class="border border-success  my-5 p-5 " dir="ltr">
-                        <button type="button" class="btn btn-info px-5 my-5" onclick="favFoodTry()">Try</button>
-                        <br>
-                        <div class="targil-div"></div>
-                        <br>
-                        <script>
-                            function favFoodTry() {
-                                document.querySelector('.targil-div').innerHTML = ''
-                                let favfood = ['salamon', 'loopster', 'ship meat'];
-                                document.querySelector('.targil-div').innerHTML += `favFood =[${favfood}]`;
-                                favfood[1] = 'Cake';
-                                favfood.push('macaronia');
+                        <div class="border border-success  my-5 p-5 " dir="ltr">
+                            <button type="button" class="btn btn-info px-5 my-5" onclick="favFoodTry()">Try</button>
+                            <br>
+                            <div class="targil-div"></div>
+                            <br>
+                            <script>
+                                function favFoodTry() {
+                                    document.querySelector('.targil-div').innerHTML = ''
+                                    let favfood = ['salamon', 'loopster', 'ship meat'];
+                                    document.querySelector('.targil-div').innerHTML += `favFood =[${favfood}]`;
+                                    favfood[1] = 'Cake';
+                                    favfood.push('macaronia');
 
-                                for (let j = 0; j < favfood.length; j++) {
-                                    document.querySelector('.targil-div').innerHTML += `<p>${favfood[j]}</p>`;
-                                }
-                            }
-                        </script>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <!-- leason 5 q2 -->
-
-            <div id="leason5-q2" class="card my-5">
-                <div class="card-header">
-                    <span class="q-title">שאלה 2</span>
-                    <br>
-                    <h5>
-                        כתבו סקריפט המכיל פונקציה בשם findMax() המקבלת מערך מספרים כלשהו ומחזירה את הערך
-                        המקסימלי במערך, אם קיים. אחרת מחזירה null . אין להשתמש במתודות קיימות.
-                    </h5>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-2-js.png"
-                            alt="leason 5 javaScript question 2">
-                    </div>
-
-
-                    <div class="border border-success  my-5 p-5 " dir="ltr">
-                        <button type="button" class="btn btn-info px-5 my-5" onclick="findMax()">find Max</button>
-                        <br>
-                        <div class="targil-div2"></div>
-                        <br>
-                        <script>
-                            let numbers = [130, 1315, 1582, 760, 200]
-
-                            function findMax() {
-                                let max = numbers[0];
-
-                                for (i = 1; i < numbers.length; i++) {
-                                    if (numbers[i] > max) {
-                                        max = numbers[i]
+                                    for (let j = 0; j < favfood.length; j++) {
+                                        document.querySelector('.targil-div').innerHTML += `<p>${favfood[j]}</p>`;
                                     }
                                 }
-                                document.querySelector('.targil-div2').innerHTML += `numbers = [${numbers}]<br>Targil 2 Max value = ${max}`;
-                            }
-                        </script>
+                            </script>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
 
 
-            <!-- leason 5 q3 -->
+                <!-- leason 5 q2 -->
 
-            <div id="leason5-q3" class="card my-5">
-                <div class="card-header">
-                    <span class="q-title">שאלה 3</span>
-                    <br>
-                    <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-3-q.png" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-3-js.png"
-                            alt="leason 5 javaScript question 3">
-                    </div>
-
-
-                    <div class="border border-success  my-5 p-5 " dir="ltr">
-                        <div id="box"></div>
+                <div id="leason5-q2" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="q-title">שאלה 2</span>
                         <br>
-                        <script>
-                            let animals = ['Cat', 'Dog', 'Giraffe', 'Koala', 'Bear', 'Deer'];
-                            let paragraphFontSize = [10, 20, 30, 40, 50, 60];
-                            let box = document.querySelector('#box');
-                            for (i = 0; i < animals.length; i++) {
+                        <h5>
+                            כתבו סקריפט המכיל פונקציה בשם findMax() המקבלת מערך מספרים כלשהו ומחזירה את הערך
+                            המקסימלי במערך, אם קיים. אחרת מחזירה null . אין להשתמש במתודות קיימות.
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-2-js.png"
+                                alt="leason 5 javaScript question 2">
+                        </div>
 
-                                let fontSizeIndex = i % paragraphFontSize.length;
 
-                                box.innerHTML += `<p style="font-size:${paragraphFontSize[fontSizeIndex]}px">${animals[i]}</p>`;
+                        <div class="border border-success  my-5 p-5 " dir="ltr">
+                            <button type="button" class="btn btn-info px-5 my-5" onclick="findMax()">find Max</button>
+                            <br>
+                            <div class="targil-div2"></div>
+                            <br>
+                            <script>
+                                let numbers = [130, 1315, 1582, 760, 200]
 
-                            }
-                        </script>
+                                function findMax() {
+                                    let max = numbers[0];
+
+                                    for (i = 1; i < numbers.length; i++) {
+                                        if (numbers[i] > max) {
+                                            max = numbers[i]
+                                        }
+                                    }
+                                    document.querySelector('.targil-div2').innerHTML += `numbers = [${numbers}]<br>Targil 2 Max value = ${max}`;
+                                }
+                            </script>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <!-- leason 5 q4 -->
 
-            <div id="leason5-q4" class="card my-5">
-                <div class="card-header">
-                    <span class="q-title">שאלה 4</span>
-                    <br>
-                    <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-4-q.png" alt="">
+
+                <!-- leason 5 q3 -->
+
+                <div id="leason5-q3" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="q-title">שאלה 3</span>
+                        <br>
+                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-3-q.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-3-js.png"
+                                alt="leason 5 javaScript question 3">
+                        </div>
+
+
+                        <div class="border border-success  my-5 p-5 " dir="ltr">
+                            <div id="box"></div>
+                            <br>
+                            <script>
+                                let animals = ['Cat', 'Dog', 'Giraffe', 'Koala', 'Bear', 'Deer'];
+                                let paragraphFontSize = [10, 20, 30, 40, 50, 60];
+                                let box = document.querySelector('#box');
+                                for (i = 0; i < animals.length; i++) {
+
+                                    let fontSizeIndex = i % paragraphFontSize.length;
+
+                                    box.innerHTML += `<p style="font-size:${paragraphFontSize[fontSizeIndex]}px">${animals[i]}</p>`;
+
+                                }
+                            </script>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-4-html.png"
-                            alt="leason 5 javaScript question 4">
-                    </div>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-4-js.png"
-                            alt="leason 5 javaScript question 4">
-                    </div>
 
 
-                    <div class="row w-100 border border-success m-auto my-5 p-5">
-                        <div class="col-md-8 m-auto">
-                            <div id="gallery-box">
-                                <div class="mainImageBox">
-                                    <img id="main-pic" class="img-fluid w-75 " src="../works/Leason5/T4my/1.jpeg"
-                                        alt="Main gallery image">
+                <!-- leason 5 q4 -->
+
+                <div id="leason5-q4" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="q-title">שאלה 4</span>
+                        <br>
+                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-4-q.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-4-html.png"
+                                alt="leason 5 javaScript question 4">
+                        </div>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-4-js.png"
+                                alt="leason 5 javaScript question 4">
+                        </div>
+
+
+                        <div class="row w-100 border border-success m-auto my-5 p-5">
+                            <div class="col-md-8 m-auto">
+                                <div id="gallery-box">
+                                    <div class="mainImageBox">
+                                        <img id="main-pic" class="img-fluid w-75 " src="../works/Leason5/T4my/1.jpeg"
+                                            alt="Main gallery image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row"></div>
+                            <div class="row row-cols-4 g-2">
+                                <div class="col"><img class="w-100 h-100 object-fit-cover thumbnail"
+                                        src="../works/Leason5/T4my/1.jpeg" alt=""></div>
+                                <div class="col"><img class="w-100 h-100 object-fit-cover thumbnail"
+                                        src="../works/Leason5/T4my/2.jpeg" alt=""></div>
+                                <div class="col"><img class="w-100 h-100 object-fit-cover thumbnail"
+                                        src="../works/Leason5/T4my/3.jpeg" alt=""></div>
+                                <div class="col"><img class="w-100 h-100 object-fit-cover thumbnail"
+                                        src="../works/Leason5/T4my/4.jpeg" alt=""></div>
+                            </div>
+                            <div class="col-md-8 m-auto">
+                                <div class="row d-flex my-4">
+                                    <div class="col col-sm-6">
+                                        <button onclick="back()" class="btn btn-primary w-100"
+                                            type="button">הקודם</button>
+                                    </div>
+                                    <div class="col col-sm-6">
+                                        <button onclick="next()" class="btn btn-primary w-100"
+                                            type="button">הבא</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row"></div>
-                        <div class="row row-cols-4 g-2">
-                            <div class="col"><img class="w-100 h-100 object-fit-cover thumbnail"
-                                    src="../works/Leason5/T4my/1.jpeg" alt=""></div>
-                            <div class="col"><img class="w-100 h-100 object-fit-cover thumbnail"
-                                    src="../works/Leason5/T4my/2.jpeg" alt=""></div>
-                            <div class="col"><img class="w-100 h-100 object-fit-cover thumbnail"
-                                    src="../works/Leason5/T4my/3.jpeg" alt=""></div>
-                            <div class="col"><img class="w-100 h-100 object-fit-cover thumbnail"
-                                    src="../works/Leason5/T4my/4.jpeg" alt=""></div>
+                        <script src="../works/Leason5/T4my/gallery.js"></script>
+                    </div>
+                </div>
+
+
+
+
+                <!-- leason 5 q5 -->
+
+                <div id="leason5-q1" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="q-title">שאלה 5</span>
+                        <br>
+                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-5-q.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-5-html.png"
+                                alt="leason 5 javaScript question html 5">
                         </div>
-                        <div class="col-md-8 m-auto">
-                            <div class="row d-flex my-4">
-                                <div class="col col-sm-6">
-                                    <button onclick="back()" class="btn btn-primary w-100" type="button">הקודם</button>
-                                </div>
-                                <div class="col col-sm-6">
-                                    <button onclick="next()" class="btn btn-primary w-100" type="button">הבא</button>
-                                </div>
-                            </div>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-5-js.png"
+                                alt="leason 5 javaScript js question 5">
+                        </div>
+
+
+                        <div class="border border-success my-5 p-5 m-auto">
+                            <div id="targil5-box"></div>
+                            <script src="../works/Leason5/T5/targil5.js"></script>
+                        </div>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-5-q-2.png"
+                                alt="leason 5 javaScript js question 5">
                         </div>
                     </div>
-                    <script src="../works/Leason5/T4my/gallery.js"></script>
                 </div>
-            </div>
-
-
-
-
-            <!-- leason 5 q5 -->
-
-            <div id="leason5-q1" class="card my-5">
-                <div class="card-header">
-                    <span class="q-title">שאלה 5</span>
-                    <br>
-                    <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-5-q.png" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-5-html.png"
-                            alt="leason 5 javaScript question html 5">
-                    </div>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-5-js.png"
-                            alt="leason 5 javaScript js question 5">
-                    </div>
-
-
-                    <div class="border border-success my-5 p-5 m-auto">
-                        <div id="targil5-box"></div>
-                        <script src="../works/Leason5/T5/targil5.js"></script>
-                    </div>
-                                        <div class="mt-2">
-                                            <img class="img-fluid" src="../works/Leason5/leason5images/leason-5-5-q-2.png"
-                                                alt="leason 5 javaScript js question 5">
-                                        </div>
-                </div>
-            </div>
 
 
 
 
 
-        </section>
-
-
-
-
-        </section>
-
+            </section>
+        </div>
     </main>
 
 

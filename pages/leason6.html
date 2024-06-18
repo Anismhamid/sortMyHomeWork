@@ -51,8 +51,8 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./leason5.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="./leason5.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 שיעור 6
                             </a>
                             <ul class="dropdown-menu gx-5">
@@ -97,261 +97,278 @@
     </section>
 
 
-
-    <main>
-
-
+    <main class=" gx-0 p-0 bg-dark">
+        <div class="container-lg">
 
 
 
-        <!-- leason 6 -->
-        <section class="text-center h-100" id="leason6">>
-            <h2 class="text-light h1">
-                שיעור 6
-            </h2>
+            <!-- leason 6 -->
+            <section class="text-center h-100" id="leason6">>
+                <h2 class="text-light h1">
+                    שיעור 6
+                </h2>
 
-            <!-- leason 6 q1 -->
+                <!-- leason 6 q1 -->
 
-            <div id="leason6-q1" class="card">
-                <div class="card-header">
-                    <span class="card-title">שאלה 1</span>
-                    <br>
-                    <img class="img-fluid" src="../works/leason6/leason6images/leason-6-1-q.png" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-1-html.png"
-                            alt="leason 6 javaScript html question 1">
+                <div id="leason6-q1" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="card-title">שאלה 1</span>
+                        <br>
+                        <img class="img-fluid" src="../works/leason6/leason6images/leason-6-1-q.png" alt="">
                     </div>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-1-js.png"
-                            alt="leason 6 javaScript js question 1">
-                    </div>
-
-
-                    <div class="border border-success my-5 w-75 mx-auto" dir="ltr">
-                        <div class="targil-6">
-                            <div class=" border p-5">
-                                <span>אני</span>
-                                <h2 id="computer"></h2>
-                                <p id="computerResult"></p>
-                            </div>
-                            <div class="border p-5">
-                                <span>אתה</span>
-                                <h2 id="user"></h2>
-                                <p id="userResult"></p>
-                            </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-1-html.png"
+                                alt="leason 6 javaScript html question 1">
                         </div>
-                        <button type="button" class="btn btn-danger my-3" onclick="roll()">Roll</button>
-                        <script>
-                            function roll() {
+                        <h5 class="my-3">javaScript</h5>
+                        <div class="mt-2  text-start border">
+                            <pre>
+
+                            <code>
+                                function roll() {
                                 let computerRoll = Math.floor(Math.random() * 10 + 1);
                                 let userRoll = Math.floor(Math.random() * 10 + 1);
-
+                                
                                 document.getElementById('computer').innerText = computerRoll;
                                 document.getElementById('user').innerText = userRoll;
-
+                                
                                 function resultFunc(winner, empty) {
-                                    document.getElementById('computerResult').innerText = winner;
-                                    document.getElementById('userResult').innerText = empty;
+                                document.getElementById('computerResult').innerText = winner;
+                                document.getElementById('userResult').innerText = empty;
                                 }
                                 if (computerRoll > userRoll) {
-                                    resultFunc('ניצחת (:', '')
-                                } else if (computerRoll < userRoll) {
-                                    resultFunc('', 'ניצחת (:')
-                                } else {
-                                    resultFunc('שווה', 'שווה')
-                                }
-                            }
-                        </script>
-                    </div>
-                </div>
-            </div>
+                                resultFunc('ניצחת (:', '')
+                                } else if (computerRoll < userRoll) { resultFunc('', 'ניצחת (:' ) } else { resultFunc('שווה', 'שווה' ) } }
+                            </code>
+                        </pre>
+                        </div>
 
 
-
-            <!-- leason 6 q2 -->
-
-            <div id="leason6-q2" class="card">
-                <div class="card-header">
-                    <span class="card-title">שאלה 2</span>
-                    <br>
-                    <img class="img-fluid" src="../works/leason6/leason6images/leason-6-2-q.png" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-2-html.png"
-                            alt="leason 6 javaScript html question 2">
-                    </div>
-
-                    <div class="border border-success my-5 w-75 mx-auto" dir="ltr">
-
-                        <input type="date" name="date" id="date">
-                        <button type="button" onclick="dateinDay()">בדוק</button>
-                        <p id="p"></p>
-
-                        <script>
-                            function dateinDay() {
-                                let userValue = document.getElementById('date').value;
-                                let date = new Date(userValue);
-                                let days = [
-                                    'ראשון',
-                                    'שני',
-                                    'שלישי',
-                                    'רביעי',
-                                    'חמישי',
-                                    'שישי',
-                                    'שבת',
-                                ];
-                                document.getElementById('p').innerText = days[date.getDay()];
-                                console.log(days[date.getDay()]);
-                            }
-                        </script>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- leason 6 q3 -->
-
-            <div id="leason6-q3" class="card">
-                <div class="card-header">
-                    <span class="card-title">שאלה 3</span>
-                    <br>
-                    <img class="img-fluid" src="../works/leason6/leason6images/leason-6-3-q.png" alt="">
-                    <a href="https://bennettfeely.com/clippy/" target="_blank"
-                        rel=" noopener noreferrer ">https://bennettfeely.com/clippy/</a>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-3-html.png"
-                            alt="leason 6 javaScript html question 3">
-                    </div>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-3-js.png"
-                            alt="leason 6 javaScript html question 3">
-                    </div>
-
-                    <div class="border border-success my-5 w-75 mx-auto">
-
-                        <div class="row-3 my-5">
-                            <div class="col-2 mx-auto">
-                                <div id="red" class="rounded-circle p-5 mt-2 h-100 w-100"></div>
-
-                                <div id="yellow" class="rounded-circle p-5 mt-2  h-100 w-100"></div>
-                                <div id="green" class="rounded-circle p-5 mt-2  h-100 w-100"></div>
+                        <div class="border border-success my-5 w-75 mx-auto">
+                            <div class="targil-6">
+                                <div class=" border p-5">
+                                    <span>אני</span>
+                                    <h2 id="computer"></h2>
+                                    <p id="computerResult"></p>
+                                </div>
+                                <div class="border p-5">
+                                    <span>אתה</span>
+                                    <h2 id="user"></h2>
+                                    <p id="userResult"></p>
+                                </div>
                             </div>
+                            <button type="button" class="btn btn-danger my-3" onclick="roll()">Roll</button>
+                            <script>
+                                function roll() {
+                                    let computerRoll = Math.floor(Math.random() * 10 + 1);
+                                    let userRoll = Math.floor(Math.random() * 10 + 1);
+
+                                    document.getElementById('computer').innerText = computerRoll;
+                                    document.getElementById('user').innerText = userRoll;
+
+                                    function resultFunc(winner, empty) {
+                                        document.getElementById('computerResult').innerText = winner;
+                                        document.getElementById('userResult').innerText = empty;
+                                    }
+                                    if (computerRoll > userRoll) {
+                                        resultFunc('ניצחת (:', '')
+                                    } else if (computerRoll < userRoll) {
+                                        resultFunc('', 'ניצחת (:')
+                                    } else {
+                                        resultFunc('שווה', 'שווה')
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- leason 6 q2 -->
+
+                <div id="leason6-q2" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="card-title">שאלה 2</span>
+                        <br>
+                        <img class="img-fluid" src="../works/leason6/leason6images/leason-6-2-q.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-2-html.png"
+                                alt="leason 6 javaScript html question 2">
                         </div>
 
-                        <script>
-                            let counter = 0;
-                            function tafficLight() {
-                                counter %= 4;
-                                switch (counter) {
-                                    case 0:
-                                        document.getElementById('red').style.backgroundColor = 'red';
-                                        break;
-                                    case 1:
-                                        document.getElementById('red').style.backgroundColor = 'gray'
-                                        document.getElementById('yellow').style.backgroundColor = 'yellow';
-                                        break;
-                                    case 2:
-                                        document.getElementById('yellow').style.backgroundColor = 'gray'
-                                        document.getElementById('green').style.backgroundColor = 'green';
+                        <div class="border border-success my-5 w-75 mx-auto" dir="ltr">
 
-                                        break;
-                                    case 3:
-                                        document.getElementById('green').style.backgroundColor = 'gray';
-                                        document.getElementById('red').style.backgroundColor = 'gray';
-                                        document.getElementById('yellow').style.backgroundColor = 'gray'
-                                        break;
-                                    default:
-                                        break;
+                            <input type="date" name="date" id="date">
+                            <button type="button" onclick="dateinDay()">בדוק</button>
+                            <p id="p"></p>
+
+                            <script>
+                                function dateinDay() {
+                                    let userValue = document.getElementById('date').value;
+                                    let date = new Date(userValue);
+                                    let days = [
+                                        'ראשון',
+                                        'שני',
+                                        'שלישי',
+                                        'רביעי',
+                                        'חמישי',
+                                        'שישי',
+                                        'שבת',
+                                    ];
+                                    document.getElementById('p').innerText = days[date.getDay()];
+                                    console.log(days[date.getDay()]);
                                 }
-                                counter++;
-                            }
-                            setInterval(tafficLight, 1000)
-
-
-                        </script>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-            <!-- leason 6 q4 -->
-
-            <div id="leason6-q4" class="card">
-                <div class="card-header">
-                    <span class="card-title">שאלה 4</span>
-                    <br>
-                    <img class="img-fluid" src="../works/leason6/leason6images/leason-6-4-q.png"
-                        alt="leason 6 javaScript question 4 image">
-                    <a href="https://bennettfeely.com/clippy/" target="_blank"
-                        rel=" noopener noreferrer ">https://bennettfeely.com/clippy/</a>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="mt-2">
-                        <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-4-js.png"
-                            alt="leason 6 javaScript html question 4">
-                    </div>
-
-                    <div class="border border-success my-5 h-100 p-5 w-75 mx-auto">
-                        <div class="image-container p-5 h-100">
-                            <img id="image" class="img-thumbnail w-100" src="../works/leason6/leason6images/imgs/3.jpeg"
-                                alt="Image loop">
-                            <label id="seconds-input" for="inputSeconds">בחר שניה 1 , שניות 2 , שניות 3 , שניות 4 ,....</label>
-                            <input oninput="changeImage()" id="inputSeconds" type="number" class="m-2"
-                                placeholder="בחר כמה שניות התמונה תתחלף">
-
+                            </script>
                         </div>
-                        <script>
-
-                            let images = [
-                                '../works/leason6/leason6images/imgs/1.jpeg',
-                                '../works/leason6/leason6images/imgs/2.jpeg',
-                                '../works/leason6/leason6images/imgs/3.jpeg',
-                                '../works/leason6/leason6images/imgs/4.jpeg',
-                            ];
-                            let currentImageIndex = 0;
-                            function changeImage() {
-                                let inputSeconds = +document.getElementById('inputSeconds').value;
-                                if (isNaN(inputSeconds) || inputSeconds <= 0) {
-                                    document.querySelector("#seconds-input").innerText = "Please enter a valid positive number for seconds.";
-                                    return;
-                                }
-
-                                let imgElement = document.getElementById('image');
-
-                                imgElement.src = images[currentImageIndex];
-                                currentImageIndex = (currentImageIndex + 1) % images.length;
-
-                                setTimeout(changeImage, inputSeconds * 1000);
-                            }
-                            changeImage();
-                        </script>
-
-                        </script>
                     </div>
                 </div>
-            </div>
+
+
+
+                <!-- leason 6 q3 -->
+
+                <div id="leason6-q3" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="card-title">שאלה 3</span>
+                        <br>
+                        <img class="img-fluid" src="../works/leason6/leason6images/leason-6-3-q.png" alt="">
+                        <a href="https://bennettfeely.com/clippy/" target="_blank"
+                            rel=" noopener noreferrer ">https://bennettfeely.com/clippy/</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-3-html.png"
+                                alt="leason 6 javaScript html question 3">
+                        </div>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-3-js.png"
+                                alt="leason 6 javaScript html question 3">
+                        </div>
+
+                        <div class="border border-success my-5 w-75 mx-auto">
+
+                            <div class="row-3 my-5">
+                                <div class="col-2 mx-auto">
+                                    <div id="red" class="rounded-circle p-5 mt-2 h-100 w-100"></div>
+
+                                    <div id="yellow" class="rounded-circle p-5 mt-2  h-100 w-100"></div>
+                                    <div id="green" class="rounded-circle p-5 mt-2  h-100 w-100"></div>
+                                </div>
+                            </div>
+
+                            <script>
+                                let counter = 0;
+                                function tafficLight() {
+                                    counter %= 4;
+                                    switch (counter) {
+                                        case 0:
+                                            document.getElementById('red').style.backgroundColor = 'red';
+                                            break;
+                                        case 1:
+                                            document.getElementById('red').style.backgroundColor = 'gray'
+                                            document.getElementById('yellow').style.backgroundColor = 'yellow';
+                                            break;
+                                        case 2:
+                                            document.getElementById('yellow').style.backgroundColor = 'gray'
+                                            document.getElementById('green').style.backgroundColor = 'green';
+
+                                            break;
+                                        case 3:
+                                            document.getElementById('green').style.backgroundColor = 'gray';
+                                            document.getElementById('red').style.backgroundColor = 'gray';
+                                            document.getElementById('yellow').style.backgroundColor = 'gray'
+                                            break;
+                                        default:
+                                            break;
+                                    }
+                                    counter++;
+                                }
+                                setInterval(tafficLight, 1000)
+
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
 
 
 
 
 
-        </section>
 
+
+                <!-- leason 6 q4 -->
+
+                <div id="leason6-q4" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="card-title">שאלה 4</span>
+                        <br>
+                        <img class="img-fluid" src="../works/leason6/leason6images/leason-6-4-q.png"
+                            alt="leason 6 javaScript question 4 image">
+                        <a href="https://bennettfeely.com/clippy/" target="_blank"
+                            rel=" noopener noreferrer ">https://bennettfeely.com/clippy/</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="mt-2">
+                            <img class="img-fluid" src="../works/Leason6/leason6images/leason-6-4-js.png"
+                                alt="leason 6 javaScript html question 4">
+                        </div>
+
+                        <div class="border border-success my-5 h-100 p-5 w-75 mx-auto">
+                            <div class="image-container p-5 h-100">
+                                <img id="image" class="img-thumbnail w-100"
+                                    src="../works/leason6/leason6images/imgs/3.jpeg" alt="Image loop">
+                                <label id="seconds-input" for="inputSeconds">בחר שניה 1 , שניות 2 , שניות 3 , שניות 4
+                                    ,....</label>
+                                <input oninput="changeImage()" id="inputSeconds" type="number" class="m-2"
+                                    placeholder="בחר כמה שניות התמונה תתחלף">
+
+                            </div>
+                            <script>
+
+                                let images = [
+                                    '../works/leason6/leason6images/imgs/1.jpeg',
+                                    '../works/leason6/leason6images/imgs/2.jpeg',
+                                    '../works/leason6/leason6images/imgs/3.jpeg',
+                                    '../works/leason6/leason6images/imgs/4.jpeg',
+                                ];
+                                let currentImageIndex = 0;
+                                function changeImage() {
+                                    let inputSeconds = +document.getElementById('inputSeconds').value;
+                                    if (isNaN(inputSeconds) || inputSeconds <= 0) {
+                                        document.querySelector("#seconds-input").innerText = "Please enter a valid positive number for seconds.";
+                                        return;
+                                    }
+
+                                    let imgElement = document.getElementById('image');
+
+                                    imgElement.src = images[currentImageIndex];
+                                    currentImageIndex = (currentImageIndex + 1) % images.length;
+
+                                    setTimeout(changeImage, inputSeconds * 1000);
+                                }
+                                changeImage();
+                            </script>
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </section>
+        </div>
     </main>
 
 
