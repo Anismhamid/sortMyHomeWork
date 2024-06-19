@@ -730,53 +730,59 @@
 
 
                 <!-- leason 8 q4 -->
-                <!-- 
-                <div id="leason8-q4" class="card w-75 my-5 m-auto">
+
+                <div id="leason8-2-q4" class="card w-75 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 4</span>
                         <br>
                         <h5 class="text-danger card-text">
-                            כתוב פונקציה המקבלת מערך של מספרים ומחזירה את ממוצע איברי המערך
+                            כתוב פונקציה המקבלת שתי מספרים ומדפיסהלקונסולה את כל המספרי השלמים בין שני המספרים
                         </h5>
                     </div>
+
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-2-4-js.png"
+                            alt="leason 8 javaScript js question 4">
+                    </div>
+
                     <div class="card-body">
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-4-js.png"
-                                alt="leason 8 javaScript js question 4">
-                        </div>
-
-
                         <div class="border border-success my-5 w-100 mx-auto">
                             <div class="row">
                                 <div class="col">
-                                    <p id="avarage-row"></p>
-                                    <p id="avarage">התוצאה<br></p>
+                                    <p id="completeNum"></p>
+                                </div>
+                                <div class="col">
+                                    <p id="completeNum2"></p>
                                 </div>
                             </div>
+
                             <script>
-                                let arry = [100, 80, 100, 80, 100, 100, 90, 100, 75]
-                                function avaraGe(arr) {
-                                    let sum = 0;
-                                    for (i = 0; i < arr.length; i++) {
-                                        sum += arr[i] / arr.length;
+                                function compNum(num1, num2) {
+                                    if (num1 < num2) {
+                                        for (let i = num1; i <= num2; i++) {
+                                            document.getElementById('completeNum').innerHTML += ` <br>${i}`
+                                        }
+                                    } else {
+                                        for (let i = num1; i >= num2; i--) {
+                                            document.getElementById('completeNum2').innerHTML += ` <br>${i}`
+                                        }
                                     }
-                                    document.getElementById('avarage-row').innerText = `let array = [${arry}]`
-                                    document.getElementById('avarage').innerText += Math.floor(sum)
-                                    return Math.floor(sum)
                                 }
-                                avaraGe(arry);
-                            </s>
+                                compNum(10, 20)
+                                compNum(20, 10)
+
+                            </script>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
 
 
                 <!-- leason 8 q5 -->
-                <!-- 
-                <div id="leason8-q5" class="card w-75 my-5 m-auto">
+
+                <div id="leason8-2-q5" class="card w-75 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 5</span>
                         <br>
@@ -787,92 +793,75 @@
                     <div class="card-body">
                         <h5 class="card-title">פיתרון</h5>
                         <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-5-js.png"
+                            <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-2-5-js.png"
                                 alt="leason 8 javaScript js question 5">
                         </div>
 
 
                         <div class="border border-success my-5 w-75 mx-auto">
                             <div class="row">
-                                <div class="col ">
-                                    <p id="p-res"></p>
+                                <div class="col">
+                                    <p id="log3shankYaJim"></p>
                                 </div>
                             </div>
                             <script>
-                                let ar = [50, 60, 20, 10, 30, 10, 80]
-                                function Bigger(arr) {
-                                    let max = arr[0]
-                                    for (i = 1; i < arr.length; i++) {
-                                        if (arr[i] > max) {
-                                            max = arr[i]
-                                        }
-                                        document.getElementById('p-res').innerHTML = `result is<br>${max}`
-                                    }
-                                    return max
+                                function sum3Numbers(num1, num2, num3) {
+                                    return num1 + num2 + num3
                                 }
-                                Bigger(ar);
+                                document.getElementById('log3shankYaJim').innerHTML = sum3Numbers(2, 2, 3)
                             </script>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
 
 
                 <!-- leason 8 q6 -->
-                <!-- 
-                <div id="leason8-q6" class="card w-75 my-5 m-auto">
+
+                <div id="leason8-2-q6" class="card w-75 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 6</span>
                         <br>
                         <h5 class="text-danger card-text">
-                            כתוב פונקציה המקבלת מערך של מספרים ומחזירה מערך חדש שאיביריו הם האיברים מהמערך שהפונקציה
-                            קיבלה רק
-                            בסדר הפוך
+                            כתוב פונקציה המקבלת 3 מספרים ומחזירה את הממוצע
                         </h5>
                     </div>
                     <h5 class="card-title">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-6-js.png"
-                            alt="leason 8 javaScript js question 6">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-2-6-js.png"
+                            alt="leason 8-2 javaScript js question 6">
                     </div>
                     <div class="card-body">
 
                         <div class="border border-success my-5 w-100 mx-auto">
                             <div class="row">
                                 <div class="col">
-                                    <p id="revers-array"></p>
-                                    <p id="revers-array2"></p>
+                                    <p id="mmotsa3"></p>
                                 </div>
                             </div>
                             <script>
-                                let aar = [10, 20, 30, 40, 50]
-                                function reverseArray(arr) {
-                                    let newArry = [];
-                                    for (i = arr.length - 1; i >= 0; i--) {
-                                        newArry.push(aar[i])
-                                    }
-                                    document.getElementById('revers-array').innerText = `let array-1 = [${arr}]`
-                                    document.getElementById('revers-array2').innerText = `let = Array = [${newArry}]`
-                                    return newArry
+                                function avaraeFunc(num1, num2, num3) {
+                                    return (num1 + num2 + num3) / 3
                                 }
-                                reverseArray(aar);
+                                document.getElementById('mmotsa3').innerText = Math.floor(avaraeFunc(90, 80, 95))
+
                             </script>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
 
 
                 <!-- leason 8 q7 -->
-                <!-- 
+
                 <div id="leason8-q7" class="card w-75 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 7</span>
                         <br>
                         <h5 class="text-danger card-text">
-                            כתוב פונקציה המקבלת מספר ומחזירה את כמות הספרות השונות בו
+                            כתוב פונקציה המקבלת מחרוזת ומחזירה את אורך המחרוזת
                         </h5>
                     </div>
                     <h5 class="card-title">פיתרון</h5>
@@ -886,97 +875,84 @@
                         <div class="border border-success my-5 w-75 mx-auto">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <input oninput="countDiff(this.value)" id="get-user-input"
-                                        placeholder="הזן מספר לבדיקה" type="text">
-                                    <p id="check-num"></p>
+                                    <p id="stringStr"></p>
                                 </div>
                             </div>
                             <script>
-                                let user = document.getElementById('get-user-input').value;
-                                function countDiff(num) {
-                                    // בודקים אילו ספרות יש במספר
-                                    let counters = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                                    while (num > 0) {
-                                        counters[num % 10]++;
-                                        num = Math.floor(num / 10);
+                                function strLength(str) {
+                                    let newst = ''
+                                    for (i = 0; i < str.length; i++) {
+                                        newst += str[i]
                                     }
-                                    // לבדוק כמה מהן שונות
-                                    let count = 0;
-                                    for (let i = 0; i < counters.length; i++) {
-                                        if (counters[i] > 0) count++;
-                                        document.getElementById('check-num').innerText = count
-                                    }
-                                    return count;
+                                    return newst.length
                                 }
+                                strLength('anis')
+                                document.getElementById('stringStr').innerText = strLength('anis');
                             </script>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
 
 
                 <!-- leason 8 q8 -->
-                <!-- 
-                <div id="leason8-q8" class="card w-75 my-5 m-auto">
+
+                <div id="leason8-2-q8" class="card w-75 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 8</span>
                         <br>
                         <h5 class="text-danger card-text">
-                            כתוב פונקציה המקבלת מערך של מחרוזות ומחזירה מערך חדש המכיל רק את המחרוזות מהמערך המקורי
-                            שאורכן גדול
-                            או שווה - 5
+                            כתוב פונקציה המקבלת מחרוזת ומחזירה true אם המחרוזת מכילה האות 't' מחזירה false
                         </h5>
                     </div>
                     <h5 class="card-title">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-8-js.png"
-                            alt="leason 8 javaScript js question 9">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-2-8-js.png"
+                            alt="leason 8-2 javaScript js question 8">
                     </div>
+
                     <div class="card-body">
-
-
                         <div class="border border-success my-5 w-100 mx-auto">
                             <div class="row">
-                                <div id="rslt-d" class="col ">
-                                    <p id="rslt"></p>
+                                <div class="col ">
+                                    <p id="rsolt"></p>
+                                    <p id="rsolt2"></p>
                                 </div>
                             </div>
                             <script>
-                                let neAr = ['Gim', 'Moti', 'Yehodet', 'David', 'Itamar'];
-                                function strings(arr) {
-                                    let newstr = '';
-                                    for (i = 0; i < arr.length; i++) {
-                                        if (arr[i].length >= '5') {
-                                            newstr += arr[i] + ', '
-                                        }
+                                function checkT(str) {
+                                    for (i = 0; i < str.length; i++) {
+                                        if (str[i] === 't' || str[i] === 'T') return true
                                     }
-                                    document.getElementById('rslt-d').innerHTML += `<p>let string = [${neAr}]</p><br>`
-                                    document.getElementById('rslt').innerText += newstr
-                                    return newstr;
+                                    return false
                                 }
-                                strings(neAr);
+                                checkT('Jamil')
+                                checkT('itamar')
+
+                                document.getElementById('rsolt').innerText = checkT('Jamil')
+                                document.getElementById('rsolt2').innerText = checkT('itamar')
                             </script>
                         </div>
                     </div>
                 </div>
- -->
 
 
 
-                <!-- leason 8 q9 -->
-                <!-- 
-                <div id="leason8-q9" class="card w-75 my-5 m-auto">
+
+                <!-- leason 8-2 q9 -->
+
+                <div id="leason8-2-q9" class="card w-75 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 9</span>
                         <br>
                         <h5 class="text-danger card-text">
-                            כתוב פונקציה שמקבלת מערך של מחירים ומחזירה מערך חדש המכיל את המיחירים לאחר חנחה של 20%
+                            כתוב פונקציה שמקבלת מחרוזת של מחירים ומחזירה מערך חדש המכיל את המיחירים לאחר חנחה של 20%
                         </h5>
                     </div>
                     <h5 class="card-title">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-9-js.png"
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-2-9-js.png"
                             alt="leason 8 javaScript js question 9">
                     </div>
                     <div class="card-body">
@@ -985,43 +961,40 @@
                         <div class="border border-success my-5 w-100 mx-auto">
                             <div class="row">
                                 <div class="col">
-                                    <p id="sale"></p>
+                                    <p id="santensL"></p>
                                 </div>
                             </div>
                             <script>
-                                let mewaar = [100, 500, 600, 800, 990, 300, 1450, 1293]
-                                function sale(arr) {
-                                    let newarr = []
-                                    for (i = 0; i < arr.length; i++) {
-                                        let discountPrice = arr[i] - (arr[i] * 20) / 100
-                                        newarr.push(discountPrice)
+                                function santensL(str) {
+                                    let arr = [];
+                                    for (let i = 0; i < str.length; i++) {
+                                        arr += str[i]
                                     }
-                                    document.getElementById('sale').innerText = newarr
-                                    return newarr
+                                    return arr.split(' ')
                                 }
-                                sale(mewaar);
+                                santensL('jamil haifa anis umalfahm')
+                                document.getElementById('santensL').innerText = santensL('jamil haifa anis umalfahm')
                             </script>
 
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
 
-                <!-- leason 8 q10 -->
-                <!-- 
-                <div id="leason8-q10" class="card w-75 my-5 m-auto">
+                <!-- leason 8-2 q10 -->
+
+                <div id="leason8-2-q10" class="card w-75 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 10</span>
                         <br>
                         <h5 class="text-danger card-text">
-                            כתוב פונקציה המקבלת מערך של מחרוזות ומחזירה מערך חדש המכיל את המחרוזות מהמערך המקורי באותיות
-                            גדולות
+                            כתוב פונקציה המקבלת 2 מספרים ובודקת האם שניהם מתחלקים ב3 ללא שארית
                         </h5>
                     </div>
                     <h5 class="card-title">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-10-js.png"
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-2-10-js.png"
                             alt="leason 8 javaScript js question 10">
                     </div>
                     <div class="card-body">
@@ -1030,26 +1003,112 @@
                         <div class="border border-success my-5 w-100 m-auto">
                             <div class="row">
                                 <div class="col">
-                                    <p id="upper-case"></p>
+                                    <p id="ifDevide"></p>
                                 </div>
                             </div>
 
                             <script>
-                                let movies = [' drama ', ' action ', ' romace ']
-                                function upperChase(dArr) {
-                                    let mewstr = [];
-                                    for (i = 0; i < dArr.length; i++) {
-                                        let = toUpper = dArr[i].toUpperCase();
-                                        mewstr.push(toUpper);
+                                function ifDevide(num1, num2) {
+                                    if (num1 % 3 === 0 && num2 % 3 === 0) {
+                                        return true
                                     }
-                                    document.getElementById('upper-case').innerText = `let movies = [ ${mewstr} ]`
-                                    return mewstr;
+                                    return false
                                 }
-                                upperChase(movies);
+
+                                document.getElementById('ifDevide').innerText += ifDevide(3, 1);
+
                             </script>
                         </div>
                     </div>
-                </div> -->
+                </div>
+
+
+
+                <!-- leason 8-2 q11 -->
+
+                <div id="leason8-2-q10" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <span class="card-title">שאלה 10</span>
+                        <br>
+                        <h5 class="text-danger card-text">
+                            כתוב פונקציה המקבלת 2 מספרים ובודקת האם שניהם מתחלקים ב3 ללא שארית
+                        </h5>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-11-js.png"
+                            alt="leason 8 javaScript js question 10">
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="border border-success my-5 w-100 m-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="ifDevide"></p>
+                                    <p id="ifDevide2"></p>
+                                </div>
+                            </div>
+
+                            <script>
+                                function ifDevide(num1, num2) {
+                                    if (num1 % 3 === 0 && num2 % 3 === 0) {
+                                        return true
+                                    }
+                                    return false
+                                }
+                                ifDevide(3, 6)
+                                ifDevide(2, 9)
+                                document.getElementById('ifDevide').innerHTML += `<br>${ifDevide(3, 6)}`;
+                                document.getElementById('ifDevide2').innerText += ifDevide(2, 9);
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- leason 8-2 q12 -->
+
+                <div id="leason8-2-q12" class="card w-75 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 12</h2>
+                        <br>
+                        <h5 class="text-danger card-text">
+                            כתוב פונקציה המקבלת 2 מספרים ובודקת האם הראשון הוא זוגי והשני אי זוגי אם כן תחזיר true אם לא
+                            תחזיר false
+                        </h5>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason8/leason8images/leason-8-12-js.png"
+                            alt="leason 11 javaScript js question 11">
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="border border-success my-5 w-100 m-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="isEvenOrNot"></p>
+                                </div>
+                            </div>
+
+                            <script>
+                                function isEvenOrNot(num1, num2) {
+                                    if (num1 % 2 === 0 && num2 % 2 === 1) {
+                                        return true
+                                    }
+                                    return false
+                                }
+                                isEvenOrNot(6, 5);
+                                isEvenOrNot(6, 2);
+                                // document.getElementById('isEvenOrNot').innerText = 
+                            </script>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
