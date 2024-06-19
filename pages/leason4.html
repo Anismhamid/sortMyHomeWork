@@ -17,7 +17,7 @@
                 <a class="navbar-brand" href="#main-section">HomeWorks javaScript modul leason 4</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <h2 class="navbar-toggler-icon"></h2>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -67,9 +67,9 @@
                                 שיעור 7
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a class="nav-link" href="./leason8.html" role="button">
-                                שיעור 8
+                                שיעור 8 מערכים ופונקציות
                             </a>
                         </li>
                         <li class="nav-item dropdown">
@@ -115,20 +115,30 @@
 
                 <div id="leason4-q1" class="card w-75 my-5 m-auto">
                     <div class="card-header">
-                        <h2 class="q-title">שאלה 1</h2>
+                        <h2 class="card-title">שאלה 1</h2>
                         <br>
-                        כתבו סקריפט המדפיס לקונסול בלולאת for את כל המספרים מ- 1 עד 25 כולל
+                        <h4 class="text-danger card-text">
+                            כתבו סקריפט המדפיס לקונסול בלולאת for את כל המספרים מ- 1 עד 25 כולל
+
+                        </h4>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason4/leason4images/leason-4-1.png"
+                            alt="leason 4 javaScript question 1">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="mt-2">
-                            <img class="img-fluid" src="../works/Leason4/leason4images/leason-4-1.png"
-                                alt="leason 4 javaScript question 1">
-                        </div>
-
-
                         <div class="border border-success  my-5 p-5 " dir="ltr">
-
+                            <div class="row">
+                                <div class="col">
+                                    <p id="i-to-25"></p>
+                                </div>
+                            </div>
+                            <script>
+                                for (i = 1; i <= 25; i++) {
+                                    document.getElementById('i-to-25').innerText += ` ${i}`
+                                }
+                            </script>
                             </script>
                         </div>
                     </div>
@@ -141,28 +151,27 @@
 
                 <div id="leason4-q2" class="card w-75 my-5 m-auto">
                     <div class="card-header">
-                        <span class="q-title">שאלה 2</span>
+                        <h2 class="card-title">שאלה 2</h2>
                         <br>
-                        כתבו סקריפט המדפיס לקונסול בלולאת for את כל המספרים הזוגיים מ 1 עד 50 כולל.
+                        <h4 class="text-danger card-text"> כתבו סקריפט המדפיס לקונסול בלולאת for את כל המספרים הזוגיים מ
+                            1 עד 50 כולל.
+                        </h4>
+
                     </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" title="leason 4 javaScript question 2"
+                            src="../works/Leason4/leason4images/leason-4-2.png" alt="leason 4 javaScript question 2">
+                    </div>
+
                     <div class="card-body">
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="mt-2">
-                            <img title="leason 4 javaScript question 2" class="img-fluid"
-                                src="../works/Leason4/leason4images/leason-4-2.png"
-                                alt="leason 4 javaScript question 2">
-                        </div>
-
-
                         <div class="border border-success  my-5 p-5 " dir="ltr">
-                            <p id="p"></p>
+                            <p id="even-i-to-50"></p>
                             <script>
-                                let p = document.getElementById('p');
                                 for (let i = 1; i <= 50; i++) {
                                     if (i % 2 == 0) {
                                         let newstr = ''
-                                        console.log(newstr = i);
-                                        p.innerText += newstr + ','
+                                        document.getElementById('even-i-to-50').innerText += ` ${newstr = i}`;
                                     }
                                 }
                             </script>
@@ -177,18 +186,17 @@
 
                 <div id="leason4-q3" class="card w-75 my-5 m-auto">
                     <div class="card-header">
-                        <span class="q-title">שאלה 3</span>
+                        <h2 class="card-title">שאלה 3</h2>
                         <br>
                         <img title="leason 4 javaScript question 3" class="img-fluid"
                             src="../works/Leason4/leason4images/leason-4-3-q.png" alt="leason 4 javaScript question 3">
                     </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason4/leason4images/leason-4-3.png"
+                            alt="leason 4 javaScript question 3">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="mt-2">
-                            <img class="img-fluid" src="../works/Leason4/leason4images/leason-4-3.png"
-                                alt="leason 4 javaScript question 3">
-                        </div>
-
                         <div class="border border-success  my-5 p-5 " dir="ltr">
                             <input id="selectedNumber" type="number" placeholder="Enter number to power it (**)">
                             <button onclick="(powerCalculate())" type="button">Calculate</button>
@@ -219,17 +227,17 @@
 
                 <div id="leason4-q4" class="card w-75 my-5 m-auto">
                     <div class="card-header">
-                        <span class="q-title">שאלה 4</span>
+                        <h2 class="card-title">שאלה 4</h2>
                         <br>
                         <img class="img-fluid" title="leason 4 javaScript question 4"
                             src="../works/Leason4/leason4images/leason-4-4-q.png" alt="leason 4 javaScript question 4">
                     </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason4/leason4images/leason-4-html.png"
+                            alt="leason 4 javaScript question 4">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="mt-2">
-                            <img class="img-fluid" src="../works/Leason4/leason4images/leason-4-html.png"
-                                alt="leason 4 javaScript question 4">
-                        </div>
 
                         <div class="border border-success  my-5 p-5 " dir="ltr">
                             <input id="a1" type="number" placeholder="Enter a1 number">
@@ -252,7 +260,7 @@
                                 }
                             </script>
                         </div>
-                        <div class="mt-2">
+                        <div class="card-img my-2">
                             <img title="leason 4 javaScript question 5" class="img-fluid"
                                 src="../works/Leason4/leason4images/leason-4-5-q.png"
                                 alt="leason 4 javaScript question 5">
