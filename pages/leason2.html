@@ -81,6 +81,16 @@
                                 שיעור 10
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason11.html" role="button">
+                                שיעור 11
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason12.html" role="button">
+                                שיעור 12
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -100,7 +110,18 @@
     <main class=" gx-0 p-0 bg-dark">
         <div class="container-lg">
 
+            <div class="row w-100" dir="ltr">
+                <div class="col-6">
+                    <a href="./leason3.html"><button class="btn btn-outline-light w-100">הבא</button>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="./leason1.html"><button class="btn btn-outline-light w-100">אחורה</button>
+                    </a>
+                </div>
+            </div>
 
+            
             <!-- leason 2 -->
             <section class="text-center" id="leason2">
                 <h1 class="text-light">
@@ -109,7 +130,7 @@
 
                 <!-- leason 2 q1 -->
 
-                <div id="leason2-q1" class="card w-75 my-5 m-auto">
+                <div id="leason2-q1" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <span class="q-title">שאלה 1</span>
                         <br>
@@ -130,7 +151,7 @@
 
                         <div class="border border-success  my-5 p-5 " dir="ltr">
                             <label for="image-width">Image width:</label>
-                            <input oninput="changeWidth()" type="number" id="image-width">
+                            <input class="form-control" oninput="changeWidth()" type="number" id="image-width">
                             <img style="width: 100px;" src="../works/Leason2/question1/Zoo.png" id="giraffe"
                                 alt="giraffe image">
                             <script src="../works/Leason2/question1/welcomeToTheZooo.js"></script>
@@ -142,7 +163,7 @@
 
                 <!-- leason 2 q2 -->
 
-                <div id="leason2-q2" class="card w-75 my-5 m-auto">
+                <div id="leason2-q2" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <h2 class="card-title">שאלה 2</h2>
                         <br>
@@ -163,13 +184,13 @@
                     <div class="card-body">
 
                         <div class="border border-success  my-5 p-5 " dir="ltr">
-                            <img src="../works/Leason2/question2/GamingController.png" alt="">
+                            <img class="img-fluid" src="../works/Leason2/question2/GamingController.png" alt="">
                             <p>Food: <span id="food"></span></p>
                             <p>Mony: <span id="money"></span></p>
                             <p>Name: <span id="name"></span></p>
                             <p id="winner"></p>
-                            <button onclick="buyFood()">Buy food</button>
-                            <button onclick="askForMoney()">Ask for mony</button>
+                            <button class="btn btn-outline-info" onclick="buyFood()">Buy food</button>
+                            <button class="" onclick="askForMoney()">Ask for mony</button>
                             <button onclick="setName()">Change Name</button>
                             <script src="../works/Leason2/question2/foodVsMoney.js"></script>
                         </div>
@@ -179,6 +200,18 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row w-100" dir="ltr">
+                    <div class="col-6">
+                        <a href="./leason3.html"><button class="btn btn-outline-light w-100">הבא</button>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="./leason1.html"><button class="btn btn-outline-light w-100">אחורה</button>
+                        </a>
+                    </div>
+                </div>
+
             </section>
         </div>
     </main>

@@ -82,26 +82,47 @@
                                 שיעור 10
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason11.html" role="button">
+                                שיעור 11
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason12.html" role="button">
+                                שיעור 12
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-
-
-
-    <section id="main-section m-auto">
-        <img class="w-100" src="../What-Is-JavaScript-Used-For.avif" alt="What-Is-JavaScript-Used-For">
-        <a href="#top">
-            <h1 class="fixed-bottom text-center text-info text-decoration-underline ">▲</h1>
-        </a>
-    </section>
-
-
     <main class=" gx-0 p-0 bg-dark">
         <div class="container-lg">
 
+
+            <section id="main-section m-auto">
+                <img class="w-100" src="../What-Is-JavaScript-Used-For.avif" alt="What-Is-JavaScript-Used-For">
+                <a href="#top">
+                    <h1 class="fixed-bottom text-center text-info text-decoration-underline ">▲</h1>
+                </a>
+            </section>
+
+
+
+
+
+            <div class="row w-100" dir="ltr">
+                <div class="col-6">
+                    <a href="./leason4.html"><button class="btn btn-outline-light w-100">הבא</button>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="./leason2.html"><button class="btn btn-outline-light w-100">אחורה</button>
+                    </a>
+                </div>
+            </div>
 
             <!-- leason 3 -->
             <section class="text-center" id="leason3">
@@ -112,7 +133,7 @@
 
                 <!-- leason 3 q1 -->
 
-                <div id="leason3-q1" class="card w-75 my-5 m-auto">
+                <div id="leason3-q1" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 1</span>
                         <br>
@@ -134,8 +155,8 @@
                         <div class="border border-success  my-5 p-5 " dir="ltr">
                             GRADE System <br>
                             <label for="input">Grade:</label>
-                            <input type="number" id="input">
-                            <button type="button" onclick="chechGrades()">CHECK</button>
+                            <input class="form-control shadow" type="number" id="input">
+                            <button class="btn btn-primary mt-4" type="button" onclick="chechGrades()">CHECK</button>
                             <p id="l3Q1Result"></p>
                             <script src="../works/Leason3/A/js/targil1.js"></script>
                         </div>
@@ -149,7 +170,7 @@
 
                 <!-- leason 3 q2 -->
 
-                <div id="leason3-q2" class="card w-75 my-5 m-auto">
+                <div id="leason3-q2" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <h2 class="crad-title">שאלה 2</h2>
                         <br>
@@ -169,8 +190,8 @@
 
                         <div class="border border-success  my-5 p-5 " dir="ltr">
                             <label for="inputs">Grade:</label>
-                            <input type="number" id="inputs">
-                            <button onclick="checkGrades()">CHECK</button>
+                            <input class="form-control shadow" type="number" id="inputs">
+                            <button class="btn btn-primary mt-4" onclick="checkGrades()">CHECK</button>
                             <p id="l3Q2Result"></p>
                             <script src="../works/Leason3/B/js/targil2.js"></script>
                         </div>
@@ -184,22 +205,22 @@
 
                 <!-- leason 3 q3 -->
 
-                <div id="leason3-q3" class="card w-75 my-5 m-auto">
+                <div id="leason3-q3" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <span class="q-title">שאלה 3</span>
                         <br>
                         <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-3-q.png"
                             alt="leason 2 javaScript question 1">
                     </div>
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-3-htm.png"
-                                alt="leason 2 javaScript question 1">
-                        </div>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-3-js.png"
-                                alt="leason 2 javaScript question 1">
-                        </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-3-htm.png"
+                            alt="leason 2 javaScript question 1">
+                    </div>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-3-js.png"
+                            alt="leason 2 javaScript question 1">
+                    </div>
                     <div class="card-body">
 
                         <div class="border border-success  my-5 p-5 " dir="ltr">
@@ -207,9 +228,11 @@
                             <h2>Password: 1234</h2>
                             <hr>
                             <h2 class="h1">PASSOWRD CHECKER</h2>
-                            <input id="emailinput" type="email" placeholder="Enter your email:">
-                            <input id="passowrdinput" type="password" placeholder="Enter your passowrd:">
-                            <button onclick="checkPassord()">Login</button>
+                            <input class="form-control shadow" id="emailinput" type="email"
+                                placeholder="Enter your email:">
+                            <input class="form-control shadow mt-2" id="passowrdinput" type="password"
+                                placeholder="Enter your passowrd:">
+                            <button class="btn btn-primary mt-4" onclick="checkPassord()">Login</button>
                             <script src="../works/Leason3/C/js/targil3.js"></script>
                         </div>
                     </div>
@@ -221,30 +244,31 @@
 
                 <!-- leason 3 q4 -->
 
-                <div id="leason3-q4" class="card w-75 my-5 m-auto">
+                <div id="leason3-q4" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <span class="q-title">שאלה 4</span>
                         <br>
                         <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-4-q.png"
                             alt="leason 3 javaScript question 4">
                     </div>
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-4-htm.png"
-                                alt="leason 3 javaScript question 4">
-                        </div>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-4-js.png"
-                                alt="leason 3 javaScript question 4">
-                        </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-4-htm.png"
+                            alt="leason 3 javaScript question 4">
+                    </div>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-4-js.png"
+                            alt="leason 3 javaScript question 4">
+                    </div>
                     <div class="card-body">
 
 
                         <div class="border border-success  my-5 p-5 " dir="ltr">
                             <h1>BMI CALCULATOR</h1>
-                            <input type="number" id="weight" placeholder="weight (kg)" />
-                            <input type="number" id="height" placeholder="height (cm)" />
-                            <button onclick="calculate()">Calculate</button>
+                            <input class="form-control shadow" type="number" id="weight" placeholder="weight (kg)" />
+                            <input class="form-control shadow mt-2" type="number" id="height"
+                                placeholder="height (cm)" />
+                            <button class="btn btn-primary mt-4" onclick="calculate()">Calculate</button>
                             <p id="bmiResult"></p>
                             <script src="../works/Leason3/E/js/targil4.js"></script>
                         </div>
@@ -257,31 +281,31 @@
 
                 <!-- leason 3 q5 -->
 
-                <div id="leason3-q5" class="card w-75 my-5 m-auto">
+                <div id="leason3-q5" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <span class="q-title">שאלה 5</span>
                         <br>
                         <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-5-q.png"
                             alt="leason 2 javaScript question 1">
                     </div>
-                        <h5 class="card-title">פיתרון</h5>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-7-htm.png"
-                                alt="leason 2 javaScript question 1">
-                        </div>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-7-js.png"
-                                alt="leason 2 javaScript question 1">
-                        </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-7-htm.png"
+                            alt="leason 2 javaScript question 1">
+                    </div>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/Leason3/leason3images/leason-3-7-js.png"
+                            alt="leason 2 javaScript question 1">
+                    </div>
                     <div class="card-body">
 
 
                         <div class="border border-success  my-5 p-5 " dir="ltr">
-                            <img style="width: 500px; height: 260px; object-fit: cover;" id="img" class="img-fluid"
-                                src="../works/Leason3/D/Flag_of_Tunisia.svg.png" alt="">
+                            <img style="width: 500px; height: 260px; object-fit: cover;" id="img"
+                                class="img-fluid shadow" src="../works/Leason3/D/Flag_of_Tunisia.svg.png" alt="">
                         </div>
                         <h1>Raise flag</h1>
-                        <select onchange="chagedFlag()" name="flag" id="userValue">
+                        <select class="form-select" onchange="chagedFlag()" name="flag" id="userValue">
                             <option value="tunisia">tunisia</option>
                             <option value="swiss">swiss</option>
                         </select>
@@ -292,6 +316,18 @@
                             alt="leason 2 javaScript question 1">
                     </div>
                 </div>
+
+                <div class="row w-100" dir="ltr">
+                    <div class="col-6">
+                        <a href="./leason4.html"><button class="btn btn-outline-light w-100">הבא</button>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="./leason2.html"><button class="btn btn-outline-light w-100">אחורה</button>
+                        </a>
+                    </div>
+                </div>
+
             </section>
         </div>
     </main>

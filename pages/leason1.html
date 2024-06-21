@@ -82,6 +82,16 @@
                                 שיעור 10
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason11.html" role="button">
+                                שיעור 11
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leason12.html" role="button">
+                                שיעור 12
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -92,6 +102,9 @@
     <main class=" gx-0 p-0 bg-dark">
         <div class="container-lg">
 
+
+
+
             <section id="main-section m-auto">
                 <img class="w-100 mt-5" src="../What-Is-JavaScript-Used-For.avif" alt="What-Is-JavaScript-Used-For">
                 <a href="#top">
@@ -99,6 +112,17 @@
                 </a>
             </section>
 
+
+            <div class="row w-100" dir="ltr">
+                <div class="col-6">
+                    <a href="./leason2.html"><button class="btn btn-outline-light w-100">הבא</button>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="../index.html"><button class="btn btn-outline-light w-100">בית</button>
+                    </a>
+                </div>
+            </div>
 
             <!-- leason 1 -->
             <section class="text-center" id="leason1">
@@ -108,7 +132,7 @@
 
 
                 <!-- leason 1 q1 -->
-                <div id="leason1-q1" class="card w-75 my-5 m-auto">
+                <div id="leason1-q1" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <h2 class="card-title">שאלה 1</h2>
                         <br>
@@ -140,7 +164,7 @@
 
                 <!-- leason 1 q2 -->
 
-                <div id="leason1-q2" class="card w-75 m-auto my-5">
+                <div id="leason1-q2" class="card w-100 m-auto my-5">
                     <div class="card-header">
                         <h2 class="card-title">שאלה 2</h2>
                         <br>
@@ -170,7 +194,7 @@
 
                 <!-- leason 1 q3 -->
 
-                <div id="leason1-q3" class="card my-5 w-75 m-auto">
+                <div id="leason1-q3" class="card my-5 w-100 m-auto">
                     <div class="card-header">
                         <h4 class="card-title">שאלה 3</h4>
                         <br>
@@ -201,7 +225,7 @@
 
                 <!-- leason 1 q4 -->
 
-                <div id="leason1-q4" class="card m-auto w-75 my-5">
+                <div id="leason1-q4" class="card m-auto w-100 my-5">
                     <div class="card-header">
                         <h4 class="catr-title">שאלה 4</h4>
                         <br>
@@ -221,8 +245,8 @@
                     <div class="card-body">
                         <div class="border border-success  my-5 p-5 " dir="ltr">
                             <div class="card-img my-2">
-                                <img id="image" src="../works/Leason1/D/images/facebook.png" alt="facbook image"
-                                    width="200px">
+                                <img class="img-fluid" id="image" src="../works/Leason1/D/images/facebook.png"
+                                    alt="facbook image" width="200px">
                             </div>
                             <button id="facbook"
                                 onclick="cahngeImage('../works/Leason1/D/images/facebook.png')">Facebook</button>
@@ -247,7 +271,7 @@
 
                 <!-- leason 1 q5 -->
 
-                <div id="leason1-q5" class="card m-auto w-75">
+                <div id="leason1-q5" class="card m-auto w-100">
                     <div class="card-header">
                         <h4 class="q-title">שאלה 5</h4>
                         <br>
@@ -266,9 +290,10 @@
                             <div id="main-box">
                                 <h1>DISCOUNT CALCULATOR</h1>
                                 <label class="d-block" for="price">Price:</label>
-                                <input id="price" placeholder="Original price" type="number">
+                                <input class=" form-control" id="price" placeholder="Original price" type="number">
                                 <label class="d-block" for="discount">Discount:</label>
-                                <input placeholder="Enter discount value" type="number" id="discount">
+                                <input class="form-control" placeholder="Enter discount value" type="number"
+                                    id="discount">
                                 <button class="d-block m-auto my-2" onclick="calc()">Calculate</button>
                                 <button class="d-block m-auto my-2" onclick="reset()">Reset</button>
                                 <p id="pr"></p>
@@ -281,12 +306,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row w-100" dir="ltr">
+                    <div class="col-6">
+                        <a href="./leason2.html"><button class="btn btn-outline-light w-100">הבא</button>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="../index.html"><button class="btn btn-outline-light w-100">בית</button>
+                        </a>
+                    </div>
+                </div>
             </section>
-
+        </div>
     </main>
-
-    </div>
-
     <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row border border-danger-subtle">
@@ -365,6 +398,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    </body>
+</body>
 
 </html>
