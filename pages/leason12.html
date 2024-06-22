@@ -435,21 +435,15 @@
                             </div>
                             <script>
                                 function fresh(num1, num2) {
-                                    let error = 'somthing wrong please try another numbers'
                                     let nwwarr = []
-                                    let start = 0;
-                                    let end = 0;
                                     if (num1 < num2) {
-                                        start = num1
-                                        end = num2
+                                        for (let i = num1; i < num2; i++) {
+                                            nwwarr.push(i)
+                                        }
                                     } else if (num1 > num2) {
-                                        start = num2
-                                        end = num1
-                                    } else {
-                                        return error
-                                    }
-                                    for (let i = start; i <= end; i++) {
-                                        nwwarr.push(i)
+                                        for (let i = num2; i < num1; i++) {
+                                            nwwarr.push(i)
+                                        }
                                     }
                                     return nwwarr
                                 }
@@ -459,6 +453,8 @@
                                     ;
                                 ;
                             </script>
+
+
                         </div>
                     </div>
                 </div>
@@ -493,14 +489,13 @@
                             <script>
                                 function random(arr) {
                                     let newaar = []
-
                                     for (let i = 0; i < arr.length; i++) {
-                                        newaar.push(Math.ceil((Math.random() * 10)))
+                                        newaar.push(Math.floor((Math.random() * 10) + 1))
+                                        newaar.push(Math.ceil(Math.random() * 10))
                                     }
                                     return newaar
                                 }
                                 document.getElementById('random').innerHTML = `[${random([,])}]`;
-
                             </script>
                         </div>
                     </div>
@@ -599,16 +594,16 @@
                     </div>
                 </div>
 
-            <div class="row w-100" dir="ltr">
-                <div class="col-6">
-                    <a href="./leason13.html"><button class="btn btn-primary w-100">הבא</button>
-                    </a>
+                <div class="row w-100" dir="ltr">
+                    <div class="col-6">
+                        <a href="./leason13.html"><button class="btn btn-primary w-100">הבא</button>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="./leason11.html"><button class="btn btn-primary w-100">אחורה</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <a href="./leason11.html"><button class="btn btn-primary w-100">אחורה</button>
-                    </a>
-                </div>
-            </div>
 
             </section>
         </div>
