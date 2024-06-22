@@ -686,435 +686,431 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group">
-                                    <input oninput="calculatePower()" placeholder="הוסף מספר ראשון"
-                                        class="form-control m-2" type="number" id="num-1"></input>
-                                    <input oninput="calculatePower()" placeholder="הוסף מספר שני"
-                                        class="form-control m-2" type="number" id="num-2"></input>
-                                    <br>
+                                        <input oninput="calculatePower()" placeholder="הוסף מספר ראשון"
+                                            class="form-control m-2" type="number" id="num-1"></input>
+                                        <input oninput="calculatePower()" placeholder="הוסף מספר שני"
+                                            class="form-control m-2" type="number" id="num-2"></input>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <p id="rlsut"></p>
+                                    </div>
+
                                 </div>
                             </div>
 
+                            <script>
+                                function calculatePower() {
+                                    var num1 = +document.getElementById('num-1').value;
+                                    var num2 = +document.getElementById('num-2').value;
+                                    var rlsut = Math.pow(num1, num2);
+                                    document.getElementById('rlsut').innerText = rlsut
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- leason 8-2 q3 -->
+
+                <div id="leason-82-q3" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 3</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה המקבלת מספר ומציגה שורת כוכבים באורך המספר
+                        </h4>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-2-3-js.png"
+                            alt="leason 8-2 javaScript js question 3">
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="border border-success my-5 w-100 mx-auto">
+                            <div class="row ">
+                                <div class="col-6 m-auto my-4">
+                                    <input placeholder="כתוב סיסמה" oninput="convertToStars(this)" id="convert-to-stars"
+                                        type="text" class="form-control">
+                                </div>
+                            </div>
+                            <script>
+                                function convertToStars(input) {
+                                    let inputValue = input.value;
+                                    let starsString = '';
+                                    for (let i = 0; i < inputValue.length; i++) {
+                                        starsString += '*';
+                                    }
+                                    input.value = starsString;
+                                    return starsString
+                                }
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- leason 8-2 q4 -->
+
+                <div id="leason-82-q4" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 4</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה המקבלת שתי מספרים ומדפיסה לקונסולה את כל המספרי השלמים בין שני המספרים
+                        </h4>
+                    </div>
+
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-4-js.png"
+                            alt="leason 8 javaScript js question 4">
+                    </div>
+
+                    <div class="card-body">
+                        <div class="border border-success my-5 w-100 mx-auto">
                             <div class="row">
                                 <div class="col">
-                                    <p id="rlsut"></p>
+                                    <p id="completeNum"></p>
                                 </div>
-
+                                <div class="col">
+                                    <p id="completeNum2"></p>
+                                </div>
                             </div>
-                        </div>
 
-                        <script>
-                            function calculatePower() {
-                                var num1 = +document.getElementById('num-1').value;
-                                var num2 = +document.getElementById('num-2').value;
-                                var rlsut = Math.pow(num1, num2);
-                                document.getElementById('rlsut').innerText = rlsut
-                            }
-                        </script>
-                    </div>
-                </div>
-        </div>
-
-
-        <!-- leason 8-2 q3 -->
-
-        <div id="leason-82-q3" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 3</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה המקבלת מספר ומציגה שורת כוכבים באורך המספר
-                </h4>
-            </div>
-            <h5 class="card-title">פיתרון</h5>
-            <div class="card-img my-2">
-                <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-2-3-js.png"
-                    alt="leason 8-2 javaScript js question 3">
-            </div>
-
-            <div class="card-body">
-
-                <div class="border border-success my-5 w-100 mx-auto">
-                    <div class="row ">
-                        <div class="col-6 m-auto my-4">
-                            <input placeholder="כתוב סיסמה" oninput="convertToStars(this)" id="convert-to-stars"
-                                type="text" class="form-control">
-                        </div>
-                    </div>
-                    <script>
-                        function convertToStars(input) {
-                            let inputValue = input.value;
-                            let starsString = '';
-                            for (let i = 0; i < inputValue.length; i++) {
-                                starsString += '*';
-                            }
-                            input.value = starsString;
-                            return starsString
-                        }
-                    </script>
-                </div>
-
-            </div>
-        </div>
-
-
-
-
-        <!-- leason 8-2 q4 -->
-
-        <div id="leason-82-q4" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 4</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה המקבלת שתי מספרים ומדפיסה לקונסולה את כל המספרי השלמים בין שני המספרים
-                </h4>
-            </div>
-
-            <h5 class="card-title">פיתרון</h5>
-            <div class="card-img my-2">
-                <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-4-js.png"
-                    alt="leason 8 javaScript js question 4">
-            </div>
-
-            <div class="card-body">
-                <div class="border border-success my-5 w-100 mx-auto">
-                    <div class="row">
-                        <div class="col">
-                            <p id="completeNum"></p>
-                        </div>
-                        <div class="col">
-                            <p id="completeNum2"></p>
-                        </div>
-                    </div>
-
-                    <script>
-                        function compNum(num1, num2) {
-                            if (num1 < num2) {
-                                for (let i = num1; i <= num2; i++) {
-                                    if (i % 2 == 0)
-                                        document.getElementById('completeNum').innerHTML += ` <br>${i}`
+                            <script>
+                                function compNum(num1, num2) {
+                                    if (num1 < num2) {
+                                        for (let i = num1; i <= num2; i++) {
+                                            if (i % 2 == 0)
+                                                document.getElementById('completeNum').innerHTML += ` <br>${i}`
+                                        }
+                                    } else {
+                                        for (let i = num1; i >= num2; i--) {
+                                            if (i % 2 == 0)
+                                                document.getElementById('completeNum2').innerHTML += ` <br>${i}`
+                                        }
+                                    }
                                 }
-                            } else {
-                                for (let i = num1; i >= num2; i--) {
-                                    if (i % 2 == 0)
-                                        document.getElementById('completeNum2').innerHTML += ` <br>${i}`
+                                compNum(10, 20)
+                                compNum(20, 10)
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- leason 8-2 q5 -->
+
+                <div id="leason-82-q5" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 5</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה 3 מספרים ומחזירה את סכומם
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">פיתרון</h5>
+                        <div class="card-img my-2">
+                            <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-5-js.png"
+                                alt="leason 8 javaScript js question 5">
+                        </div>
+
+
+                        <div class="border border-success my-5 w-100 mx-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="log3shankYaJim"></p>
+                                </div>
+                            </div>
+                            <script>
+                                function sum3Numbers(num1, num2, num3) {
+                                    return num1 + num2 + num3
                                 }
-                            }
-                        }
-                        compNum(10, 20)
-                        compNum(20, 10)
-
-                    </script>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!-- leason 8-2 q5 -->
-
-        <div id="leason-82-q5" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 5</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה  3 מספרים ומחזירה את סכומם
-                </h4>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">פיתרון</h5>
-                <div class="card-img my-2">
-                    <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-5-js.png"
-                        alt="leason 8 javaScript js question 5">
-                </div>
-
-
-                <div class="border border-success my-5 w-100 mx-auto">
-                    <div class="row">
-                        <div class="col">
-                            <p id="log3shankYaJim"></p>
+                                document.getElementById('log3shankYaJim').innerHTML = sum3Numbers(2, 2, 3)
+                            </script>
                         </div>
                     </div>
-                    <script>
-                        function sum3Numbers(num1, num2, num3) {
-                            return num1 + num2 + num3
-                        }
-                        document.getElementById('log3shankYaJim').innerHTML = sum3Numbers(2, 2, 3)
-                    </script>
                 </div>
-            </div>
-        </div>
 
 
 
 
-        <!-- leason 8-2 q6 -->
+                <!-- leason 8-2 q6 -->
 
-        <div id="leason-82-q6" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 6</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה המקבלת 3 מספרים ומחזירה את הממוצע
-                </h4>
-            </div>
-            <h5 class="card-title">פיתרון</h5>
-            <div class="card-img my-2">
-                <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-6-js.png"
-                    alt="leason 8-2 javaScript js question 6">
-            </div>
-            <div class="card-body">
+                <div id="leason-82-q6" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 6</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה המקבלת 3 מספרים ומחזירה את הממוצע
+                        </h4>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-6-js.png"
+                            alt="leason 8-2 javaScript js question 6">
+                    </div>
+                    <div class="card-body">
 
-                <div class="border border-success my-5 w-100 mx-auto">
-                    <div class="row">
-                        <div class="col">
-                            <p id="mmotsa3"></p>
+                        <div class="border border-success my-5 w-100 mx-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="mmotsa3"></p>
+                                </div>
+                            </div>
+                            <script>
+                                function avaraeFunc(num1, num2, num3) {
+                                    return (num1 + num2 + num3) / 3
+                                }
+                                document.getElementById('mmotsa3').innerText = Math.floor(avaraeFunc(90, 80, 95))
+
+                            </script>
                         </div>
                     </div>
-                    <script>
-                        function avaraeFunc(num1, num2, num3) {
-                            return (num1 + num2 + num3) / 3
-                        }
-                        document.getElementById('mmotsa3').innerText = Math.floor(avaraeFunc(90, 80, 95))
-
-                    </script>
                 </div>
-            </div>
-        </div>
 
 
 
 
-        <!-- leason 8-2 q7 -->
+                <!-- leason 8-2 q7 -->
 
-        <div id="leason-82-q7" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 7</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה המקבלת מחרוזת ומחזירה את אורך המחרוזת
-                </h4>
-            </div>
-            <h5 class="card-title">פיתרון</h5>
-            <div class="card-img my-2">
-                <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-7-js.png"
-                    alt="leason 8 javaScript js question 7">
-            </div>
-            <div class="card-body">
+                <div id="leason-82-q7" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 7</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה המקבלת מחרוזת ומחזירה את אורך המחרוזת
+                        </h4>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-7-js.png"
+                            alt="leason 8 javaScript js question 7">
+                    </div>
+                    <div class="card-body">
 
 
-                <div class="border border-success my-5 w-100 mx-auto">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p id="stringStr"></p>
+                        <div class="border border-success my-5 w-100 mx-auto">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p id="stringStr"></p>
+                                </div>
+                            </div>
+                            <script>
+                                function strLength(str) {
+                                    return str.length
+                                }
+                                strLength('anis')
+                                document.getElementById('stringStr').innerText = strLength('anis');
+                            </script>
                         </div>
                     </div>
-                    <script>
-                        function strLength(str) {
-                            let newst = ''
-                            for (i = 0; i < str.length; i++) {
-                                newst += str[i]
-                            }
-                            return newst.length
-                        }
-                        strLength('anis')
-                        document.getElementById('stringStr').innerText = strLength('anis');
-                    </script>
                 </div>
-            </div>
-        </div>
 
 
 
 
-        <!-- leason 8-2 q8 -->
+                <!-- leason 8-2 q8 -->
 
-        <div id="leason-82-q8" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 8</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה המקבלת מחרוזת ומחזירה true אם המחרוזת מכילה האות 't' מחזירה false
-                </h4>
-            </div>
-            <h5 class="card-title">פיתרון</h5>
-            <div class="card-img my-2">
-                <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-8-js.png"
-                    alt="leason 8-2 javaScript js question 8">
-            </div>
-
-            <div class="card-body">
-                <div class="border border-success my-5 w-100 mx-auto">
-                    <div class="row">
-                        <div class="col ">
-                            <p id="rsolt"></p>
-                            <p id="rsolt2"></p>
-                        </div>
+                <div id="leason-82-q8" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 8</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה המקבלת מחרוזת ומחזירה true אם המחרוזת מכילה האות 't' מחזירה false
+                        </h4>
                     </div>
-                    <script>
-                        function checkT(str) {
-                            for (i = 0; i < str.length; i++) {
-                                if (str[i] === 't' || str[i] === 'T') return true
-                            }
-                            return false
-                        }
-                        checkT('Jamil')
-                        checkT('itamar')
-
-                        document.getElementById('rsolt').innerText = checkT('Jamil')
-                        document.getElementById('rsolt2').innerText = checkT('itamar')
-                    </script>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!-- leason 8-2 q9 -->
-
-        <div id="leason-82-q9" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 9</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה שמקבלת מחרוזת של מחירים ומחזירה מערך חדש המכיל את המיחירים לאחר חנחה של 20%
-                </h4>
-            </div>
-            <h5 class="card-title">פיתרון</h5>
-            <div class="card-img my-2">
-                <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-9-js.png"
-                    alt="leason 8-2 javaScript js question 9">
-            </div>
-            <div class="card-body">
-
-
-                <div class="border border-success my-5 w-100 mx-auto">
-                    <div class="row">
-                        <div class="col">
-                            <p id="santensL"></p>
-                        </div>
-                    </div>
-                    <script>
-                        function santensL(str) {
-                            let arr = [];
-                            for (let i = 0; i < str.length; i++) {
-                                arr += str[i]
-                            }
-                            return arr.split(' ')
-                        }
-                        santensL('jamil haifa anis umalfahm')
-                        document.getElementById('santensL').innerText = santensL('jamil haifa anis umalfahm')
-                    </script>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <!-- leason 8-2 q10 -->
-
-        <div id="leason-82-q10" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 10</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה המקבלת 2 מספרים ובודקת האם שניהם מתחלקים ב3 ללא שארית
-                </h4>
-            </div>
-            <h5 class="card-title">פיתרון</h5>
-            <div class="card-img my-2">
-                <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-10-js.png"
-                    alt="leason 8-2 javaScript js question 10">
-            </div>
-            <div class="card-body">
-
-
-                <div class="border border-success my-5 w-100 m-auto">
-                    <div class="row">
-                        <div class="col">
-                            <p id="ifDevide"></p>
-                            <p id="ifDevide2"></p>
-                        </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-8-js.png"
+                            alt="leason 8-2 javaScript js question 8">
                     </div>
 
-                    <script>
-                        function ifDevide(num1, num2) {
-                            if (num1 % 3 === 0 && num2 % 3 === 0) {
-                                return true
-                            }
-                            return false
-                        }
+                    <div class="card-body">
+                        <div class="border border-success my-5 w-100 mx-auto">
+                            <div class="row">
+                                <div class="col ">
+                                    <p id="rsolt"></p>
+                                    <p id="rsolt2"></p>
+                                </div>
+                            </div>
+                            <script>
+                                function checkT(str) {
+                                    for (i = 0; i < str.length; i++) {
+                                        if (str[i] === 't' || str[i] === 'T') return true
+                                    }
+                                    return false
+                                }
+                                checkT('Jamil')
+                                checkT('itamar')
 
-
-                        document.getElementById('ifDevide').innerHTML += `<br>${ifDevide(3, 6)}`;
-                        document.getElementById('ifDevide2').innerText += ifDevide(2, 9);
-
-                    </script>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- leason 8-2 q11 -->
-
-        <div id="leason-82-q11" class="card w-100 my-5 m-auto">
-            <div class="card-header">
-                <h2 class="card-title">שאלה 11</h2>
-                <br>
-                <h4 class="text-danger card-text">
-                    כתוב פונקציה המקבלת 2 מספרים ובודקת האם הראשון הוא זוגי והשני אי זוגי אם כן תחזיר true אם לא
-                    תחזיר false
-                </h4>
-            </div>
-            <h5 class="card-title">פיתרון</h5>
-            <div class="card-img my-2">
-                <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-11-js.png"
-                    alt="leason 8-2 javaScript js question 11">
-            </div>
-            <div class="card-body">
-
-
-                <div class="border border-success my-5 w-100 m-auto">
-                    <div class="row">
-                        <div class="col">
-                            <p id="isEvenOrNot"></p>
-                            <p id="isEvenOrNot2"></p>
+                                document.getElementById('rsolt').innerText = checkT('Jamil')
+                                document.getElementById('rsolt2').innerText = checkT('itamar')
+                            </script>
                         </div>
                     </div>
-
-                    <script>
-                        function isEvenOrNot(num1, num2) {
-                            if (num1 % 2 === 0 && num2 % 2 === 1) {
-                                return true
-                            }
-                            return false
-                        }
-
-
-                        document.getElementById('isEvenOrNot').innerText = isEvenOrNot(6, 5);
-                        document.getElementById('isEvenOrNot').innerText = isEvenOrNot(6, 2);
-                    </script>
                 </div>
-            </div>
-        </div>
 
-        <div class="row w-100" dir="ltr">
-            <div class="col-6">
-                <a href="./leason9.html"><button class="btn btn-primary w-100">הבא</button>
-                </a>
-            </div>
-            <div class="col-6">
-                <a href="./leason7.html"><button class="btn btn-primary w-100">אחורה</button>
-                </a>
-            </div>
-        </div>
-        </section>
+
+
+
+                <!-- leason 8-2 q9 -->
+
+                <div id="leason-82-q9" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 9</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה שמקבלת מחרוזת של מחירים ומחזירה מערך חדש המכיל את המיחירים לאחר חנחה של 20%
+                        </h4>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-9-js.png"
+                            alt="leason 8-2 javaScript js question 9">
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="border border-success my-5 w-100 mx-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="santensL"></p>
+                                </div>
+                            </div>
+                            <script>
+                                function santensL(str) {
+                                    let arr = [];
+                                    for (let i = 0; i < str.length; i++) {
+                                        arr += str[i]
+                                    }
+                                    return arr.split(' ')
+                                }
+                                santensL('jamil haifa anis umalfahm')
+                                document.getElementById('santensL').innerText = santensL('jamil haifa anis umalfahm')
+                            </script>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- leason 8-2 q10 -->
+
+                <div id="leason-82-q10" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 10</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה המקבלת 2 מספרים ובודקת האם שניהם מתחלקים ב3 ללא שארית
+                        </h4>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-10-js.png"
+                            alt="leason 8-2 javaScript js question 10">
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="border border-success my-5 w-100 m-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="ifDevide"></p>
+                                    <p id="ifDevide2"></p>
+                                </div>
+                            </div>
+
+                            <script>
+                                function ifDevide(num1, num2) {
+                                    if (num1 % 3 === 0 && num2 % 3 === 0) {
+                                        return true
+                                    }
+                                    return false
+                                }
+
+
+                                document.getElementById('ifDevide').innerHTML += `<br>${ifDevide(3, 6)}`;
+                                document.getElementById('ifDevide2').innerText += ifDevide(2, 9);
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- leason 8-2 q11 -->
+
+                <div id="leason-82-q11" class="card w-100 my-5 m-auto">
+                    <div class="card-header">
+                        <h2 class="card-title">שאלה 11</h2>
+                        <br>
+                        <h4 class="text-danger card-text">
+                            כתוב פונקציה המקבלת 2 מספרים ובודקת האם הראשון הוא זוגי והשני אי זוגי אם כן תחזיר true אם לא
+                            תחזיר false
+                        </h4>
+                    </div>
+                    <h5 class="card-title">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason8/leason8images/leason-8-2-11-js.png"
+                            alt="leason 8-2 javaScript js question 11">
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="border border-success my-5 w-100 m-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <p id="isEvenOrNot"></p>
+                                    <p id="isEvenOrNot2"></p>
+                                </div>
+                            </div>
+
+                            <script>
+                                function isEvenOrNot(num1, num2) {
+                                    if (num1 % 2 === 0 && num2 % 2 === 1) {
+                                        return true
+                                    }
+                                    return false
+                                }
+
+
+                                document.getElementById('isEvenOrNot').innerText = isEvenOrNot(6, 5);
+                                document.getElementById('isEvenOrNot').innerText = isEvenOrNot(6, 2);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row w-100" dir="ltr">
+                    <div class="col-6">
+                        <a href="./leason9.html"><button class="btn btn-primary w-100">הבא</button>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="./leason7.html"><button class="btn btn-primary w-100">אחורה</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -1126,7 +1122,7 @@
             <div class="row border border-danger-subtle">
                 <div class="col-md-4">
                     <h5 class="mb-4">מצגות לשיעורי JavaScript</h5>
-    
+
                     <p>שיעור 1:
                         <br>
                         היכרות עם ההיסטוריה של javaScript
@@ -1156,7 +1152,7 @@
                         <a href="./presentations/js4-loops.pdf" download="js3-conditions.pdf">מצגת שיעור 4</a>
                         <hr>
                     </p>
-    
+
                     <p>
                         שיעור 5:
                         <br>
@@ -1165,7 +1161,7 @@
                         <a href="./presentations/js5-arrays.pdf" download="js3-conditions.pdf">מצגת שיעור 5</a>
                         <hr>
                     </p>
-    
+
                     <p>
                         שיעור 6:
                         <br>
@@ -1174,16 +1170,16 @@
                         <a href="./presentations/js6-tools.pdf" download="js3-conditions.pdf">מצגת שיעור 6</a>
                         <hr>
                     </p>
-    
+
                     <p>
                         שיעור 7:
                         <br>
-    
+
                         <br>
                         <a href="./presentations/js7-bom.pdf" download="js3-conditions.pdf">מצגת שיעור 7</a>
                         <hr>
                     </p>
-    
+
                     <p>
                         שיעור 8:
                         <br>
@@ -1192,7 +1188,7 @@
                         <a href="./presentations/js8-functions.pdf" download="js3-conditions.pdf">מצגת שיעור 8</a>
                         <hr>
                     </p>
-    
+
                     <p>
                         שיעור 9:
                         <br>
@@ -1201,7 +1197,7 @@
                         <a href="./presentations/js9-exercise.pdf" download="js3-conditions.pdf">מצגת שיעור 9</a>
                         <hr>
                     </p>
-    
+
                     <p>
                         שיעור 10:
                         <br>
