@@ -107,13 +107,13 @@
             </section>
 
 
-            <div class="row w-100" dir="ltr">
+            <div class="row w-100 my-5" dir="ltr">
                 <div class="col-6">
-                    <a href="./leason12.html"><button class="btn btn-outline-light w-100">הבא</button>
+                    <a href="./leason12.html"><button class="btn btn-primary w-100">הבא</button>
                     </a>
                 </div>
                 <div class="col-6">
-                    <a href="./leason10.html"><button class="btn btn-outline-light w-100">אחורה</button>
+                    <a href="./leason10.html"><button class="btn btn-primary w-100">אחורה</button>
                     </a>
                 </div>
             </div>
@@ -126,39 +126,125 @@
 
 
                 <!-- leason 10 q1 -->
-                <div id="leason10-q1" class="card w-75 my-5 m-auto">
+                <div id="leason10-q1" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <h2 class="card-title">שאלה 1</h2>
                         <br>
                         <div>
-                            <img class="img-fluid" src="../works/Leason10/leason10images/leason11-1.png"
+                            <img class="img-fluid" src="../works/Leason11/leason11images/leason11-1.png"
                                 alt="html image question 1">
                         </div>
                     </div>
                     <h5 class="card-title">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid" src="../workkjs/Leason10/leason10images/leason10-1-html.png"
+                        <img class="img-fluid" src="../works/Leason11/leason11images/leason11-1-js-1.png"
                             alt="js image question 1">
                     </div>
 
                     <div class="card-body">
-                        <div class="border border-success  my-5 p-5 ">
+                        <div class="border border-success  my-5 p-5 " dir="ltr">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <h3 class="display-3 text-danger">Guess the Number</h1>
+                                        <p>You have 5 attempts to guess number (1-10)</p>
+                                        <label for="">your guess:</label>
+                                        <input id="inp" type="number" class="form-control">
+                                        <button id="btn" type="button" onclick="check()"
+                                            class="btn btn-outline-success">CHECK</button>
+                                </div>
+                                <div class="col-sm-5">
+                                    <h5 c="display-3"></h5>
+                                    <div class="col-sm-7" id="result">
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
-                    </div>
-                </div>
-                <div class="row w-100" dir="ltr">
-                    <div class="col-6">
-                        <a href="./leason12.html"><button class="btn btn-outline-light w-100">הבא</button>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="./leason10.html"><button class="btn btn-outline-light w-100">אחורה</button>
-                        </a>
-                    </div>
-                </div>
+                        <script>
+                            let counter = 5;
+                            let random = Math.floor(Math.random() * 10) + 1;
 
-            </section>
+                            function check() {
+                                let userValue = +document.getElementById('inp').value;
+                                let results = document.getElementById('result');
+                                let inputBox = document.getElementById('inp');
+                                let resetButton = '<button class="btn btn-primary" onclick="resetGame()">Reset</button>';
+
+                                if (userValue > 10 || userValue < 1) {
+                                    results.innerHTML += `<p>invalid Number try another number</p><br>`;
+                                }
+                                else if (userValue != random) {
+                                    counter--;
+                                    if (counter >= 1) {
+                                        results.innerHTML += `<p>You have ${counter} attempts remaining<hr>${userValue} is too small. Try again</p><br>`;
+                                        counter = counter;
+                                    } else {
+                                        results.innerHTML = `You lost the game. The number was ${random}. you can try again by click on the reset button. good luck`;
+                                        results.innerHTML += `<div class='row'> ${resetButton} </div>`
+                                        inputBox.disabled = true;
+                                        document.getElementById("btn").disabled = true;
+                                        counter = 5;
+                                    }
+                                }
+                                else if (userValue > random) {
+                                    counter--;
+                                    if (counter <= 1) {
+                                        results.innerHTML += `<p>${userValue} is too large, Try again!</p>`;
+                                    } else {
+                                        results.innerHTML += `<p>You lost the game ^(!-!)^ The number was ${random}</p>`;
+                                        results.innerHTML += `<div class='row'> ${resetButton} </div>`
+                                        inputBox.disabled = true;
+                                        document.getElementById("btn").disabled = true;
+                                        counter = 5;
+                                    }
+                                } else {
+                                    results.innerHTML += `<p>Exellent You are won the game ${userValue} is the correct number</p>`;
+                                    results.innerHTML += `<div class='row'> ${resetButton} </div>`;
+                                    inputBox.disabled = true;
+                                    document.getElementById("btn").disabled = true;
+                                    counter = 5;
+                                }
+                            }
+
+                            function resetGame() {
+                                counter = 5;
+                                random = Math.floor(Math.random() * 10) + 1;
+                                document.getElementById('result').innerText = '';
+                                document.getElementById('inp').value = '';
+                                document.getElementById('inp').disabled = false;
+                                document.getElementById('btn').disabled = false;
+                            }
+
+                        </script>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row w-100" dir="ltr">
+            <div class="col-6">
+                <a href="./leason12.html"><button class="btn btn-primary w-100">הבא</button>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="./leason10.html"><button class="btn btn-primary w-100">אחורה</button>
+                </a>
+            </div>
+        </div>
+
+        </section>
         </div>
     </main>
 

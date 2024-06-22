@@ -110,13 +110,13 @@
             </section>
 
 
-            <div class="row w-100" dir="ltr">
+            <div class="row w-100 my-5" dir="ltr">
                 <div class="col-6">
-                    <a href="./leason7.html"><button class="btn btn-outline-light w-100">הבא</button>
+                    <a href="./leason7.html"><button class="btn btn-primary w-100">הבא</button>
                     </a>
                 </div>
                 <div class="col-6">
-                    <a href="./leason5.html"><button class="btn btn-outline-light w-100">אחורה</button>
+                    <a href="./leason5.html"><button class="btn btn-primary w-100">אחורה</button>
                     </a>
                 </div>
             </div>
@@ -130,7 +130,7 @@
 
                 <!-- leason 6 q1 -->
 
-                <div id="leason6-q1" class="card w-75 my-5 m-auto">
+                <div id="leason6-q1" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 1</span>
                         <br>
@@ -146,7 +146,7 @@
                             alt="leason 6 javaScript html question 1">
                     </div>
                     <div class="card-body">
-                        <div class="border border-success my-5 w-75 mx-auto">
+                        <div class="border border-success my-5 w-100 mx-auto">
                             <div class="targil-6">
                                 <div class=" border p-5">
                                     <span>אני</span>
@@ -189,7 +189,7 @@
 
                 <!-- leason 6 q2 -->
 
-                <div id="leason6-q2" class="card w-75 my-5 m-auto">
+                <div id="leason6-q2" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <h2 class="card-title">שאלה 2</h2>
                         <br>
@@ -204,7 +204,7 @@
                     </div>
 
                     <div class="card-body">
-                        <div class="border border-success my-5 w-75 mx-auto" dir="ltr">
+                        <div class="border border-success my-5 w-100 mx-auto" dir="ltr">
                             <input type="date" name="date" id="date">
                             <button type="button" onclick="dateinDay()">בדוק</button>
                             <p id="p"></p>
@@ -233,7 +233,7 @@
 
                 <!-- leason 6 q3 -->
 
-                <div id="leason6-q3" class="card w-75 my-5 m-auto">
+                <div id="leason6-q3" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 3</span>
                         <br>
@@ -252,11 +252,10 @@
                     </div>
 
                     <div class="card-body">
-                        <div class="border border-success my-5 w-75 mx-auto">
+                        <div class="border border-success my-5 w-100 mx-auto">
                             <div class="row-3 my-5">
-                                <div class="col-2 mx-auto">
+                                <div class="col-1 col-xl-1 col-md-1 mx-auto">
                                     <div id="red" class="rounded-circle p-5 card-img my-2 h-100 w-100"></div>
-
                                     <div id="yellow" class="rounded-circle p-5 mt-2  h-100 w-100"></div>
                                     <div id="green" class="rounded-circle p-5 mt-2  h-100 w-100"></div>
                                 </div>
@@ -305,7 +304,7 @@
 
                 <!-- leason 6 q4 -->
 
-                <div id="leason6-q4" class="card w-75 my-5 m-auto">
+                <div id="leason6-q4" class="card w-100 my-5 m-auto">
                     <div class="card-header">
                         <span class="card-title">שאלה 4</span>
                         <br>
@@ -321,66 +320,66 @@
                     </div>
 
                     <div class="card-body">
-                        <div class="border border-success my-5 h-100 p-5 w-75 mx-auto">
-                            <div class="image-container p-5 h-100">
-                                <img id="image" class="img-thumbnail w-100"
-                                    src="../works/leason6/leason6images/imgs/3.jpeg" alt="Image loop">
-                                <label id="seconds-input" for="inputSeconds">
+                        <div class="border border-success my-5 h-100 p-5 w-100 mx-auto">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 m-auto ">
+                                    <div class="card-img">
+                                        <img id="image" class="img-fluid w-100"
+                                            src="../works/leason6/leason6images/imgs/3.jpeg" alt="Image loop">
+                                    </div>
+                                    <label id="seconds-input" for="inputSeconds">
 
-                                </label>
-                                <input oninput="changeImage()" id="inputSeconds" type="number" class="m-2"
-                                    placeholder="בחר כמה שניות התמונה תתחלף">
-
+                                    </label>
+                                    <input oninput="changeImage()" id="inputSeconds" type="number"
+                                        class="form-control m-2" placeholder="בחר כמה שניות התמונה תתחלף">
+                                </div>
                             </div>
-                            <script>
-
-                                let images = [
-                                    '../works/leason6/leason6images/imgs/1.jpeg',
-                                    '../works/leason6/leason6images/imgs/2.jpeg',
-                                    '../works/leason6/leason6images/imgs/3.jpeg',
-                                    '../works/leason6/leason6images/imgs/4.jpeg',
-                                ];
-                                let currentImageIndex = 0;
-                                function changeImage() {
-                                    let inputSeconds = +document.getElementById('inputSeconds').value;
-                                    if (isNaN(inputSeconds) || inputSeconds <= 0) {
-                                        document.querySelector("#seconds-input").innerText = "בחר שניה 1 , שניות 2 , שניות 3 , שניות 4";
-                                        return;
-                                    }
-
-                                    let imgElement = document.getElementById('image');
-
-                                    imgElement.src = images[currentImageIndex];
-                                    currentImageIndex = (currentImageIndex + 1) % images.length;
-
-                                    setTimeout(changeImage, inputSeconds * 1000);
-                                }
-                                changeImage();
-                            </script>
-
-                            </script>
                         </div>
+                        <script>
+                            let images = [
+                                '../works/leason6/leason6images/imgs/1.jpeg',
+                                '../works/leason6/leason6images/imgs/2.jpeg',
+                                '../works/leason6/leason6images/imgs/3.jpeg',
+                                '../works/leason6/leason6images/imgs/4.jpeg',
+                            ];
+                            let currentImageIndex = 0;
+                            function changeImage() {
+                                let inputSeconds = +document.getElementById('inputSeconds').value;
+                                if (isNaN(inputSeconds) || inputSeconds <= 0) {
+                                    document.querySelector("#seconds-input").innerText = "בחר שניה ";
+                                    return;
+                                }
+
+                                let imgElement = document.getElementById('image');
+
+                                imgElement.src = images[currentImageIndex];
+                                currentImageIndex = (currentImageIndex + 1) % images.length;
+
+                                setTimeout(changeImage, inputSeconds * 1000);
+                            }
+                            changeImage();
+                        </script>
+
+                        </script>
                     </div>
                 </div>
+        </div>
 
 
+        <div class="row w-100" dir="ltr">
+            <div class="col-6">
+                <a href="./leason7.html"><button class="btn btn-primary w-100">הבא</button>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="./leason5.html"><button class="btn btn-primary w-100">אחורה</button>
+                </a>
+            </div>
+        </div>
 
-                <div class="row w-100" dir="ltr">
-                    <div class="col-6">
-                        <a href="./leason7.html"><button class="btn btn-outline-light w-100">הבא</button>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="./leason5.html"><button class="btn btn-outline-light w-100">אחורה</button>
-                        </a>
-                    </div>
-                </div>
-
-            </section>
+        </section>
         </div>
     </main>
-
-
 
 
 
@@ -389,7 +388,7 @@
             <div class="row border border-danger-subtle">
                 <div class="col-md-4">
                     <h5 class="mb-4">מצגות לשיעורי JavaScript</h5>
-
+    
                     <p>שיעור 1:
                         <br>
                         היכרות עם ההיסטוריה של javaScript
@@ -419,7 +418,7 @@
                         <a href="./presentations/js4-loops.pdf" download="js3-conditions.pdf">מצגת שיעור 4</a>
                         <hr>
                     </p>
-
+    
                     <p>
                         שיעור 5:
                         <br>
@@ -428,7 +427,7 @@
                         <a href="./presentations/js5-arrays.pdf" download="js3-conditions.pdf">מצגת שיעור 5</a>
                         <hr>
                     </p>
-
+    
                     <p>
                         שיעור 6:
                         <br>
@@ -437,23 +436,77 @@
                         <a href="./presentations/js6-tools.pdf" download="js3-conditions.pdf">מצגת שיעור 6</a>
                         <hr>
                     </p>
-
+    
                     <p>
                         שיעור 7:
                         <br>
-
+    
                         <br>
-                        <a href="./presentations/js6-tools.pdf" download="js3-conditions.pdf">מצגת שיעור 7</a>
+                        <a href="./presentations/js7-bom.pdf" download="js3-conditions.pdf">מצגת שיעור 7</a>
+                        <hr>
+                    </p>
+    
+                    <p>
+                        שיעור 8:
+                        <br>
+                        מערכים ופונקציות
+                        <br>
+                        <a href="./presentations/js8-functions.pdf" download="js3-conditions.pdf">מצגת שיעור 8</a>
+                        <hr>
+                    </p>
+    
+                    <p>
+                        שיעור 9:
+                        <br>
+                        תרגול
+                        <br>
+                        <a href="./presentations/js9-exercise.pdf" download="js3-conditions.pdf">מצגת שיעור 9</a>
+                        <hr>
+                    </p>
+    
+                    <p>
+                        שיעור 10:
+                        <br>
+                        סיכום
+                        <br>
+                        <a href="./presentations/js10-summary.pdf" download="js3-conditions.pdf">מצגת שיעור 10</a>
                         <hr>
                     </p>
                 </div>
-                <div class="row mt-5 m-auto p-5 border-top border-danger">
-                    <div class="col text-center">
-                        <p class="mb-0">&copy; Anis mhamid כל הזכויות שמורות &#169; 2024</p>
-                    </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">מקורות וקישורים נוספים</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN
+                                JavaScript Documentation</a>
+                        </li>
+                        <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a>
+                        </li>
+                        <li>
+                            <a href="https://javascript.info/" target="_blank">JavaScript.info</a>
+                        </li>
+                        <li>
+                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                                target="_blank">bootstrap Docs</a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">קשר</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: anesnhamed1@gmail.com</li>
+                        <li>Phone: +972 538346915</li>
+                        <li>Address: Ein al derwa Street, umm al fahm, israel</li>
+                        <li>
+                            <iframe class="ratio"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26909.473146113032!2d35.17182356000711!3d32.53458190184413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d00ddfbe216bb%3A0x1dbafbd553a9f1db!2z15DXldedINeQ15wt16TXl9ed!5e0!3m2!1siw!2sil!4v1719044226123!5m2!1siw!2sil"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-
 
 
 
