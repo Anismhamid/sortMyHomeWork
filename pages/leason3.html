@@ -11,10 +11,10 @@
 </head>
 
 <body class="bg-dark">
-    <header class="fixed-top">
-        <nav class="navbar text-center navbar-expand-lg bg-info p-110 d-fixed">
+    <header class="sticky-top">
+        <nav class="navbar text-center navbar-expand-lg  text-bg-warning p-5 d-fixed">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#main-section">HomeWorks javaScript modul leason 3</a>
+                <a class="navbar-brand" href="../index.html">javaScript modul leason 3</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,20 +22,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link text-black" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="./leason1.html" role="button">
+                            <a class="nav-link text-black" href="./leason1.html" role="button">
                                 שיעור 1
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./leason2.html" role="button">
+                            <a class="nav-link text-black" href="./leason2.html" role="button">
                                 שיעור 2
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./leason3.html" role="button"
+                            <a class="nav-link text-danger fw-bold  dropdown-toggle" href="./leason3.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 שיעור 3
                             </a>
@@ -48,48 +48,58 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./leason4.html" role="button">
+                            <a class="nav-link text-black" href="./leason4.html" role="button">
                                 שיעור 4
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="./leason5.html" role="button">
+                            <a class="nav-link text-black" href="./leason5.html" role="button">
                                 שיעור 5
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="./leason6.html" role="button">
+                            <a class="nav-link text-black" href="./leason6.html" role="button">
                                 שיעור 6
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="./leason7.html" role="button">
+                            <a class="nav-link text-black" href="./leason7.html" role="button">
                                 שיעור 7
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./leason8.html" role="button">
+                            <a class="nav-link text-black" href="./leason8.html" role="button">
                                 שיעור 8 מערכים ופונקציות
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="./leason9.html" role="button">
+                            <a class="nav-link text-black" href="./leason9.html" role="button">
                                 שיעור 9
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="./leason10.html" role="button">
+                            <a class="nav-link text-black" href="./leason10.html" role="button">
                                 שיעור 10
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./leason11.html" role="button">
+                            <a class="nav-link text-black" href="./leason11.html" role="button">
                                 שיעור 11
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./leason12.html" role="button">
+                            <a class="nav-link text-black" href="./leason12.html" role="button">
                                 שיעור 12
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./leason13.html" role="button">
+                                שיעור 13
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./leason1JsAdvancesd.html" role="button">
+                                שיעור 1 javaScript Advanced
                             </a>
                         </li>
                     </ul>
@@ -99,17 +109,14 @@
     </header>
 
     <main class=" gx-0 p-0 bg-dark">
-        <div class="container-lg">
+        <div class="container-fluid">
 
 
-            <section id="main-section m-auto">
-                <img class="w-100" src="../What-Is-JavaScript-Used-For.avif" alt="What-Is-JavaScript-Used-For">
-                <a href="#top">
-                    <h1 class="fixed-bottom text-center text-info text-decoration-underline ">▲</h1>
-                </a>
-            </section>
 
-
+            <!-- back to top button -->
+            <a href="#top">
+                <h1 class="fixed-bottom text-center text-warning">▲</h1>
+            </a>
 
 
 
@@ -334,130 +341,34 @@
 
 
 
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row border border-danger-subtle">
-                <div class="col-md-4">
-                    <h5 class="mb-4">מצגות לשיעורי JavaScript</h5>
-    
-                    <p>שיעור 1:
-                        <br>
-                        היכרות עם ההיסטוריה של javaScript
-                        <br>
-                        <a href="./presentations/js1-intro.pdf" download="ijs1-intro.pdf">מצגת שיעור 1</a>
-                        <hr>
-                    </p>
-                    <p>
-                        שיעור 2: <br>
-                        משתנים וסוגי נתונים
-                        <br>
-                        <a href="./presentations/js2-variables.pdf" download="js2-variables.pdf">מצגת שיעור 2</a>
-                        <hr>
-                    </p>
-                    <p>
-                        שיעור 3: <br>
-                        תנאים
-                        <br>
-                        <a href="./presentations/js3-conditions.pdf" download="js3-conditions.pdf">מצגת שיעור 3</a>
-                        <hr>
-                    </p>
-                    <p>
-                        שיעור 4:
-                        <br>
-                        לולאות
-                        <br>
-                        <a href="./presentations/js4-loops.pdf" download="js3-conditions.pdf">מצגת שיעור 4</a>
-                        <hr>
-                    </p>
-    
-                    <p>
-                        שיעור 5:
-                        <br>
-                        מערכים
-                        <br>
-                        <a href="./presentations/js5-arrays.pdf" download="js3-conditions.pdf">מצגת שיעור 5</a>
-                        <hr>
-                    </p>
-    
-                    <p>
-                        שיעור 6:
-                        <br>
-                        built In functions
-                        <br>
-                        <a href="./presentations/js6-tools.pdf" download="js3-conditions.pdf">מצגת שיעור 6</a>
-                        <hr>
-                    </p>
-    
-                    <p>
-                        שיעור 7:
-                        <br>
-    
-                        <br>
-                        <a href="./presentations/js7-bom.pdf" download="js3-conditions.pdf">מצגת שיעור 7</a>
-                        <hr>
-                    </p>
-    
-                    <p>
-                        שיעור 8:
-                        <br>
-                        מערכים ופונקציות
-                        <br>
-                        <a href="./presentations/js8-functions.pdf" download="js3-conditions.pdf">מצגת שיעור 8</a>
-                        <hr>
-                    </p>
-    
-                    <p>
-                        שיעור 9:
-                        <br>
-                        תרגול
-                        <br>
-                        <a href="./presentations/js9-exercise.pdf" download="js3-conditions.pdf">מצגת שיעור 9</a>
-                        <hr>
-                    </p>
-    
-                    <p>
-                        שיעור 10:
-                        <br>
-                        סיכום
-                        <br>
-                        <a href="./presentations/js10-summary.pdf" download="js3-conditions.pdf">מצגת שיעור 10</a>
-                        <hr>
-                    </p>
+        <footer class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row border border-danger-subtle">
+                    <div class="col-md-4">
+                        <h5 class="mb-4">מקורות וקישורים נוספים</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN
+                                    JavaScript Documentation</a>
+                            </li>
+                            <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a>
+                            </li>
+                            <li>
+                                <a href="https://javascript.info/" target="_blank">JavaScript.info</a>
+                            </li>
+                            <li>
+                                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                                    target="_blank">bootstrap Docs</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5 class="mb-4">מקורות וקישורים נוספים</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN
-                                JavaScript Documentation</a>
-                        </li>
-                        <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a>
-                        </li>
-                        <li>
-                            <a href="https://javascript.info/" target="_blank">JavaScript.info</a>
-                        </li>
-                        <li>
-                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-                                target="_blank">bootstrap Docs</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="mb-4">קשר</h5>
-                    <ul class="list-unstyled">
-                        <li>Email: anesnhamed1@gmail.com</li>
-                        <li>Phone: +972 538346915</li>
-                        <li>Address: Ein al derwa Street, umm al fahm, israel</li>
-                        <li>
-                            <iframe class="ratio"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26909.473146113032!2d35.17182356000711!3d32.53458190184413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d00ddfbe216bb%3A0x1dbafbd553a9f1db!2z15DXldedINeQ15wt16TXl9ed!5e0!3m2!1siw!2sil!4v1719044226123!5m2!1siw!2sil"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </li>
-                    </ul>
+                <div class="row mt-5 m-auto p-5 border-top border-danger">
+                    <div class="col text-center">
+                        <p class="mb-0">&copy; Anis mhamid כל הזכויות שמורות &#169; 2024</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 
 
