@@ -10,7 +10,7 @@
     <title>leason 14</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-light">
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light text-bg-warning">
             <div class="container-fluid">
@@ -86,7 +86,7 @@
 
 
 
-    <main class=" gx-0 p-0 bg-dark">
+    <main class=" gx-0 p-0">
         <div class="container-fluid">
 
 
@@ -130,7 +130,7 @@
 
             <!-- leason 1 Advanced -->
             <section class="text-center" id="leason1">
-                <h1 class="text-light h1">
+                <h1 class="text-dark display-1">
                     שיעור 1 javaScript Advanced
                 </h1>
 
@@ -140,16 +140,16 @@
 
 
                 <!-- leason  Advanced q1 - card 1 -->
-                <div id="Advanced-leason-1-q1" class="card w-100 my-5 m-auto">
+                <div id="Advanced-leason-1-q1" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
-                        <h2 class="card-title">שאלה 1</h2>
+                        <h2 class="card-title text-light">שאלה 1</h2>
                         <br>
                         <h4 class="card-text text-danger">
                             כתוב פונקציה בשם chechGrade() המקבלת מערך ובו 7 ציונים של סטודנטים
                             הפונקציה תדפיס את הציון הממוצע ותבדוק אילו ציונים גדולים או שווים לציון הממוצע ותחזיר מערך
                             חדש של אותם הציונים בלבד </h4>
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
                         <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-1.png"
                             alt="leason Advanced js image question 1">
@@ -158,8 +158,9 @@
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
                                 <div class="col">
-                                    <p id="avarage"></p>
-                                    <p id="avarage2"></p>
+                                    <p class="text-light fw-bold" id="avarage"></p>
+                                    <p class="text-light fw-bold" id="avarage2"></p>
+                                    <p class="text-light fw-bold" id="avarage3"></p>
                                 </div>
                             </div>
                             <script>
@@ -167,13 +168,12 @@
                                 function checkGrade(studentsArr) {
                                     let sum = studentsArr.reduce((total, grade) => total + grade);
                                     let average = sum / studentsArr.length;
-                                    console.log("Average grade:", (average).toFixed(0));
+                                    document.getElementById('avarage').innerHTML = "Average grade: " + `<span class='text-danger display-6'>${(average).toFixed(0)}</span>`;
                                     let filteredGrades = studentsArr.filter(grade => grade >= average);
                                     return filteredGrades;
                                 };
-                                document.getElementById('avarage').innerHTML = `grade array = [${array}]<hr>result`
-                                document.getElementById('avarage2').innerText = `${checkGrade(array)}`
-                                console.log();
+                                document.getElementById('avarage2').innerHTML = `grade array = [${array}<hr>result`
+                                document.getElementById('avarage3').innerHTML = `<span class='text-primary display-6'>[ ${checkGrade(array)} ]</span>`
                             </script>
                         </div>
                     </div>
@@ -185,9 +185,9 @@
 
 
                 <!-- leason  Advanced q2 - card 2 -->
-                <div id="Advanced-leason-1-q2" class="card w-100 my-5 m-auto">
+                <div id="Advanced-leason-1-q2" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
-                        <h2 class="card-title">שאלה 2</h2>
+                        <h2 class="card-title text-light">שאלה 2</h2>
                         <br>
                         <h4 class="card-text text-danger">
                             סעיף 1 : <br>
@@ -197,7 +197,7 @@
                             במערך חדש שבו כל המחירים יהיו עם שתי ספרות אחרי הנקודה העשרונית. למשל, 21.25 .₪
                         </h4>
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
                         <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-2-1.png"
                             alt="leason Advanced js image question 2">
@@ -207,8 +207,8 @@
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
                                 <div class="col">
-                                    <p id="updatePrices"></p>
-                                    <p id="updatePrices2"></p>
+                                    <p class="text-light fw-bold" id="updatePrices"></p>
+                                    <p class="text-light fw-bold" id="updatePrices2"></p>
                                 </div>
                             </div>
                             <script>
@@ -219,8 +219,7 @@
                                     return pricesAfterDis;
                                 }
                                 document.getElementById('updatePrices').innerHTML += `updatePrices array = [${[10, 24, 30, 40, 50, 60]}]<hr>result`;
-                                document.getElementById('updatePrices2').innerHTML += `${updatePrices([10, 24, 30, 40, 50, 60])}`;
-                                // document.getElementById('updatePrices2').innerHTML += `${memotsa3([20, 50, 40, 60])}`;
+                                document.getElementById('updatePrices2').innerHTML += `<span class='text-primary display-6'>[ ${updatePrices([10, 24, 30, 40, 50, 60])}</span>`;
                             </script>
                         </div>
                     </div>
@@ -230,19 +229,20 @@
 
 
 
-                <!-- leason  Advanced q3 -->
-                <div id="Advanced-leason-1-q3" class="card w-100 my-5 m-auto">
+                <!-- leason  Advanced q2-2 -->
+                <div id="Advanced-leason-1-q2-2" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
-                        <h2 class="card-title">שאלה 3</h2>
+                        <h2 class="card-title text-light">שאלה 2 סעיף 2</h2>
                         <br>
                         <h4 class="card-text text-danger">
-                            יש ליצור פונקציה המקבלת 2 מערכים או יותר ומחזירה אותם כמערך אחד
+                            סעיף 2 : <br>
+                            כתבו פונקציה בשם upper המקבלת מערך מחרוזות המייצג שמות של בעלי חיים. הפונקציה תחזיר
+                            את המערך כאשר כל האותיות במחרוזות בו אותיות גדולות.
                         </h4>
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid"
-                            src="../works/leason Advanced/leason Advancedimages/leason Advanced-3-oneFunctions.png"
+                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-2-2.png"
                             alt="leason Advanced js image question 2">
                     </div>
 
@@ -250,34 +250,18 @@
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
                                 <div class="col">
-                                    <p id="addArray0"></p>
-                                    <p id="addArray-1"></p>
+                                    <p class="text-light fw-bold" id="addArray"></p>
                                 </div>
                             </div>
                             <script>
-                                function addArray(arr1, arr2, arr3, arr4) {
-                                    let newaar = []
-                                    for (let i = 0; i < arr1.length; i++) {
-                                        newaar.push(arr1[i]);
-                                    }
-                                    for (let i = 0; i < arr2.length; i++) {
-                                        newaar.push(arr2[i]);
-                                    }
-                                    for (let i = 0; i < arr3.length; i++) {
-                                        newaar.push(arr3[i]);
-                                    }
-                                    for (let i = 0; i < arr4.length; i++) {
-                                        newaar.push(arr4[i]);
-                                    }
-                                    return newaar
+                                let animals = ['geraffe', 'camel', 'deer', 'bear', 'cheetah'];
+                                function upper(upprC) {
+                                    let upprD = upprC.map(function (str) {
+                                        return str.toUpperCase()
+                                    })
+                                    return upprD
                                 }
-                                document.getElementById('addArray0').innerHTML = `array 1 = [${[10, 20, 30, 40, 50, 60]}]<br>array 2 = [${['a', 'b', 'c', 'd', 'e', 'f']}]<br>array 3 = [${[70, 80, 90, 100]}]<br>array 4 = [${['G', 'H', 'i', 'j', 'k']}]<br>`
-                                document.getElementById('addArray-1').innerHTML = `<hr>${addArray(
-                                    [10, 20, 30, 40, 50, 60],
-                                    ['a', 'b', 'c', 'd', 'e', 'f'],
-                                    [70, 80, 90, 100],
-                                    ['G', 'H', 'i', 'j', 'k']
-                                )}<hr>`;
+                                document.getElementById('addArray').innerHTML = `<span class='text-primary display-6'>[ ${upper(animals)} ]</span>`;
                             </script>
                         </div>
                     </div>
@@ -288,50 +272,43 @@
 
 
 
-                <!-- leason  Advanced q3-2 -->
-                <div id="Advanced-leason-1-q3-2" class="card w-100 my-5 m-auto">
+                <!-- leason  Advanced q3-->
+                <div id="Advanced-leason-1-q3-2" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
-                        <h2 class="card-title">שאלה 3</h2>
+                        <h2 class="card-title text-light">שאלה 3 filter</h2>
                         <br>
                         <h4 class="card-text text-danger">
-                            יש ליצור פונקציה המקבלת 2 מערכים או יותר ומחזירה אותם כמערך אחד - 2
+                            לפניכם המערך הבא:
+                        </h4>
+                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-3-q.png"
+                            alt="leason1 advanced question 3 image">
+                        <h4 class="card-text text-danger">
+                            סעיף 1 : <br>
+                            כתבו פונקציה בשם checkSocials שמבצעת סינון על המערך ומחזירה מערך חדש המכיל רק את
+                            הרשתות ששמן מכיל לפחות 7 תווים ומכיל את האות e
                         </h4>
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid"
-                            src="../works/leason Advanced/leason Advancedimages/leason Advanced-3-towFunctions.png"
-                            alt="leason Advanced js image question 2">
+                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-3-1.png"
+                            alt="leason Advanced js image question 3">
                     </div>
 
                     <div class="card-body" dir="ltr">
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
                                 <div class="col">
-                                    <p id="addingArray"></p>
-                                    <p id="addingArray2"></p>
+                                    <p class=" text-light" id="social"></p>
                                 </div>
                             </div>
                             <script>
-                                function automatic(arr, newar) {
-                                    let newaar = newar.slice()
-                                    for (let i = 0; i < arr.length; i++) {
-                                        newaar.push(arr[i]);
-                                    }
-                                    return newaar
+                                var socials = ["Facebook", "Instagram", "Twitter", "Linkedin", "Tiktok", 'akko'];
+                                function checkSocials(socialArray) {
+                                    return socialArray.filter(function (social) {
+                                        return social.length >= 7 && social.includes('e');
+                                    });
                                 }
-                                function addArray(arr1, arr2, arr3, arr4) {
-                                    let results = []
-                                    results = automatic(arr1, results)
-                                    results = automatic(arr2, results)
-                                    results = automatic(arr3, results)
-                                    results = automatic(arr4, results)
-                                    return results
-                                }
-                                document.getElementById('addingArray').innerHTML = `array 1 = [${[10, 20, 30, 40, 50, 60]}] <br> array 2 = [${['a', 'b', 'c', 'd', 'e', 'f']}] <br> array 3 = [${[70, 80, 90, 100]}] <br> array 4 = [${['G', 'H', 'i', 'j', 'k']}] <hr> result`
-
-                                document.getElementById('addingArray2').innerHTML = `${addArray([10, 20, 30, 40, 50, 60], ['a', 'b', 'c', 'd', 'e', 'f'], [70, 80, 90, 100], ['G', 'H', 'i', 'j', 'k'])} <hr>`
-
+                                document.getElementById('social').innerHTML = `<span class='text-primary display-6'>[ ${checkSocials(socials)} ]</span>`;
                             </script>
                         </div>
                     </div>
@@ -341,45 +318,76 @@
 
 
 
-
-                <!-- leason  Advanced q4 -->
-                <div id="Advanced-leason-1-q4" class="card w-100 my-5 m-auto">
+                <!-- leason  Advanced q3-2-->
+                <div id="Advanced-leason-1-q3-2" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
-                        <h2 class="card-title">שאלה 4</h2>
+                        <h2 class="card-title text-light">שאלה 3 filter</h2>
                         <br>
                         <h4 class="card-text text-danger">
-                            כתבו פוקנציה שמקבלת מערך מחרוזות
-                            הפונקציה תחזיר את המחרוזת הארוכה ביותר
+                            סעיף 2 : <br>
+                            כתבו פונקציה בשם checkThree שמקבלת מערך של מספרים ומחזירה מערך חדש רק את המספרים
+                            שמתחלקים ב 3 ללא שארית.
                         </h4>
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid"
-                            src="../works/leason Advanced/leason Advancedimages/leason Advanced-4.png"
-                            alt="leason Advanced js image question 4">
+                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-3-2.png"
+                            alt="leason Advanced js image question 3 - 2">
                     </div>
 
                     <div class="card-body" dir="ltr">
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
                                 <div class="col">
-                                    <p id="maxLenStr"></p>
-                                    <p id="maxLenStr2"></p>
+                                    <p class="text-light fw-bold" id="checkThree"></p>
                                 </div>
                             </div>
                             <script>
-                                let cities = ["Haifa", "Eilat", "Jerusalem", "Tel Aviv"];
-                                function maxLenStr(arr) {
-                                    let maxStr = arr[0];
-                                    for (let i = 1; i < arr.length; i++) {
-                                        if (arr[i].length > maxStr.length) {
-                                            maxStr = arr[i];
-                                        }
-                                    }
-                                    return maxStr;
+                                function checkThree(three) {
+                                    let checkThreeNumbers = three.filter(function (number) {
+                                        return number % 3 == 0
+                                    })
+                                    return checkThreeNumbers
                                 }
-                                document.getElementById('maxLenStr').innerHTML = `[ ${cities} ]<hr>`;
-                                document.getElementById('maxLenStr2').innerHTML = maxLenStr(cities)
+                                document.getElementById('checkThree').innerHTML = `<span class='text-primary display-6'>[ ${checkThree([10, 3, 60, 47, 257])} ]</span>`;
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- leason  Advanced q4-->
+                <div id="Advanced-leason-1-q4" class="card w-100 my-5 m-auto bg-dark">
+                    <div class="card-header">
+                        <h2 class="card-title text-light">שאלה 4 find</h2>
+                        <br>
+                        <h4 class="card-text text-danger">
+                            כתבו פונקציה בשם firstSocial שמחזירה את שם הרשת החברתית הראשונה המכילה את האות t
+                        </h4>
+                    </div>
+                    <h5 class="card-title text-light">פיתרון</h5>
+                    <div class="card-img my-2">
+                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-4.png"
+                            alt="leason Advanced js image question 3 - 2">
+                    </div>
+                    <div class="card-body" dir="ltr">
+                        <div class="border border-success  my-5 p-5 ">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-primary fw-bold" id="first-value"></p>
+                                    <p class="text-primary fw-bold" id="first-value2"></p>
+                                </div>
+                            </div>
+                            <script>
+                                function firstSocial(arr) {
+                                    return arr.find(function (str) {
+                                        return str.includes('e')
+                                    });
+                                }
+                                document.getElementById('first-value').innerHTML = `<span class='text-primary display-6'>[ ${firstSocial(['email', 'gmail'])} ]</span>`;
                             </script>
                         </div>
                     </div>
@@ -390,150 +398,103 @@
 
 
 
-                <!-- leason  Advanced q5 -->
-                <div id="Advanced-leason-1-q5" class="card w-100 my-5 m-auto">
+
+
+
+
+                <!-- leason  Advanced q5-->
+                <div id="Advanced-leason-1-q5" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
-                        <h2 class="card-title">שאלה 5</h2>
+                        <h2 class="card-title text-light">שאלה 5 sort</h2>
                         <br>
                         <h4 class="card-text text-danger">
-                            יש ליצור פונקציה המקבלת מערך ומחזירה האם כל המערכם שווים
+                            לפניכם המערך הבא:
+                        </h4>
+                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-5-q.png"
+                            alt="">
+                        <h4 class="card-text text-danger">
+                            כתבו פונקציה בשם sortMoreFive שמבצעת סינון על המערך ומחזירה מערך חדש ממוין לפי abc המכיל
+                            רק
+                            את הפירות ששמן מכיל לפחות 5 תווים.
                         </h4>
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid"
-                            src="../works/leason Advanced/leason Advancedimages/leason Advanced-4-4.png"
-                            alt="leason Advanced js image question 5">
+                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-5.png"
+                            alt="leason Advanced js image question 3 - 2">
                     </div>
-
-                    <div class="card-body">
+                    <div class="card-body" dir="ltr">
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
                                 <div class="col">
-                                    <p id="isSame"></p>
-                                    <p id="isSame2"></p>
+                                    <p class="fw-bold " id="sortMoreFive"></p>
                                 </div>
                             </div>
                             <script>
-                                function isSame(arr) {
-                                    if (arr.length == 0 || arr.length == 1) return true
-                                    for (let i = 1; i < arr.length; i++) {
-                                        if (arr[i] != arr[i - 1]) {
+                                var fruits = ['banana', 'melon', 'kiwi', 'orange', 'apple', 'cherry'];
+                                function sortMoreFive(arr) {
+                                    return arr.sort()
+                                }
+                                document.getElementById('sortMoreFive').innerHTML = `<span class='text-primary'>[ ${sortMoreFive(fruits)} ]</span>`;
+                            </script>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- leason  Advanced q6-->
+                    <div id="Advanced-leason-1-q6" class="card w-100 my-5 m-auto bg-dark">
+                        <div class="card-header">
+                            <h2 class="card-title text-light">שאלה 6</h2>
+                            <br>
+                            <h4 class="card-text text-danger">
+                                כתבו פונקציה בשם removeItem() שמקבלת מערך מחרוזות המייצג שמות סטודנטים ושם של סטודנט
+                                מסוים. הפונקציה תמחק את שם הסטודנט ממערך הסטודנטים. במידה והסטודנט לא קיים במערך יש
+                                להחזיר
+                                false ובמידה והמחיקה התבצעה יש להחזיר true . ניתן להניח ששם של סטודנט מופיע פעם אחת
+                                בלבד.
+                            </h4>
+                        </div>
+                        <h5 class="card-title text-light">פיתרון</h5>
+                        <div class="card-img my-2">
+                            <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-6.png"
+                                alt="leason Advanced js image question 3 - 2">
+                        </div>
+                        <div class="card-body" dir="ltr">
+                            <div class="border border-success  my-5 p-5 ">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fw-bold " id="removeItem0"></p>
+                                        <p class="fw-bold " id="removeItem"></p>
+                                        <p class="fw-bold " id="removeItem2"></p>
+                                        <p class="fw-bold " id="removeItem3"></p>
+                                    </div>
+                                </div>
+                                <script>
+                                    var studeints = ['fayad', 'itamar', 'jamil', 'roaa', 'dorin'];
+                                    function removeItem(arr, itemToRemove) {
+                                        var i = arr.indexOf(itemToRemove);
+                                        if (i !== -1) {
+                                            arr.splice(i, 1);
+                                            return true
+                                        } else {
                                             return false
                                         }
+                                        return i;
                                     }
-                                    return true
-                                }
-                                document.getElementById('isSame').innerHTML = ``
-                                document.getElementById('isSame2').innerHTML = `array 1 = [${[10, 22, 54, 56, 87]}]<br>${isSame([10, 22, 54, 56, 87])}<hr>array 2 = [${[10, 10, 10, 10, 10]}]<br>${isSame([10, 10, 10, 10, 10])}`;
-                            </script>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-                <!-- leason  Advanced q6 -->
-                <div id="Advanced-leason-1-q6" class="card w-100 my-5 m-auto">
-                    <div class="card-header">
-                        <h2 class="card-title">שאלה 6</h2>
-                        <br>
-                        <h4 class="card-text text-danger">
-                            יש ליצור פונקציה המקבלת 2 מספרים ומחזירה מערך כל המספרים שבניהם
-                        </h4>
-                    </div>
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <img class="img-fluid"
-                            src="../works/leason Advanced/leason Advancedimages/leason Advanced-6-6.png"
-                            alt="leason Advanced js image question 6">
-                    </div>
-
-                    <div class="card-body">
-                        <div class="border border-success  my-5 p-5 ">
-                            <div class="row">
-                                <div class="col">
-                                    <p id="fresh"></p>
-                                    <p id="fresh2"></p>
-                                    <p id="fresh3"></p>
-                                </div>
+                                    document.getElementById('removeItem0').innerHTML = `<span class='text-primary'>1<br>studeints<br>[${studeints}]<hr></span>`;
+                                    document.getElementById('removeItem').innerHTML = `<span class='text-primary'>2<br>is removed <br>${removeItem(studeints, 'itamar')}</span><hr>`;
+                                    document.getElementById('removeItem2').innerHTML = `<span class='text-primary'>3<br> no have itamar <hr>${removeItem(studeints, 'itamar')}</span><hr>no studeint`;
+                                    document.getElementById('removeItem3').innerHTML = `<span class='text-primary'>4<br>after remove<hr>[ ${studeints} ]</span>`;
+                                </script>
                             </div>
-                            <script>
-                                function fresh(num1, num2) {
-                                    let nwwarr = []
-                                    if (num1 < num2) {
-                                        for (let i = num1; i < num2; i++) {
-                                            nwwarr.push(i)
-                                        }
-                                    } else if (num1 > num2) {
-                                        for (let i = num2; i < num1; i++) {
-                                            nwwarr.push(i)
-                                        }
-                                    }
-                                    return nwwarr
-                                }
-                                document.getElementById('fresh').innerHTML = `${fresh(0, 10)}`
-                                document.getElementById('fresh2').innerHTML = `${fresh(20, 10)}`
-                                document.getElementById('fresh3').innerHTML = `${fresh(20, 20)}`
-                                    ;
-                                ;
-                            </script>
-
-
                         </div>
+
+
+
                     </div>
-                </div>
-
-
-
-
-
-
-                <!-- leason  Advanced q7 -->
-                <div id="Advanced-leason-1-q7" class="card w-100 my-5 m-auto">
-                    <div class="card-header">
-                        <h2 class="card-title">שאלה 7</h2>
-                        <br>
-                        <h4 class="card-text text-danger">
-                            יש ליצור פונקציה המקבלת מערך ומחזירה איבר הראשון רנדומלי
-                        </h4>
-                    </div>
-                    <h5 class="card-title">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <img class="img-fluid"
-                            src="../works/leason Advanced/leason Advancedimages/leason Advanced-7.png"
-                            alt="leason Advanced js image question 7">
-                    </div>
-
-                    <div class="card-body">
-                        <div class="border border-success  my-5 p-5 ">
-                            <div class="row">
-                                <div class="col">
-                                    <p id="random"></p>
-                                </div>
-                            </div>
-                            <script>
-                                function random(arr) {
-                                    let newaar = []
-                                    for (let i = 0; i < arr.length; i++) {
-                                        newaar.push(Math.floor((Math.random() * 10) + 1))
-                                        newaar.push(Math.ceil(Math.random() * 10))
-                                    }
-                                    return newaar
-                                }
-                                document.getElementById('random').innerHTML = `[${random([,])}]`;
-                            </script>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
             </section>
         </div>
     </main>
