@@ -433,8 +433,14 @@
                             <script>
                                 var fruits = ['banana', 'melon', 'kiwi', 'orange', 'apple', 'cherry'];
                                 function sortMoreFive(arr) {
-                                    return arr.sort()
+                                    let new_arr = arr.filter(function (str) {
+                                        return str.length >= 5
+                                        new_arr.sort()
+                                    }
+                                    )
+                                    return new_arr;
                                 }
+                                console.log(sortMoreFive(fruits));
                                 document.getElementById('sortMoreFive').innerHTML = `<span class='text-primary'>[ ${sortMoreFive(fruits)} ]</span>`;
                             </script>
                         </div>
@@ -492,7 +498,23 @@
                             </div>
                         </div>
 
+                        <script>
+                            var studients = ['fayad', 'itamar', 'jamil', 'roaa', 'dorin'];
+                            function updateItem(arr, index, update) {
+                                let i = arr.indexOf(index);
 
+                                if (i !== -1) {
+                                    arr.splice(i, 1, update)
+                                    return true;
+
+                                }
+                                return false
+
+
+                            }
+                            console.log(updateItem(studients, "roaa", "jojo"));
+                            console.log(studients);
+                        </script>
 
                     </div>
             </section>
