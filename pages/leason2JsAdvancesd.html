@@ -119,7 +119,7 @@
                     </a>
                 </div>
                 <div class="col-6">
-                    <a href="./leason Advanced.html"><button class="btn btn-primary w-100">אחורה</button>
+                    <a href="./leason12.html"><button class="btn btn-primary w-100">אחורה</button>
                     </a>
                 </div>
             </div>
@@ -129,10 +129,10 @@
 
 
 
-            <!-- leason 1 Advanced -->
+            <!-- leason 2 Advanced -->
             <section class="text-center" id="leason1">
                 <h1 class="text-dark display-1">
-                    שיעור 1 javaScript Advanced
+                    שיעור 2 javaScript Advanced
                 </h1>
 
 
@@ -140,41 +140,56 @@
 
 
 
-                <!-- leason  Advanced q1 - card 1 -->
-                <div id="Advanced-leason-1-q1" class="card w-100 my-5 m-auto bg-dark">
+                <!-- leason 2  Advanced q1 -->
+                <div id="Advanced-leason-2-q1" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
                         <h2 class="card-title text-light">שאלה 1</h2>
                         <br>
-                        <h4 class="card-text text-danger">
-                            כתוב פונקציה בשם chechGrade() המקבלת מערך ובו 7 ציונים של סטודנטים
-                            הפונקציה תדפיס את הציון הממוצע ותבדוק אילו ציונים גדולים או שווים לציון הממוצע ותחזיר מערך
-                            חדש של אותם הציונים בלבד </h4>
+                        <h4 class="card-text text-light lh-base">
+                            צרו מערך המכיל את האובייקטים המיוצגים בטבלה:
+                        </h4>
+                        <div class="card-img my-2">
+                            <img class="img-fluid"
+                                src="../works/leason2jsAdvanced/leason2ImagesJsAdvanced/leason2-advanced-1-q.png"
+                                alt="leason Advanced js image question 1">
+                        </div>
                     </div>
+                    <h4 class="card-text text-light lh-base">
+                        כתבו פונקציה שתפקידה להציג בדפדפן את שמות הקורסים (בלבד) ברשימה
+                        השתמשו בלולאה,
+                        באובייקט שיצרתם ובתגיות רשימה
+
+                        . קראו לפונקציה ובדקו תקינותה.
+                    </h4>
                     <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-1.png"
+                        <img class="img-fluid"
+                            src="../works/leason2jsAdvanced/leason2ImagesJsAdvanced/leason2-advanced-1.png"
                             alt="leason Advanced js image question 1">
                     </div>
                     <div class="card-body">
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
                                 <div class="col">
-                                    <p class="text-light fw-bold" id="avarage"></p>
-                                    <p class="text-light fw-bold" id="avarage2"></p>
-                                    <p class="text-light fw-bold" id="avarage3"></p>
+                                    <ul class="list-group " id="coursesUl">
+
+                                    </ul>
                                 </div>
                             </div>
                             <script>
-                                let array = [80, 60, 80, 99, 70, 90, 100];
-                                function checkGrade(studentsArr) {
-                                    let sum = studentsArr.reduce((total, grade) => total + grade);
-                                    let average = sum / studentsArr.length;
-                                    document.getElementById('avarage').innerHTML = "Average grade: " + `<span class='text-danger display-6'>${(average).toFixed(0)}</span>`;
-                                    let filteredGrades = studentsArr.filter(grade => grade >= average);
-                                    return filteredGrades;
+                                let courses = [
+                                    { name: 'python', courseNum: 205, numOfStusents: 50 },
+                                    { name: 'Angular', courseNum: 207, numOfStusents: 32 },
+                                    { name: 'MongoDB', courseNum: 208, numOfStusents: 15 },
+                                ];
+                                function showNames(arr) {
+                                    let listItems = '';
+                                    for (let i = 0; i < arr.length; i++) {
+                                        listItems += `<li class="list-group-item w-50 m-auto">${arr[i].name}</li>`
+                                    }
+                                    return document.getElementById('coursesUl').innerHTML = listItems
                                 };
-                                document.getElementById('avarage2').innerHTML = `grade array = [${array}<hr>result`
-                                document.getElementById('avarage3').innerHTML = `<span class='text-primary display-6'>[ ${checkGrade(array)} ]</span>`
+                                showNames(courses)
                             </script>
                         </div>
                     </div>
@@ -189,18 +204,24 @@
                 <div id="Advanced-leason-1-q2" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
                         <h2 class="card-title text-light">שאלה 2</h2>
-                        <br>
-                        <h4 class="card-text text-danger">
-                            סעיף 1 : <br>
-                            כתבו פונקציה בשם updatePrices המקבלת מערך ובו 6 מחירים של מוצרים. הפונקציה תעבור על
-                            כל
-                            המחירים עם map ותעדכן להם את המחיר לאחר הנחה של 20% . שימו לב, יש לאחסן את המחירים החדשים
-                            במערך חדש שבו כל המחירים יהיו עם שתי ספרות אחרי הנקודה העשרונית. למשל, 21.25 .₪
+                        <h4 class="card-text text-light lh-base"> ייבאו את Bootstrap לקובץ
+                            <br>
+                            הוסיפו תגית select והצמידו לה id
+                            <br>
+                            צרו אובייקט המכיל בתוכו את המאפיינים הבאים:
+                            <br>
+                            <br> מערך המכיל את שמות ימי השבוע באנגלית
+                            <br> פונקציה שתפקידה לעבור בלולאה על מערך הימים ולהוסיף את ימי השבוע בתור options
+                            לתגית ה- select מסעיף 2
+                            יש להשתמש ב- this
+                            <br>
+                            קראו לפונקציה ובדקו תקינותה.
                         </h4>
                     </div>
                     <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-2-1.png"
+                        <img class="img-fluid"
+                            src="../works/leason2jsAdvanced/leason2ImagesJsAdvanced/leason2-advanced-2.png"
                             alt="leason Advanced js image question 2">
                     </div>
 
@@ -208,19 +229,19 @@
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
                                 <div class="col">
-                                    <p class="text-light fw-bold" id="updatePrices"></p>
-                                    <p class="text-light fw-bold" id="updatePrices2"></p>
+                                    <select class="text-black fw-bold " value="select Day" id="dayss"></select>
                                 </div>
                             </div>
                             <script>
-                                function updatePrices(arr) {
-                                    let pricesAfterDis = arr.map(function (item) {
-                                        return (item * 0.8).toFixed(2);
-                                    });
-                                    return pricesAfterDis;
+                                let days = ['sunday', 'monday', 'tuesday', 'wedenesday', 'thrusday', 'friady', 'saturday']
+                                function daysArr(arr) {
+                                    let options = ''
+                                    for (let i = 0; i < arr.length; i++) {
+                                        options += `<option value="${arr[i]}">${arr[i]}</option>`
+                                    }
+                                    document.getElementById('dayss').innerHTML = options;
                                 }
-                                document.getElementById('updatePrices').innerHTML += `updatePrices array = [${[10, 24, 30, 40, 50, 60]}]<hr>result`;
-                                document.getElementById('updatePrices2').innerHTML += `<span class='text-primary display-6'>[ ${updatePrices([10, 24, 30, 40, 50, 60])}</span>`;
+                                daysArr(days)
                             </script>
                         </div>
                     </div>
@@ -233,12 +254,25 @@
                 <!-- leason  Advanced q2-2 -->
                 <div id="Advanced-leason-1-q2-2" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
-                        <h2 class="card-title text-light">שאלה 2 סעיף 2</h2>
+                        <h2 class="card-title text-light">שאלה 3</h2>
                         <br>
-                        <h4 class="card-text text-danger">
-                            סעיף 2 : <br>
-                            כתבו פונקציה בשם upper המקבלת מערך מחרוזות המייצג שמות של בעלי חיים. הפונקציה תחזיר
-                            את המערך כאשר כל האותיות במחרוזות בו אותיות גדולות.
+                        <h4 class="card-text text-light lh-base">
+                            לפניכם טבלת מנות במסעדה כלשהי:
+                        </h4>
+                        <div class="card-img my-2">
+                            <img class="img-fluid"
+                                src="../works/leason2jsAdvanced/leason2ImagesJsAdvanced/leason2-advanced-3-q.png"
+                                alt="leason Advanced js image question 2">
+                        </div>
+                        <div class="card-img my-2">
+                            <img class="img-fluid"
+                                src="../works/leason2jsAdvanced/leason2ImagesJsAdvanced/leason2-advanced-3-q-2.png"
+                                alt="leason Advanced js image question 2">
+                        </div>
+                        <h4 class="card-text text-light lh-base">
+                            צרו מערך אובייקטים בשם food ובו הנתונים המוצגים בטבלה
+                            <br>
+                            השתמשו במערך על מנת להציג את המנות ב- cards של
                         </h4>
                     </div>
                     <h5 class="card-title text-light">פיתרון</h5>
@@ -250,19 +284,38 @@
                     <div class="card-body">
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
-                                <div class="col">
-                                    <p class="text-light fw-bold" id="addArray"></p>
+                                <div class="col" id="food-listo">
+
                                 </div>
                             </div>
                             <script>
-                                let animals = ['geraffe', 'camel', 'deer', 'bear', 'cheetah'];
-                                function upper(upprC) {
-                                    let upprD = upprC.map(function (str) {
-                                        return str.toUpperCase()
-                                    })
-                                    return upprD
+                                let foodList = [
+                                    { Name: 'salad', Category: 'First', Price: 37 },
+                                    { Name: 'Hamburger M', Category: 'Main', Price: 52 },
+                                    { Name: 'Hamburger L', Category: 'Main', Price: 62 },
+                                    { Name: 'Pizza L', Category: 'Main', Price: 45 },
+                                    { Name: 'Pizza XL', Category: 'Main', Price: 55 },
+                                    { Name: 'Fries', Category: 'First', Price: 26 },
+                                    { Name: 'Soup', Category: 'First', Price: 30 },
+                                    { Name: 'Steak M', Category: 'Main', Price: 84 },
+                                ];
+                                function food(arr) {
+                                    let fooding = '';
+                                    for (let i = 0; i < arr.length; i++) {
+                                        fooding += `
+                                        <div class='card w-50 m-auto my-5'>
+                                            <div class='card-title'>Card</div>
+                                            <div class='card-body'>
+                                                <div class='card-text'><span class='text-primary fs-4 fw-bold'>${arr[i].Name}</div></span>
+                                                <div class='card-text text-black-50 fs-6 fw-bold'>${arr[i].Category}</div>
+                                                <div class='card-text text-success'>שח ${arr[i].Price}</div>
+                                            </div>
+                                        </div>
+                                        </div>`;
+                                    }
+                                    document.getElementById('food-listo').innerHTML = fooding
                                 }
-                                document.getElementById('addArray').innerHTML = `<span class='text-primary display-6'>[ ${upper(animals)} ]</span>`;
+                                food(foodList)
                             </script>
                         </div>
                     </div>
@@ -278,12 +331,12 @@
                     <div class="card-header">
                         <h2 class="card-title text-light">שאלה 3 filter</h2>
                         <br>
-                        <h4 class="card-text text-danger">
+                        <h4 class="card-text text-light">
                             לפניכם המערך הבא:
                         </h4>
                         <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-3-q.png"
                             alt="leason1 advanced question 3 image">
-                        <h4 class="card-text text-danger">
+                        <h4 class="card-text text-light lh-base">
                             סעיף 1 : <br>
                             כתבו פונקציה בשם checkSocials שמבצעת סינון על המערך ומחזירה מערך חדש המכיל רק את
                             הרשתות ששמן מכיל לפחות 7 תווים ומכיל את האות e
@@ -324,7 +377,7 @@
                     <div class="card-header">
                         <h2 class="card-title text-light">שאלה 3 filter</h2>
                         <br>
-                        <h4 class="card-text text-danger">
+                        <h4 class="card-text text-light lh-base">
                             סעיף 2 : <br>
                             כתבו פונקציה בשם checkThree שמקבלת מערך של מספרים ומחזירה מערך חדש רק את המספרים
                             שמתחלקים ב 3 ללא שארית.
@@ -365,7 +418,7 @@
                     <div class="card-header">
                         <h2 class="card-title text-light">שאלה 4 find</h2>
                         <br>
-                        <h4 class="card-text text-danger">
+                        <h4 class="card-text text-light lh-base">
                             כתבו פונקציה בשם firstSocial שמחזירה את שם הרשת החברתית הראשונה המכילה את האות t
                         </h4>
                     </div>

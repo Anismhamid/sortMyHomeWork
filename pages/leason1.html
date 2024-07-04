@@ -14,7 +14,7 @@
     <header class="sticky-top">
         <nav class="navbar text-center navbar-expand-lg  text-bg-warning p-5 d-fixed">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">javaScript modul leason 1</a>
+                <a class="navbar-brand" href="../index.html">Anis Mhamid</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -109,7 +109,7 @@
     </header>
 
 
-    <main class=" gx-0 p-0 bg-dark">
+    <main class=" gx-0 p-0 bg-light">
         <div class="container-lg">
 
             <!-- back to top button -->
@@ -119,12 +119,12 @@
                 </a>
             </div>
 
-            <div class="row w-100 my-5" dir="ltr">
-                <div class="col-6">
+            <div class="row w-75 m-auto" dir="ltr">
+                <div class="col-6 pt-5">
                     <a href="./leason2.html"><button class="btn btn-primary w-100">הבא</button>
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-6 pt-5">
                     <a href="../index.html"><button class="btn btn-primary w-100">בית</button>
                     </a>
                 </div>
@@ -132,23 +132,23 @@
 
             <!-- leason 1 -->
             <section class="text-center" id="leason1">
-                <h1 class="text-light h1">
+                <h1 class="text-dark display-2">
                     שיעור 1
                 </h1>
 
 
                 <!-- leason 1 q1 -->
-                <div id="leason1-q1" class="card w-100 my-5 m-auto">
+                <div id="leason1-q1" class="card bg-dark w-100 my-5 m-auto">
                     <div class="card-header">
-                        <h2 class="card-title">שאלה 1</h2>
+                        <h2 class="card-title text-light">שאלה 1</h2>
                         <br>
-                        <h4 class="card-text text-danger">
+                        <h4 class="card-text text-light">
                             כתבו סקריפט המוסיף לדף פסקה ובה שם הרחוב והעיר בה אתם גרים. שם העיר בלבד צריך להיות בכתב
                             מודגש.
                             אין צורך להשתמש ב- CSS
                         </h4>
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
                         <div>
                             <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-1-html.png"
@@ -170,16 +170,16 @@
 
                 <!-- leason 1 q2 -->
 
-                <div id="leason1-q2" class="card w-100 m-auto my-5">
+                <div id="leason1-q2" class="card bg-dark w-100 m-auto my-5">
                     <div class="card-header">
-                        <h2 class="card-title">שאלה 2</h2>
+                        <h2 class="card-title text-light">שאלה 2</h2>
                         <br>
-                        <h4 class="card-text text-danger ">
+                        <h4 class="card-text text-light">
                             צרו דף ובו פסקה עם שם החיה האהובה עליכם וכפתור בשם change , שבעת לחיצה עליו, צבע הרקע
                             של הדף ישתנה לצבע כחול וצבע הטקסט ישתנה ללבן
                         </h4>
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
                         <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-2-html.png" alt="">
                     </div>
@@ -191,7 +191,7 @@
 
                         <div id="body" class="border border-success  my-5 p-5 ">
                             <p id="para">Sabastia</p>
-                            <button id="changeColorButton" onclick="blueBgColor('blue','white')">changeBgColor</button>
+                            <button class="btn btn-outline-info" id="changeColorButton" onclick="blueBgColor('blue','white')">changeBgColor</button>
                             <script src="../works/Leason1/B/js/javascript.js"></script>
                         </div>
                     </div>
@@ -200,15 +200,15 @@
 
                 <!-- leason 1 q3 -->
 
-                <div id="leason1-q3" class="card my-5 w-100 m-auto">
+                <div id="leason1-q3" class="card bg-dark my-5 w-100 m-auto">
                     <div class="card-header">
-                        <h4 class="card-title">שאלה 3</h4>
+                        <h4 class="card-title text-light">שאלה 3</h4>
                         <br>
                         <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-3-q.png"
                             alt="javaScript-question3">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">פיתרון</h5>
+                        <h5 class="card-title text-light">פיתרון</h5>
                         <div class="mt-2">
                             <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-3-html.png"
                                 alt="javaScript-code">
@@ -219,10 +219,10 @@
                         </div>
 
                         <div class="border border-success  my-5 p-5 ">
-                            <h1 id="Title">Choose yor favorite color</h1>
-                            <button id="red" onclick="changeTextColor('red')">Red</button>
-                            <button id="gren" onclick="changeTextColor('green')">Green</button>
-                            <button id="blue" onclick="changeTextColor('Blue')">Blue</button>
+                            <h1 class="display-1 text-danger" id="Title">Choose yor favorite color</h1>
+                            <button class="btn btn-outline-info" id="red" onclick="changeTextColor('text-danger')">Red</button>
+                            <button class="btn btn-outline-info" id="gren" onclick="changeTextColor('text-success')">Green</button>
+                            <button class="btn btn-outline-info" id="blue" onclick="changeTextColor('text-primary')">Blue</button>
                             <script src="../works/Leason1/C/js/javascript.js"></script>
                         </div>
                     </div>
@@ -231,16 +231,16 @@
 
                 <!-- leason 1 q4 -->
 
-                <div id="leason1-q4" class="card m-auto w-100 my-5">
+                <div id="leason1-q4" class="card bg-dark m-auto w-100 my-5">
                     <div class="card-header">
-                        <h4 class="catr-title">שאלה 4</h4>
+                        <h4 class="catr-title text-light">שאלה 4</h4>
                         <br>
                     </div>
                     <div class="card-img my-2">
                         <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-4-q.png"
                             alt="javaScript-question3">
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
                         <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-4-html.png" alt="html-code">
                     </div>
@@ -254,14 +254,14 @@
                                 <img class="img-fluid" id="image" src="../works/Leason1/D/images/facebook.png"
                                     alt="facbook image" width="200px">
                             </div>
-                            <button id="facbook"
+                            <button class="btn btn-outline-info" id="facbook"
                                 onclick="cahngeImage('../works/Leason1/D/images/facebook.png')">Facebook</button>
-                            <button id="instatgram"
+                            <button class="btn btn-outline-info" id="instatgram"
                                 onclick="cahngeImage('../works/Leason1/D/images/instagram.png')">Instagram</button>
-                            <button id="linkedin"
+                            <button class="btn btn-outline-info" id="linkedin"
                                 onclick="cahngeImage('../works/Leason1/D/images/linkedin.png')">Linkedin</button>
 
-                            <button id="x" onclick="cahngeImage('../works/Leason1/D/images/twitter.png')">X</button>
+                            <button class="btn btn-outline-info" id="x" onclick="cahngeImage('../works/Leason1/D/images/twitter.png')">X</button>
 
                             <script src="../works/Leason1/D/js/javascript.js"></script>
                         </div>
@@ -277,14 +277,14 @@
 
                 <!-- leason 1 q5 -->
 
-                <div id="leason1-q5" class="card m-auto w-100">
+                <div id="leason1-q5" class="card bg-dark m-auto w-100">
                     <div class="card-header">
-                        <h4 class="q-title">שאלה 5</h4>
+                        <h4 class="card-title text-light">שאלה 5</h4>
                         <br>
                         <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-5-q.png"
                             alt="javaScript-question3">
                     </div>
-                    <h5 class="card-title">פיתרון</h5>
+                    <h5 class="card-text text-light">פיתרון</h5>
                     <div class="card-img my-2">
                         <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-5-html.png" alt="html-code">
                     </div>
@@ -297,7 +297,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group" id="main-box">
-                                        <h1>DISCOUNT CALCULATOR</h1>
+                                        <h1 class="display-2">DISCOUNT CALCULATOR</h1>
                                         <input class=" form-control" id="price" placeholder="Price" type="number">
                                         <input class="form-control" placeholder="%" type="number" id="discount">
                                     </div>
