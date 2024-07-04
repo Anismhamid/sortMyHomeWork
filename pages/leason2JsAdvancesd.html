@@ -200,8 +200,8 @@
 
 
 
-                <!-- leason  Advanced q2 - card 2 -->
-                <div id="Advanced-leason-1-q2" class="card w-100 my-5 m-auto bg-dark">
+                <!-- leason 2 Advanced q2 -->
+                <div id="Advanced-leason-2-q2" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
                         <h2 class="card-title text-light">שאלה 2</h2>
                         <h4 class="card-text text-light lh-base"> ייבאו את Bootstrap לקובץ
@@ -233,7 +233,7 @@
                                 </div>
                             </div>
                             <script>
-                                let days = ['sunday', 'monday', 'tuesday', 'wedenesday', 'thrusday', 'friady', 'saturday']
+                                let days = ['sunday', 'monday', 'tuesday', 'wedenesday', 'thrusday', 'friady', 'saturday'];
                                 function daysArr(arr) {
                                     let options = ''
                                     for (let i = 0; i < arr.length; i++) {
@@ -251,8 +251,8 @@
 
 
 
-                <!-- leason  Advanced q2-2 -->
-                <div id="Advanced-leason-1-q2-2" class="card w-100 my-5 m-auto bg-dark">
+                <!-- leason 2 Advanced q3 -->
+                <div id="Advanced-leason-2-q3" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
                         <h2 class="card-title text-light">שאלה 3</h2>
                         <br>
@@ -277,7 +277,8 @@
                     </div>
                     <h5 class="card-title text-light">פיתרון</h5>
                     <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-2-2.png"
+                        <img class="img-fluid"
+                            src="../works//leason2jsAdvanced/leason2ImagesJsAdvanced/leason2-advanced-3.png"
                             alt="leason Advanced js image question 2">
                     </div>
 
@@ -326,20 +327,21 @@
 
 
 
-                <!-- leason  Advanced q3-->
-                <div id="Advanced-leason-1-q3-2" class="card w-100 my-5 m-auto bg-dark">
+                <!-- leason 2 Advanced q4-->
+                <div id="Advanced-leason-2-q3" class="card w-100 my-5 m-auto bg-dark">
                     <div class="card-header">
-                        <h2 class="card-title text-light">שאלה 3 filter</h2>
+                        <h2 class="card-title text-light">שאלה 4</h2>
                         <br>
                         <h4 class="card-text text-light">
-                            לפניכם המערך הבא:
+                            לפניכם טבלת המוצרים הבאה:
                         </h4>
-                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-3-q.png"
+                        <img class="img-fluid"
+                            src="../works/leason2jsAdvanced/leason2ImagesJsAdvanced/leason2-advanced-4-q.png"
                             alt="leason1 advanced question 3 image">
                         <h4 class="card-text text-light lh-base">
-                            סעיף 1 : <br>
-                            כתבו פונקציה בשם checkSocials שמבצעת סינון על המערך ומחזירה מערך חדש המכיל רק את
-                            הרשתות ששמן מכיל לפחות 7 תווים ומכיל את האות e
+                            1. צרו מערך אובייקטים בשם products ובו הנתונים המוצגים בטבלה
+                            <br>
+                            2. השתמשו במערך על מנת להציג את המוצרים בטבלה מעוצבת של bootstrap
                         </h4>
                     </div>
                     <h5 class="card-title text-light">פיתרון</h5>
@@ -347,212 +349,67 @@
                         <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-3-1.png"
                             alt="leason Advanced js image question 3">
                     </div>
-
                     <div class="card-body" dir="ltr">
                         <div class="border border-success  my-5 p-5 ">
                             <div class="row">
-                                <div class="col">
-                                    <p class=" text-light" id="social"></p>
+                                <div class="col-12">
+                                    <table class="table" id="productsArrr"></table>
+                                    <style>
+                                        tr,
+                                        th,
+                                        td {
+                                            border: 1px solid #000;
+                                        }
+                                    </style>
                                 </div>
                             </div>
                             <script>
-                                var socials = ["Facebook", "Instagram", "Twitter", "Linkedin", "Tiktok", 'akko'];
-                                function checkSocials(socialArray) {
-                                    return socialArray.filter(function (social) {
-                                        return social.length >= 7 && social.includes('e');
-                                    });
-                                }
-                                document.getElementById('social').innerHTML = `<span class='text-primary display-6'>[ ${checkSocials(socials)} ]</span>`;
-                            </script>
-                        </div>
-                    </div>
-                </div>
+                                var products = [
+                                    { id: 2536, name: '"Sony Professional 32GB XQD"', price: 500, category: '"Storage"', description: '"The new XQD cards achieve Max read"' },
+
+
+                                    { id: 2537, name: '"Lenovo Legion 15.6 Gaming"', price: 4228, category: '"Laptops"', description: '"Lenovo Legion 5 pairs unparalleled flexibility with incredible power, offering a plethora of performance options for any gamer in a clean and minimalist design"' },
 
 
 
-
-
-                <!-- leason  Advanced q3-2-->
-                <div id="Advanced-leason-1-q3-2" class="card w-100 my-5 m-auto bg-dark">
-                    <div class="card-header">
-                        <h2 class="card-title text-light">שאלה 3 filter</h2>
-                        <br>
-                        <h4 class="card-text text-light lh-base">
-                            סעיף 2 : <br>
-                            כתבו פונקציה בשם checkThree שמקבלת מערך של מספרים ומחזירה מערך חדש רק את המספרים
-                            שמתחלקים ב 3 ללא שארית.
-                        </h4>
-                    </div>
-                    <h5 class="card-title text-light">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-3-2.png"
-                            alt="leason Advanced js image question 3 - 2">
-                    </div>
-
-                    <div class="card-body" dir="ltr">
-                        <div class="border border-success  my-5 p-5 ">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-light fw-bold" id="checkThree"></p>
-                                </div>
-                            </div>
-                            <script>
-                                function checkThree(three) {
-                                    let checkThreeNumbers = three.filter(function (number) {
-                                        return number % 3 == 0
-                                    })
-                                    return checkThreeNumbers
-                                }
-                                document.getElementById('checkThree').innerHTML = `<span class='text-primary display-6'>[ ${checkThree([10, 3, 60, 47, 257])} ]</span>`;
-                            </script>
-                        </div>
-                    </div>
-                </div>
+                                    { id: 2538, name: '"ASUS ROG GL552VW-DH71 15.6"', price: 5300, category: '"Laptops"', description: '"Offering a formidable core experience for serious gaming and multitasking on Windows 10 Pro"' },
 
 
 
+                                    { id: 2539, name: '"Razer BlackWidow V3 Chroma RGB"', price: 439, category: '"Keyboards"', description: '"Experience one of the most iconic mechanical gaming keyboards with the Razer BlackWidow"' },
 
 
-                <!-- leason  Advanced q4-->
-                <div id="Advanced-leason-1-q4" class="card w-100 my-5 m-auto bg-dark">
-                    <div class="card-header">
-                        <h2 class="card-title text-light">שאלה 4 find</h2>
-                        <br>
-                        <h4 class="card-text text-light lh-base">
-                            כתבו פונקציה בשם firstSocial שמחזירה את שם הרשת החברתית הראשונה המכילה את האות t
-                        </h4>
-                    </div>
-                    <h5 class="card-title text-light">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-4.png"
-                            alt="leason Advanced js image question 3 - 2">
-                    </div>
-                    <div class="card-body" dir="ltr">
-                        <div class="border border-success  my-5 p-5 ">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-primary fw-bold" id="first-value"></p>
-                                    <p class="text-primary fw-bold" id="first-value2"></p>
-                                </div>
-                            </div>
-                            <script>
-                                function firstSocial(arr) {
-                                    return arr.find(function (str) {
-                                        return str.includes('e')
-                                    });
-                                }
-                                document.getElementById('first-value').innerHTML = `<span class='text-primary display-6'>[ ${firstSocial(['email', 'gmail'])} ]</span>`;
-                            </script>
-                        </div>
-                    </div>
-                </div>
+                                    { id: 2540, name: '"Microsoft Surface Pro 7.0"', price: 5400, category: '"Laptops"', description: '""New Surface Pro 7 adapts to the way you work with laptop-to-tablet versatility"' }
+                                ];
+                                function productsFunc(productsArr) {
+                                    let newproductsArrr = ''
+                                    newproductsArrr = `
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>`;
+                                    for (let i = 0; i < productsArr.length; i++) {
+                                        newproductsArrr +=`
+                                            <tbody>
+                                            <tr>
+                                            <td>${productsArr[i].id}</td>
+                                            <td>${productsArr[i].name}</td>
+                                            <td>${productsArr[i].price}</td>
+                                            <td>${productsArr[i].category}</td>
+                                            <td>${productsArr[i].description}</td>
+                                            </tr>
+                                            <tr>
+                                        </tbody>`;
 
-
-
-
-
-                <!-- leason  Advanced q5-->
-                <div id="Advanced-leason-1-q5" class="card w-100 my-5 m-auto bg-dark">
-                    <div class="card-header">
-                        <h2 class="card-title text-light">שאלה 5 sort</h2>
-                        <br>
-                        <h4 class="card-text text-danger">
-                            לפניכם המערך הבא:
-                        </h4>
-                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-5-q.png"
-                            alt="">
-                        <h4 class="card-text text-danger">
-                            כתבו פונקציה בשם sortMoreFive שמבצעת סינון על המערך ומחזירה מערך חדש ממוין לפי abc המכיל
-                            רק
-                            את הפירות ששמן מכיל לפחות 5 תווים.
-                        </h4>
-                    </div>
-                    <h5 class="card-title text-light">פיתרון</h5>
-                    <div class="card-body" dir="ltr">
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-5.png"
-                                alt="leason Advanced js image question 3 - 2">
-                        </div>
-
-                        <div class="border border-success  my-5 p-5 ">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bold " id="sortMoreFive"></p>
-                                </div>
-                            </div>
-                            <script>
-                                var fruits = ['banana', 'melon', 'kiwi', 'orange', 'apple', 'cherry'];
-                                function sortMoreFive(arr) {
-                                    let new_arr = arr.filter(function (str) {
-                                        return str.length >= 5
-                                        new_arr.sort()
                                     }
-                                    )
-                                    return new_arr;
-                                }
-                                console.log(sortMoreFive(fruits));
-                                document.getElementById('sortMoreFive').innerHTML = `<span class='text-primary'>[ ${sortMoreFive(fruits)} ]</span>`;
-                            </script>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- leason  Advanced q6-->
-                <div id="Advanced-leason-1-q6" class="card w-100 my-5 m-auto bg-dark">
-                    <div class="card-header">
-                        <h2 class="card-title text-light">שאלה 6</h2>
-                        <br>
-                        <h4 class="card-text text-danger">
-                            כתבו פונקציה בשם removeItem() שמקבלת מערך מחרוזות המייצג שמות סטודנטים ושם של סטודנט
-                            מסוים. הפונקציה תמחק את שם הסטודנט ממערך הסטודנטים. במידה והסטודנט לא קיים במערך יש
-                            להחזיר
-                            false ובמידה והמחיקה התבצעה יש להחזיר true . ניתן להניח ששם של סטודנט מופיע פעם אחת
-                            בלבד.
-                        </h4>
-                    </div>
-                    <h5 class="card-title text-light">פיתרון</h5>
-                    <div class="card-body" dir="ltr">
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-6.png"
-                                alt="leason Advanced js image question 3 - 2">
-                        </div>
-                        <div class="border border-success  my-5 p-5 ">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bold " id="removeItem0"></p>
-                                    <p class="fw-bold " id="removeItem1"></p>
-                                    <p class="fw-bold " id="removeItem2"></p>
-                                    <p class="fw-bold " id="removeItem3"></p>
-                                </div>
-                            </div>
-                            <script>
-                                var students = ['fayad', 'itamar', 'jamil', 'roaa', 'dorin'];
-                                document.getElementById('removeItem0').innerHTML = `<span class='text-light lh-1'>students array <span class='text-warning h5'>before</span> remove<br>[ ${students} ]<hr></span>`;
-                                function removeItem(arr, itemToRemove) {
-                                    var i = arr.indexOf(itemToRemove);
-                                    if (i == -1) return false;
-                                    arr.splice(i, 1);
-                                    return true
-                                }
-                                document.getElementById('removeItem1').innerHTML = `
-                                    <span class='text-primary'>
-                                        <span class='text-warning '>
-                                        return
-                                        </span> <span class='text-success h5'>true</span>
-                                        <br>${removeItem(students, 'itamar')}
-                                        </span>
-                                        <hr>`;
-                                document.getElementById('removeItem2').innerHTML = `
-                                    <span class='text-primary'>
-                                        <span class='text-warning h5'>
-                                        return
-                                        </span> <span class='text-danger'>false</span> if the name is not in array
-                                        <br>${removeItem(students, 'itamar')}
-                                        </span>
-                                        <hr>`;
-                                document.getElementById('removeItem3').innerHTML = `<span class='text-primary'>4<br>after remove<hr>[ ${students} ]</span>`;
+                                    document.getElementById('productsArrr').innerHTML = newproductsArrr
+                                };
+                                productsFunc(products)
                             </script>
                         </div>
                     </div>
@@ -561,62 +418,18 @@
 
 
 
-                <!-- leason  Advanced q6-->
-                <div id="Advanced-leason-1-q6" class="card w-100 my-5 m-auto bg-dark">
-                    <div class="card-header">
-                        <h2 class="card-title text-light">שאלה 6</h2>
-                        <br>
-                        <h4 class="card-text text-danger">
-                            כתבו פונקציה בשם updateItem() שמקבלת מערך מחרוזות המייצג שמות סטודנטים, שם ישן של
-                            סטודנט
-                            ושם חדש של סטודנט. הפונקציה תעדכן את שם הסטודנט הישן ממערך הסטודנטים לשם החדש. במידה
-                            והסטודנט לא קיים במערך יש להחזיר false ובמידה והעדכון התבצע יש להחזיר true . ניתן
-                            להניח ששם של
-                            סטודנט מופיע פעם אחת בלבד.
-                        </h4>
-                    </div>
-                    <h5 class="card-title text-light">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/leason1JsAdvanced/leasom1images/leason1-advanced-7.png"
-                            alt="leason Advanced js image question 3 - 2">
-                    </div>
-                    <div class="card-body" dir="ltr">
-                        <div class="border border-success  my-5 p-5 ">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bold" id="updateItem"></p>
-                                    <p class="fw-bold" id="updateItem0"></p>
-                                    <p class="fw-bold" id="updateItem2"></p>
-                                    <p class="fw-bold" id="updateItem3"></p>
-                                </div>
-                            </div>
-                            <script>
-                                var students = ['fayad', 'itamar', 'jamil', 'David', 'dorin'];
-                                document.getElementById('updateItem').innerHTML = `<span class='text-primary'>students Before<br>[ ${students} ]<hr></span>`;
-                                function updateStudents(studentsNames, oldName, newName) {
-                                    let indexToUpdate = studentsNames.indexOf(oldName);
-                                    if (indexToUpdate == -1) return false;
-                                    studentsNames[indexToUpdate] = newName;
-                                    return true;
-                                }
-                                updateStudents(students, 'David', 'Rami');
-                                document.getElementById('updateItem0').innerHTML = `<span class='text-primary'>students Afte<br>[ ${students} ]<hr></span>`;
 
-                            </script>
-                        </div>
-                    </div>
-                </div>
 
 
 
                 <!-- bottom buttons -->
                 <div class="row w-100 my-5" dir="ltr">
                     <div class="col-6">
-                        <a href="./leason2JsAdvancesd.html"><button class="btn btn-primary w-100">יום שני יועלה</button>
+                        <a href="./leason3JsAdvancesd.html"><button class="btn btn-primary w-100">יום שני יועלה</button>
                         </a>
                     </div>
                     <div class="col-6">
-                        <a href="./leason13.html"><button class="btn btn-primary w-100">אחורה</button>
+                        <a href="./leason1JsAdvancesd.html"><button class="btn btn-primary w-100">אחורה</button>
                         </a>
                     </div>
                 </div>
