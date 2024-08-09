@@ -10,24 +10,24 @@
     <title>leason 1</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-light">
     <header class="sticky-top">
         <nav class="navbar text-center navbar-expand-lg  text-bg-warning p-5 d-fixed">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Anis Mhamid</a>
+                <a class="navbar-brand text-light-emphasis" href="../index.html">Anis Mhamid</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav d-flex flex-wrap">
                         <li class="nav-item">
                             <a class="nav-link text-black active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link text-danger fw-bold  dropdown-toggle" href="#leason1" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                שיעור 1
+                                |- 1 שיעור
                             </a>
                             <ul class="dropdown-menu gx-5">
                                 <li><a class="dropdown-item " href="#leason1-q1">שאלה 1</a></li>
@@ -39,62 +39,62 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason2.html" role="button" aria-expanded="true">
-                                שיעור 2
+                                | 2 שיעור
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason3.html" role="button">
-                                שיעור 3
+                                | 3 שיעור
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason4.html" role="button">
-                                שיעור 4
+                                | שיעור 4
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason5.html" role="button">
-                                שיעור 5
+                                | שיעור 5
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason6.html" role="button">
-                                שיעור 6
+                                | שיעור 6
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason7.html" role="button">
-                                שיעור 7
+                                | 7 שיעור
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason8.html" role="button">
-                                שיעור 8 מערכים ופונקציות
+                                | שיעור 8
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason9.html" role="button">
-                                שיעור 9
+                                | שיעור 9
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason10.html" role="button">
-                                שיעור 10
+                                | 10 שיעור
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason11.html" role="button">
-                                שיעור 11
+                                | שיעור 11
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason12.html" role="button">
-                                שיעור 12
+                                | 12 שיעור
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="./leason13.html" role="button">
-                                שיעור 13
+                                | 13 שיעור
                             </a>
                         </li>
                         <li class="nav-item">
@@ -110,7 +110,7 @@
 
 
     <main class=" gx-0 p-0 bg-light">
-        <div class="container-lg">
+        <div class="container">
 
             <!-- back to top button -->
             <div id="back-to-top" class="w-25 m-auto fixed-bottom ">
@@ -138,7 +138,7 @@
 
 
                 <!-- leason 1 q1 -->
-                <div id="leason1-q1" class="card bg-dark w-100 my-5 m-auto">
+                <div id="leason1-q1" dir="ltr" class="card my-5 bg-dark w-100 my-5 m-auto">
                     <div class="card-header">
                         <h2 class="card-title text-light">שאלה 1</h2>
                         <br>
@@ -149,187 +149,258 @@
                         </h4>
                     </div>
                     <h5 class="card-title text-light">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <div>
-                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-1-html.png"
-                                alt="html image question 1">
-                        </div>
-                        <div class="card-img my-2">
-                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-1-js.png"
-                                alt="js image question 1">
+                    <div class="card">
+                        <div class="header">
+                            <div class="top">
+                                <div class="circle">
+                                    <span class="bg-danger circle2"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-warning circle2"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-success circle2"></span>
+                                </div>
+                                <div class="title">
+                                    <p id="title2">script.js</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
+                            <div class="code-container" dir="ltr">
+                                <textarea class="area" id="code" name="code" readonly="">
+function addToParagraphBody() {
+
+    document.write("<p><span id='bold'>Umm al fahm</span>, Ein alderwa street </p>")
+
+document.getElementById('bold').style.fontWeight = 'bold'
+
+}
+
+addToParagraphBody()
+</textarea>
+                            </div>
+                        </div>
+                        <div class="border border-success  my-5 p-5 ">
+                            <h1 class="text-light">אניס מחאמיד</h1>
+                            <script src="../works/Leason1/A/js/script.js"></script>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+        <!-- leason 1 q2 -->
+
+        <div id="leason1-q2" class="card my-5 text-center bg-dark w-100 m-auto my-5">
+            <div class="card-header">
+                <h2 class="card-title text-light">שאלה 2</h2>
+                <br>
+                <h4 class="card-text text-light">
+                    צרו דף ובו פסקה עם שם החיה האהובה עליכם וכפתור בשם change , שבעת לחיצה עליו, צבע הרקע
+                    של הדף ישתנה לצבע כחול וצבע הטקסט ישתנה ללבן
+                </h4>
+            </div>
+            <h5 class="card-title text-light">פיתרון</h5>
+            <div class="card">
+                <div class="header">
+                    <div class="top">
+                        <div class="circle">
+                            <span class="bg-danger circle2"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="bg-warning circle2"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="bg-success circle2"></span>
+                        </div>
+                        <div class="title">
+                            <p id="title2">script.js</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <div class="code-container" dir="ltr">
+                        <textarea class="area" id="code" name="code" readonly="">
+function blueBgColor(bodycolor,paragraphcolor){
+
+    document.getElementById('body').style.backgroundColor = bodycolor;
+
+    document.getElementById('para').style.color = paragraphcolor;
+
+}
+            </textarea>
+                    </div>
+                    <div id="body" class="border border-success  my-5 p-5 ">
+                        <p id="para" style="color: rgb(171, 171, 131);">Sabastia</p>
+                        <button class="btn btn-outline-info" id="changeColorButton"
+                            onclick="blueBgColor('blue','white')">changeBgColor</button>
+                        <script src="../works/Leason1/B/js/javascript.js"></script>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- leason 1 q3 -->
+
+            <div id="leason1-q3" class="card my-5 bg-dark my-5 w-100 m-auto">
+                <div class="card-header">
+                    <h4 class="card-title text-light">שאלה 3</h4>
+                    <br>
+                    <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-3-q.png"
+                        alt="javaScript-question3">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-light">פיתרון</h5>
+                    <div class="card">
+                        <div class="header">
+                            <div class="top">
+                                <div class="circle">
+                                    <span class="bg-danger circle2"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-warning circle2"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-success circle2"></span>
+                                </div>
+                                <div class="title">
+                                    <p id="title2">script.js</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="code-container" dir="ltr">
+                                <textarea class="area" id="code" name="code" readonly="">
+function blueBgColor(bodycolor,paragraphcolor){
+
+document.getElementById('body').style.backgroundColor = bodycolor;
+
+document.getElementById('para').style.color = paragraphcolor;
+
+}
+                                </textarea>
+                            </div>
+
                             <div class="border border-success  my-5 p-5 ">
-                                <h1>אניס מחאמיד</h1>
-                                <script src="../works/Leason1/A/js/script.js"></script>
+                                <h1 class="display-1 text-danger" id="Title">Choose yor favorite color</h1>
+                                <button class="btn btn-outline-info" id="red"
+                                    onclick="changeTextColor('text-danger')">Red</button>
+                                <button class="btn btn-outline-info" id="gren"
+                                    onclick="changeTextColor('text-success')">Green</button>
+                                <button class="btn btn-outline-info" id="blue"
+                                    onclick="changeTextColor('text-primary')">Blue</button>
+                                <script src="../works/Leason1/C/js/javascript.js"></script>
                             </div>
                         </div>
                     </div>
-                </div>
 
 
-                <!-- leason 1 q2 -->
+                    <!-- leason 1 q4 -->
 
-                <div id="leason1-q2" class="card bg-dark w-100 m-auto my-5">
-                    <div class="card-header">
-                        <h2 class="card-title text-light">שאלה 2</h2>
-                        <br>
-                        <h4 class="card-text text-light">
-                            צרו דף ובו פסקה עם שם החיה האהובה עליכם וכפתור בשם change , שבעת לחיצה עליו, צבע הרקע
-                            של הדף ישתנה לצבע כחול וצבע הטקסט ישתנה ללבן
-                        </h4>
-                    </div>
-                    <h5 class="card-title text-light">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-2-html.png" alt="">
-                    </div>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-2-js.png"
-                            alt="javaScript-code">
-                    </div>
-                    <div class="card-body">
-
-                        <div id="body" class="border border-success  my-5 p-5 ">
-                            <p id="para">Sabastia</p>
-                            <button class="btn btn-outline-info" id="changeColorButton" onclick="blueBgColor('blue','white')">changeBgColor</button>
-                            <script src="../works/Leason1/B/js/javascript.js"></script>
+                    <div id="leason1-q4" class="card bg-dark m-auto w-100 my-5">
+                        <div class="card-header">
+                            <h4 class="catr-title text-light">שאלה 4</h4>
+                            <br>
                         </div>
-                    </div>
-                </div>
-
-
-                <!-- leason 1 q3 -->
-
-                <div id="leason1-q3" class="card bg-dark my-5 w-100 m-auto">
-                    <div class="card-header">
-                        <h4 class="card-title text-light">שאלה 3</h4>
-                        <br>
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-3-q.png"
-                            alt="javaScript-question3">
-                    </div>
-                    <div class="card-body">
+                        <div class="card-img my-2">
+                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-4-q.png"
+                                alt="javaScript-question3">
+                        </div>
                         <h5 class="card-title text-light">פיתרון</h5>
-                        <div class="mt-2">
-                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-3-html.png"
-                                alt="javaScript-code">
-                        </div>
-                        <div class="mt-2">
-                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-3-js.png"
+                        <div class="card-img my-2">
+                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-4-html.png"
                                 alt="html-code">
                         </div>
-
-                        <div class="border border-success  my-5 p-5 ">
-                            <h1 class="display-1 text-danger" id="Title">Choose yor favorite color</h1>
-                            <button class="btn btn-outline-info" id="red" onclick="changeTextColor('text-danger')">Red</button>
-                            <button class="btn btn-outline-info" id="gren" onclick="changeTextColor('text-success')">Green</button>
-                            <button class="btn btn-outline-info" id="blue" onclick="changeTextColor('text-primary')">Blue</button>
-                            <script src="../works/Leason1/C/js/javascript.js"></script>
+                        <div class="card-img my-2">
+                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-4-js.png"
+                                alt="javaScript-code">
                         </div>
-                    </div>
-                </div>
+                        <div class="card-body">
+                            <div class="border border-success  my-5 p-5 " dir="ltr">
+                                <div class="card-img my-2">
+                                    <img class="img-fluid" id="image" src="../works/Leason1/D/images/facebook.png"
+                                        alt="facbook image" width="200px">
+                                </div>
+                                <button class="btn btn-outline-info" id="facbook"
+                                    onclick="cahngeImage('../works/Leason1/D/images/facebook.png')">Facebook</button>
+                                <button class="btn btn-outline-info" id="instatgram"
+                                    onclick="cahngeImage('../works/Leason1/D/images/instagram.png')">Instagram</button>
+                                <button class="btn btn-outline-info" id="linkedin"
+                                    onclick="cahngeImage('../works/Leason1/D/images/linkedin.png')">Linkedin</button>
 
+                                <button class="btn btn-outline-info" id="x"
+                                    onclick="cahngeImage('../works/Leason1/D/images/twitter.png')">X</button>
 
-                <!-- leason 1 q4 -->
-
-                <div id="leason1-q4" class="card bg-dark m-auto w-100 my-5">
-                    <div class="card-header">
-                        <h4 class="catr-title text-light">שאלה 4</h4>
-                        <br>
-                    </div>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-4-q.png"
-                            alt="javaScript-question3">
-                    </div>
-                    <h5 class="card-title text-light">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-4-html.png" alt="html-code">
-                    </div>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-4-js.png"
-                            alt="javaScript-code">
-                    </div>
-                    <div class="card-body">
-                        <div class="border border-success  my-5 p-5 " dir="ltr">
-                            <div class="card-img my-2">
-                                <img class="img-fluid" id="image" src="../works/Leason1/D/images/facebook.png"
-                                    alt="facbook image" width="200px">
+                                <script src="../works/Leason1/D/js/javascript.js"></script>
                             </div>
-                            <button class="btn btn-outline-info" id="facbook"
-                                onclick="cahngeImage('../works/Leason1/D/images/facebook.png')">Facebook</button>
-                            <button class="btn btn-outline-info" id="instatgram"
-                                onclick="cahngeImage('../works/Leason1/D/images/instagram.png')">Instagram</button>
-                            <button class="btn btn-outline-info" id="linkedin"
-                                onclick="cahngeImage('../works/Leason1/D/images/linkedin.png')">Linkedin</button>
 
-                            <button class="btn btn-outline-info" id="x" onclick="cahngeImage('../works/Leason1/D/images/twitter.png')">X</button>
 
-                            <script src="../works/Leason1/D/js/javascript.js"></script>
+
+
                         </div>
 
 
-
-
                     </div>
 
 
-                </div>
+                    <!-- leason 1 q5 -->
 
+                    <div id="leason1-q5" class="card bg-dark m-auto w-100">
+                        <div class="card-header">
+                            <h4 class="card-title text-light">שאלה 5</h4>
+                            <br>
+                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-5-q.png"
+                                alt="javaScript-question3">
+                        </div>
+                        <h5 class="card-text text-light">פיתרון</h5>
+                        <div class="card-img my-2">
+                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-5-html.png"
+                                alt="html-code">
+                        </div>
+                        <div class="card-img my-2">
+                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-5-js.png" alt="js-code">
+                        </div>
+                        <div class="card-body">
 
-                <!-- leason 1 q5 -->
-
-                <div id="leason1-q5" class="card bg-dark m-auto w-100">
-                    <div class="card-header">
-                        <h4 class="card-title text-light">שאלה 5</h4>
-                        <br>
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-5-q.png"
-                            alt="javaScript-question3">
-                    </div>
-                    <h5 class="card-text text-light">פיתרון</h5>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-5-html.png" alt="html-code">
-                    </div>
-                    <div class="card-img my-2">
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-5-js.png" alt="js-code">
-                    </div>
-                    <div class="card-body">
-
-                        <div class="border p-5 my-5 targil" dir="ltr">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="input-group" id="main-box">
-                                        <h1 class="display-2">DISCOUNT CALCULATOR</h1>
-                                        <input class=" form-control" id="price" placeholder="Price" type="number">
-                                        <input class="form-control" placeholder="%" type="number" id="discount">
+                            <div class="border p-5 my-5 targil" dir="ltr">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group" id="main-box">
+                                            <h1 class="display-2">DISCOUNT CALCULATOR</h1>
+                                            <input class=" form-control" id="price" placeholder="Price" type="number">
+                                            <input class="form-control" placeholder="%" type="number" id="discount">
+                                        </div>
                                     </div>
+                                    <div class="col">
+                                        <button class="btn btn-primary m-auto my-2" onclick="calc()">Calculate</button>
+                                        <button class="btn btn-primary m-auto my-2" onclick="reset()">Reset</button>
+                                    </div>
+                                    <p id="pr"></p>
                                 </div>
-                                <div class="col">
-                                    <button class="btn btn-primary m-auto my-2" onclick="calc()">Calculate</button>
-                                    <button class="btn btn-primary m-auto my-2" onclick="reset()">Reset</button>
-                                </div>
-                                <p id="pr"></p>
                             </div>
+                            <script src="../works/Leason1/E/js/javascript.js"></script>
+                            <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-6-q.png"
+                                alt="hackampus questions 2-3">
                         </div>
-                        <script src="../works/Leason1/E/js/javascript.js"></script>
-                        <img class="img-fluid" src="../works/Leason1/imagesLeason1/leason1-6-q.png"
-                            alt="hackampus questions 2-3">
                     </div>
+
+
+
+
+                    <div class="row w-100 my-5" dir="ltr">
+                        <div class="col-6 my-5">
+                            <a href="./leason2.html"><button class="btn btn-primary w-100">הבא</button>
+                            </a>
+                        </div>
+                        <div class="col-6 my-5">
+                            <a href="../index.html"><button class="btn btn-primary w-100">בית</button>
+                            </a>
+                        </div>
+                    </div>
+                    </section>
                 </div>
-
-
-
-
-                <div class="row w-100 my-5" dir="ltr">
-                    <div class="col-6 my-5">
-                        <a href="./leason2.html"><button class="btn btn-primary w-100">הבא</button>
-                        </a>
-                    </div>
-                    <div class="col-6 my-5">
-                        <a href="../index.html"><button class="btn btn-primary w-100">בית</button>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
     </main>
 
 
